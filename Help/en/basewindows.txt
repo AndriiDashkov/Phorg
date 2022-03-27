@@ -1,0 +1,47 @@
+<html><body><p>
+<b>Common view of the application </b><br>
+_________________________________
+<br><br>
+
+The application has four main windows:<br><br>
+
+<b>
+- the albums tree 
+</b><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This &nbsp;window contains &nbsp;the list &nbsp;of &nbsp;all albums in &nbsp;the tree &nbsp;view. All &nbsp;operations for this &nbsp;tree are <br> 
+available through the menu 'Album' or the &nbsp;context &nbsp;menu. This &nbsp;window reflects the &nbsp;interdependencies <br>
+between albums in the form of 'parent-child'.
+<br><br>
+<b>
+- Main view panel
+</b><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This main panel contains all the images for one selected and &nbsp;loaded album. This window is the<br> 
+ main place for the user to work with &nbsp;images. The content of &nbsp;the main&nbsp; view panel can be &nbsp;changed&nbsp; by <br>
+loading another album, filter operation,sorting, edit , delete , move operations and so on.
+<br><br>  
+<b>
+- List of images
+</b><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;List of images in &nbsp;the form of a table is &nbsp;intended to help the user to go through the &nbsp;images the <br> 
+quicker&nbsp; when the image&nbsp; itself is not essential. This table is secondary in &nbsp;comparison with the&nbsp; main <br>
+view panel.
+<br><br>
+<b>
+- List of subjects
+</b><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This window &nbsp;contains all the subjects &nbsp;created by user in the form of a &nbsp;table. All the edit, move  <br>
+and add operations are supported. The subject is a term that can help the user to build the cross-album 
+<br>links.
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The place &nbsp;and visibility &nbsp;of &nbsp;all these windows can &nbsp;be switched via &nbsp;the 'Window' &nbsp;menu. Some <br>
+operations are dependent on the state of windows pairs. Here are some of them:
+<br><br>
+- selecting (or finding) the image which is in the&nbsp; main view panel by the &nbsp;double click on the item &nbsp;in the<br>
+list of images;<br><br> 
+- loading images for the selected  album to the  main view panel using the item from the context menu in <br>
+the list of album tree;<br><br>
+- changing the icon of the album via the menu item in the context menu of the main view panel;<br><br>
+- fast inserting of currently selected (in the list of subjects) subject into the images selected in the main <br>
+view panel. <br><br>
+
+</p></body></html>

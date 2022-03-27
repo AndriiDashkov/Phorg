@@ -1,0 +1,22 @@
+<html>
+<body><b>
+External editor</b><br>
+<p>
+______________</p>
+<br>
+
+<p>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Use the menu item called 'Open in'  to open the image in an external application. It is <br> 
+possible to use any installed on your system program - Paint, Gimp, Graphics Gale etc., but <br> 
+first  set a start command for the targeted &nbsp; external application in Settings dialog. This dialog <br>
+has the 'External editor' &nbsp; tab &nbsp; which contains &nbsp;a table &nbsp;with three columns. The first one is a  <br>
+menu name of the application. Type any name here, it may &nbsp; not coincide with  the real name <br>
+of the &nbsp;external &nbsp;application. &nbsp; The &nbsp;second &nbsp;column is a &nbsp;full&nbsp; path to &nbsp;the &nbsp; application. &nbsp;Third <br>
+column is optional - you can add &nbsp;here some specific&nbsp; start keys if &nbsp;the application &nbsp; supports <br>
+them&nbsp; and you  need &nbsp;to &nbsp;open &nbsp;in &nbsp;&nbsp; a specific&nbsp; manner. &nbsp; (The &nbsp;information &nbsp; about&nbsp; start keys <br>
+is available in the  corresponding &nbsp;documentation &nbsp; for&nbsp;the chosen &nbsp;application). &nbsp;After filling in &nbsp;<br>
+ this &nbsp;information, &nbsp;saving &nbsp;the  settings &nbsp; and&nbsp; restarting, &nbsp; the &nbsp;new menu&nbsp; item  &nbsp; will appear in  <br>
+the popup menu 'Open in'.
+<p>
+</body>
+</html>

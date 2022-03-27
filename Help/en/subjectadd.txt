@@ -1,0 +1,25 @@
+<html><body><p>
+<b>
+Add and edit a subject</b><br>
+____________________
+<br><br>
+
+
+
+Add a new subject.<br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Use menu Subjects -> New.<br>
+There is only one value to enter in the opened dialog - the &nbsp;name of the subject. &nbsp;Use the special &nbsp;button<br>
+to perform multi-enter of subjects.<br><br>
+
+
+Edit the subject.
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;First select the subject on the subjects list (table). Then use the context menu or Subjects->Edit<br>
+menu item. &nbsp;Pay attention &nbsp;that changing  &nbsp;the name &nbsp;of the subject doesn't &nbsp;mean having &nbsp;a new &nbsp;subject <br>
+after editing. The system uses special id's &nbsp;numbers &nbsp;to&nbsp; establish relations with images and  make  every<br>
+subject to &nbsp;be unique. So&nbsp;changing &nbsp; the name of subject doesn't &nbsp;change associated&nbsp; links &nbsp;and doesn't&nbsp; <br>
+change associated id  - the old subject has a new  name, that's all.
+
+
+</p></body></html> 

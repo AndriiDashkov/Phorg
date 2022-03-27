@@ -1,0 +1,24 @@
+<html><body><p>
+<b>
+Add image</b><br>
+__________
+<br><br>
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This operation performs the addition of a new image to the album. First of all, set the path <br> 
+to the intended image file. After&nbsp; that set the image name, creation date, comments&nbsp; and choose <br>
+suitable subjects from the list by moving them into the right side &nbsp;called 'Selected Subjects'. After<br>
+ that &nbsp;choose the copy &nbsp;option for this &nbsp;file. The file can be physically copied into a standard album <br>
+folder, or the image &nbsp;can be &nbsp;added as a &nbsp;link, without coping. Also it is &nbsp;possible to set two &nbsp;next <br>
+options:  &nbsp;printed and&nbsp; bookmarked. The &nbsp;'printed' &nbsp;option&nbsp; is &nbsp;used to &nbsp;mark &nbsp;the image if it’s&nbsp; been <br>
+printed. This option doesn’t have &nbsp;any special meaning, it is just a &nbsp;suitable mark to &nbsp;indicate that<br> 
+that the image was printed. So is the 'bookmarked' &nbsp;mark. This mark means&nbsp; that the user &nbsp;would <br> 
+like &nbsp;to &nbsp;remember to&nbsp; return &nbsp;to &nbsp;this image &nbsp;for any&nbsp; reason. The reason&nbsp; itself &nbsp;can be &nbsp;set in &nbsp;the<br> 
+'Comments'  &nbsp;field. &nbsp;The &nbsp;dialog &nbsp;has a &nbsp;built-in&nbsp; validator aimed to&nbsp; notify&nbsp; if &nbsp;some &nbsp;entered data&nbsp; is <br>
+incorrect.
+
+</p></body></html>
+
+
+
+

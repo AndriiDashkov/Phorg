@@ -1,0 +1,17 @@
+<html><body><p>
+<b>
+Edit album
+</b><br>
+___________
+<br><br>
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Select an album in the tree of &nbsp;albums to &nbsp;start editing it. After&nbsp; that the&nbsp; button 'Edit album'<br> 
+will &nbsp;be enabled&nbsp; on the main toolbar, or the context&nbsp; menu can&nbsp; be used. The&nbsp; dialog window &nbsp;will be<br>
+opened.&nbsp; This&nbsp; dialog&nbsp; is almost the&nbsp; same &nbsp;as&nbsp; for the 'New &nbsp;Album' &nbsp;operation, &nbsp;but all&nbsp; the fields are  <br>
+filled with album data. Any&nbsp; of them can be &nbsp;changed. &nbsp;Remember that the &nbsp;operation &nbsp;'Edit Album' is<br>
+performed &nbsp;for the selected&nbsp; album&nbsp; in&nbsp; the&nbsp; albums &nbsp;tree&nbsp; which &nbsp;can be&nbsp; different &nbsp;from the &nbsp;currently <br>
+loaded album.&nbsp; Please, pay you attention to the fact  &nbsp;that&nbsp; the&nbsp; operation makes the &nbsp;changes of the <br> 
+common&nbsp; album &nbsp;information - name, date etc. and doesn't deal with images in the album.
+
+</p></body></html>

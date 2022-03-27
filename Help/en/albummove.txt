@@ -1,0 +1,15 @@
+<html><body><p>
+<b>
+Album move</b><br>
+___________
+<br><br>
+
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This operation allows to change&nbsp; the standard&nbsp; place for &nbsp;images. The 'standard&nbsp; place'<br> 
+is &nbsp;a &nbsp;folder where&nbsp; the album&nbsp; can&nbsp; hold its&nbsp; images in&nbsp; case&nbsp; when the user&nbsp;would like to&nbsp; add <br>
+images to &nbsp;an album not &nbsp;as a link, but as &nbsp;a physical copy. This folder &nbsp;is under responsibility<br> 
+of the application. The&nbsp; 'move' operation&nbsp; moves the&nbsp; standard folder&nbsp; to a new place and moves <br>
+images to it. The dialog window offers an option to delete the old folder after the operation.  <br>
+</p></body></html>

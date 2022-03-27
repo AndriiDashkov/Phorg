@@ -1,0 +1,36 @@
+<html><body><p>
+<b>
+Slider and instruments</b><br>
+_____________________
+<br><br>
+
+Slider.<br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Use the Slider button on the main toolbar to open the slide window. It is possible to watch <br> 
+the loaded album either  statically or dynamically. Pay attention that the slider is aware of the sort <br>
+order: images &nbsp;are shown in&nbsp; the current sort order.&nbsp; Use &nbsp;the slide widget to set a desirable &nbsp;time <br>
+of delay.<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Also pay attention that slider is &nbsp;aware of the selected &nbsp;images: it tries to be opened &nbsp;with<br> 
+selected images only, and if there is no &nbsp;selection, then it opens for all &nbsp;the images in the &nbsp;current <br> 
+album. Also there is another possibility &nbsp;to control of visibility: a special &nbsp;mark on every image &nbsp;on <br>
+the view panel. If this mark is &nbsp;switched off, then the image is not visible while the slider&nbsp; session. <br>
+This mark can be directly set&nbsp; in the &nbsp;slider itself. The other &nbsp;possibility&nbsp; is setting a &nbsp;bookmark on <br>
+the image during &nbsp;the &nbsp;slider show. This &nbsp;can&nbsp; be used &nbsp;according &nbsp;to the &nbsp;following&nbsp; scenario: &nbsp;set <br>
+bookmarks &nbsp;in the slider &nbsp;on images which are not suitable for some reason; then sort the images <br>
+on the main &nbsp;view panel according to their bookmarks; select images with bookmarks (they are on <br>
+top after sorting) and delete them from the current album.
+
+
+<br><br>
+
+Instruments.
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The &nbsp;instruments &nbsp;&nbsp;window &nbsp;can &nbsp;help &nbsp;to &nbsp;do &nbsp;some edit &nbsp;operations with &nbsp;a&nbsp; single &nbsp;image:<br> 
+turn &nbsp;left &nbsp;or &nbsp;right, &nbsp;correct&nbsp; horizon, &nbsp;contrast, &nbsp;blur&nbsp;&nbsp; etc. &nbsp;Pay &nbsp;attention &nbsp;that &nbsp;&nbsp;this &nbsp;instruments <br>
+window is a preliminary version so use at on&nbsp; your own risk. The&nbsp; window is divided into two&nbsp; parts: <br>
+work area and &nbsp;preview area. All the&nbsp;instruments work with&nbsp; the&nbsp; work &nbsp;area &nbsp;only and the&nbsp;resulting <br>
+image &nbsp;appears &nbsp;in &nbsp;the&nbsp; preview &nbsp;area.&nbsp; If &nbsp;you &nbsp;want to&nbsp; use &nbsp;the next &nbsp;instrument&nbsp; for &nbsp;the &nbsp;edited <br>
+image in&nbsp; the preview area move the edited &nbsp;image to the work area &nbsp;with the special arrow &nbsp;button<br>
+which is &nbsp;on the middle toolbar.<br>
+
+</p></body></html>

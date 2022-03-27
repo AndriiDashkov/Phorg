@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Contens>
+	<Item name="Введение" fileName="">
+		<Item name="Основные положения" fileName="generalidea.txt">
+		</Item>
+		<Item name="Быстрый старт" fileName="quickstart.txt">
+		</Item>
+		<Item name="Интерфейс пользователя" fileName="basewindows.txt">
+		</Item>
+		
+		<Item name="Локализация" fileName="inter.txt" />
+	</Item>
+	<Item name="Альбомы" >
+      <Item name="Создание" fileName="albumfuncnew.txt" />
+	<Item name="Загрузка" fileName="albumload.txt" />
+ 
+      <Item name="Редактирование" fileName="albumfuncedit.txt" />
+      
+      <Item name="Удаление и очистка" fileName="albumcleandelete.txt" />
+    
+      <Item name="Объединение" fileName="albummerge.txt" />
+
+      <Item name="Перемещение" fileName="albummove.txt" />
+      <Item name="Поиск" fileName="albumfind.txt" />
+      <Item name="Свойства" fileName="albumproperties.txt" />
+      
+		</Item>
+
+	<Item name="Изображение" >
+		<Item name="Добавление" fileName="imageadd.txt"  />
+		<Item name="Групповое добавление" fileName="imageaddgroup.txt"  />
+		<Item name="Редактирование и удаление" fileName="imageedit.txt"  />
+		<Item name="Фильтрация" fileName="imagefilter.txt"  />
+		<Item name="Сортировка" fileName="imagesort.txt"  />
+		<Item name="Поиск по имени" fileName="imagefind.txt"  />
+		<Item name="Копирование и вставка " fileName="imagecopypaste.txt"  />
+		<Item name="Внешний редактор" fileName="externaleditor.txt"  />
+		<Item name="Работа с выделением" fileName="imageselection.txt"  />
+		<Item name="Печать" fileName="print.txt"  />
+
+	</Item>
+	<Item name="Темы" >
+		<Item name ="Использование" fileName="subjectidea.txt"/>
+		<Item name = "Новая тема"  fileName="subjectadd.txt"/>
+		<Item name = "Удаление темы"  fileName="subjectdelete.txt"/>
+		<Item name = "Быстрая вставка"  fileName="subjectquickins.txt"/>
+	</Item>
+
+	<Item name="Инструменты" >
+		<Item name="Инструменты ROI" fileName="roiinstruments.txt"/>
+		<Item name="Инструменты" fileName="roiinstruments.txt"/>
+	</Item>
+
+	<Item name="Дополнительно" >
+		<Item name="Слайдер и инструменты" fileName="sliderinstrum.txt"/>
+		<Item name="Ошибки" fileName="errorreport.txt"/>
+	</Item>
+
+	
+</Contens>

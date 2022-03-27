@@ -1,0 +1,32 @@
+<html><body><p>
+<b>Clean or delete album</b><br>
+_____________________
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;These operations use four options, which can be combined to achieve results.<br>
+The first pair of options concerns the type of operation:
+<br><br>
+- clear album<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This means that the operation will remove all the images and the album will be empty.
+<br><br>
+- delete album<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This option means that the album will be cleaned and then deleted.
+<br><br>
+The next pair of options concerns files:
+<br><br>
+- without deleting images from the disk<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; This means that images will be removed from the album, but the files themselves will be left <br>on the disk.
+<br><br>
+- with deleting images from the disk<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;In this case files will be deleted physically from the disk. Pay attention that the application<br> 
+removes from the &nbsp;disk the files which it&nbsp; is responsible for  only, in other words the files &nbsp;which are <br> 
+in the standard folder for this album.  The application will never delete physically  the images added<br>
+as links.
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The last option &nbsp;is “include child’s &nbsp;albums &nbsp;into &nbsp;the operation”. Switch &nbsp;on &nbsp;this &nbsp;option to <br> 
+perform the clean/delete operation not only for selected the album, but for all child's albums.<br>
+ 
+
+</p></body></html>
+
+
+

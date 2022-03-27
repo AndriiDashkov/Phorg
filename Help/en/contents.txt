@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Contens>
+	<Item name="Introduction" fileName="">
+		<Item name="General idea" fileName="generalidea.txt">
+		</Item>
+		<Item name="Quick start" fileName="quickstart.txt">
+		</Item>
+		<Item name="Base windows" fileName="basewindows.txt">
+		</Item>
+		
+		<Item name="Localization" fileName="inter.txt" />
+	</Item>
+	<Item name="Albums" >
+      <Item name="Creation" fileName="albumfuncnew.txt" />
+	<Item name="Load album" fileName="albumload.txt" />
+ 
+      <Item name="Edit" fileName="albumfuncedit.txt" />
+      
+      <Item name="Delete and clean" fileName="albumcleandelete.txt" />
+    
+      <Item name="Merge" fileName="albummerge.txt" />
+
+      <Item name="Move" fileName="albummove.txt" />
+      <Item name="Find" fileName="albumfind.txt" />
+      <Item name="Properties" fileName="albumproperties.txt" />
+      
+		</Item>
+
+	<Item name="Images" >
+		<Item name="Add image to album" fileName="imageadd.txt"  />
+		<Item name="Add group of images to album" fileName="imageaddgroup.txt"  />
+		<Item name="Edit and Delete image" fileName="imageedit.txt"  />
+		<Item name="Filtering images" fileName="imagefilter.txt"  />
+		<Item name="Sorting images" fileName="imagesort.txt"  />
+		<Item name="Find images by name" fileName="imagefind.txt"  />
+		<Item name="Copy/paste and cut" fileName="imagecopypaste.txt"  />
+		<Item name="External editor" fileName="externaleditor.txt"  />
+		<Item name="Selection" fileName="imageselection.txt"  />
+		<Item name="Print" fileName="print.txt"  />
+
+	</Item>
+	<Item name="Subjects" >
+		<Item name ="General" fileName="subjectidea.txt"/>
+		<Item name = "Add new subject"  fileName="subjectadd.txt"/>
+		<Item name = "Delete subject"  fileName="subjectdelete.txt"/>
+		<Item name = "Quick insert"  fileName="subjectquickins.txt"/>
+	</Item>
+	
+	<Item name="Instruments" >
+		<Item name="ROI instruments" fileName="instruments.txt"/>
+		<Item name="Instruments" fileName="roiinstruments.txt"/>
+	</Item>
+
+	<Item name="Additional" >
+		<Item name="Slider and instruments" fileName="sliderinstrum.txt"/>
+		<Item name="Bugs" fileName="errorreport.txt"/>
+	</Item>
+
+	
+</Contens>

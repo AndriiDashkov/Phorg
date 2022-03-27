@@ -1,0 +1,11 @@
+<html><body><p>
+<b>Find</b><br>
+______
+<br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Use this operation to search for an album in the tree. The dialog has only one field  which<br> 
+ accepts the name of the &nbsp;album. There is no need to enter the full name; when&nbsp; entered symbols <br>
+coincide with some albums, you can &nbsp;find them just &nbsp;pushing the button “Find” some times  - the <br>
+selection will move to the next found album.
+
+</p></body></html>

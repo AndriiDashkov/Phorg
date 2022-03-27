@@ -1,0 +1,15 @@
+<html><body><p>
+<b>
+Load album</b><br>
+__________
+<br><br>
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;To start working with the images  load an album and make it current. Use the Album -> <br> 
+Load menu &nbsp;item. The &nbsp;load &nbsp;operation &nbsp;loads &nbsp;all images of the &nbsp;album to the main &nbsp;view panel, <br> 
+after that &nbsp;they can be &nbsp;seen and &nbsp;worked with.  Pay attention &nbsp;that an empty album can also be<br> 
+loaded, in this &nbsp;case nothing will be &nbsp;seen in the view &nbsp;panel, but &nbsp;it's necessary to &nbsp;do  in &nbsp;order<br> 
+ to start the addition of images to the empty album.
+
+
+</p></body></html>

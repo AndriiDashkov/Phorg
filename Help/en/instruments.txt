@@ -1,0 +1,107 @@
+<html><body><p>
+<b>
+ROI instruments</b><br>
+_____________________
+<br><br>
+
+General.<br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Use this instrument window for making image processing. <br>
+The window contains the variety of different image operations and algorithms, including changing geometry,<br>
+changing color balance, manipulations with filters and morphologial operations, etc. <br>
+All instrument buttons are aligneg on the left<br>
+must create a new ROI file or load an existing one. This file has .txt format and contains coordinates of <br>
+all created ROI rectangles, linked to appropriative images.<br> 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;You can create a new single ROI just by cropping the desirable region with<br> 
+a rectangle using the specific instrument. You can set the initial size of the rectangle instrument for shaping<br>
+in a special menu close to the instruments' button, and change the size of the rectangle on the fly. After that, <br>
+the coordinates of this rectangle will be saved to the ROI file. Please pay attention, that the file has no explicit<br> 
+link to the album; the current album knows nothing about where this file is located until you explicitly load it.<br>
+Thus you have to load this file explicitly before every session of labeling. 
+
+
+<br><br>
+
+ROI file creation or loading.
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Before the start, you need to create a new ROI file for the album, or<br>
+load an existing one. Use appropriate controls and buttons in the top part of the main toolbar.
+
+<br><br>
+
+ROI types.
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;During the labeling process, you may want to select ROIs of different<br> 
+types. For example, labeling pedestrians, you may want to select riders, cyclists, and seating persons in a <br>
+different way in order to be able to process them in a specific way further. Use the popup menu of the table <br>
+named "ROI types" to add or delete a new type of ROI. All these types will be saved in the ROI file. The <br>
+circle switching between different types of ROI while the using of the Crop/ROI instrument  can be done by <br>
+using the 'E' key.  
+
+
+<br><br>
+
+The current ROIs table.
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This table can help to control all ROIs for the current image and delete<br> 
+them if it needs. You can edit the ROI, selected in this table, by using the "Edit ROI" instrument on the main <br>
+toolbar. 
+
+<br><br>
+
+Navigation buttons: next, prev, fisrt unlabeled.
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Use these instruments to move forward-backward and get the next or previous<br> 
+image from the current album. The button "Move to the first image ..." helps to jump to the first image which has <br>
+not been labeled. 
+
+<br><br>
+
+The crop ROI instrument.
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The crop ROI instrument allows you to select the rectangle area on the current image, <br>
+and change the shape on the fly with keys W, A, S, D, or by mouse wheel. The choice of desirable ROI type can <br>
+be done by key 'E' in a circular way. Pay attention, that labeling with this instrument doesn't change the images <br>
+themselves, all coordinates of created ROI are saved in the ROI file only.
+
+<br><br>
+
+Button-specific popup menu for the crop ROI instrument.
+<br><br>
+The button-specific popup menu allows setting some options to make the process more convenient.<br>
+- Crop rectangle width, height. The initial size of instruments' rectangle.<br>
+- Resize with ratio control. If this flag is on, all instruments' rectangle resize operations (via keys or mouse wheel)<br>
+&nbsp; &nbsp; will be done with control of the ratio of the initial size of the rectangle.<br>
+- Resize step. Increase this step for more fast resizing with keys  W, A, S, D.<br>
+- Autoswitch to the next image. If you have only one ROI on every image, this option helps to switch to the next image <br>
+&nbsp; &nbsp;in the album  immediately after ROI selection.<br>
+- Keep activated. Activates the instrument immediately after switching to the next image.<br>
+
+All chosen parameters can be saved into the internal buffer by green arrows on the right side of the menu. This allows <br>
+switching between different parameters on the fly.
+
+<br><br>
+ROI statistics.
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Use this button to collect the ROI statistic : geometry, ovelapping, etc. .
+
+
+<br><br>
+
+Cut and save ROIs button.
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Finally, when your labeling is finished, you may want to create datasets of different essences<br> 
+based on what you have done. This instrument allows you to crop ROIs physically as separate images, to sort them<br> 
+to different folders, and to create a negative dataset that doesn't include ROIs.
+
+<br><br>
+
+Edit ROI button.
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Select the desirable ROI rectangle in the table. It will be selected with a different color<br>
+on the image. Use the Edit ROI instrument to change the geometry and type of the ROI.
+
+
+<br><br>
+
+</p></body></html>

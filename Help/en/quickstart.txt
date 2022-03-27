@@ -1,0 +1,41 @@
+<html><body><p>
+
+<b>Quick start</b><br>
+_____________
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;You should take the following simple steps to start the software quickly : <br><br>
+<b>
+1) Change localization (internationalization)</b> <br>
+Use the menu  Instruments -> Settings -> Localization. Then restart the application.
+<br><br><b>
+2) Click the button "New album" on the main toolbar<br><br>
+
+3) Fill in the fields of the dialog window in order to create a new album:
+</b><br><br>
+
+- give a name to your album;<br><br>
+- set the date of the album creation;<br><br>
+
+- as a newly created album will be the first, there is no need to use a parent album option, the first <br>
+created  album is always on the top of the tree; this album can be reparented  later, when there is a <br>
+ more complicated structure of albums;<br><br>
+
+- do not touch the 'album folder' option for the first album, this is not essential in the begining;<br><br>
+- edit the comments field, if you want;<br><br>
+- click 'Ok'.<br><br>
+<b>
+4) Now your album is in the list of albums. 
+</b><br>
+The label on the top of the main view panel informs that the album is current now, and has no <br>
+images. <br><br>
+- click the right button of the mouse on the empty area of the main view panel to open a popup  menu. <br><br>
+- choose the item 'Add group of images' in the menu.<br><br>
+- in the dialog window choose the folder with images which you would like to add to the current album.<br>
+Pay attention that the application may search for images in all included folders.<br><br>
+- leave the option 'add as links' in the switched on state.<br><br>
+- click 'Ok'.<br><br>
+<b>
+5) The process of loading will start.<br>
+</b>
+It can take some time (if there are a lot of images in the chosen folder).
+</p></body></html>

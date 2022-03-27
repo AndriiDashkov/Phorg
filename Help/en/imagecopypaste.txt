@@ -1,0 +1,28 @@
+<html><body><p>
+<b>
+Copy/paste operations.</b><br>
+_____________________
+<br><br>
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;It is possible to perform copy/paste operations between albums. Load an album and then select <br>
+the image with the mouse button &nbsp;or &nbsp;use &nbsp;Shift + mouse&nbsp; button to select more&nbsp; than one image. &nbsp;Then <br>
+use&nbsp; the &nbsp;button &nbsp;'Copy&nbsp; Image' &nbsp;or open &nbsp;a &nbsp;popup menu &nbsp;with the&nbsp;right &nbsp;mouse button&nbsp; and&nbsp; choose &nbsp;an<br> 
+appropriate item. After&nbsp; that insert copied images into the&nbsp;targeted album. Pay attention that&nbsp; there is no<br> 
+need to load this target album &nbsp;in order &nbsp;to paste images &nbsp;in it. Just select this album in the albums &nbsp;tree <br> 
+and press &nbsp;the button &nbsp;'Paste image',the &nbsp;images &nbsp;from the&nbsp;copy/paste buffer &nbsp;will &nbsp;be &nbsp;inserted into &nbsp;this <br>
+album.  You can check this by loading &nbsp;the target album. All&nbsp; the &nbsp;images&nbsp; in &nbsp;the&nbsp; buffer are &nbsp;inserted as&nbsp; <br> 
+links. Also &nbsp;pay &nbsp;attention &nbsp;that the &nbsp;copy/paste &nbsp;buffer &nbsp;of the application&nbsp; is&nbsp; not compatible with &nbsp;native <br>
+buffer operations in your operation system.
+
+<br><br><b>
+Cut operation</b><br>
+_____________
+<br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The cut &nbsp;operation is&nbsp; very &nbsp;similar to the copy/paste operation with one note: the selected images &nbsp;<br> 
+are &nbsp;deleted &nbsp;from the&nbsp; loaded &nbsp;album. &nbsp;Pay &nbsp;attention &nbsp;that&nbsp; this &nbsp;operation &nbsp;never&nbsp; removes&nbsp; the&nbsp; selected<br>
+ image files from the disk.
+
+</p></body></html>

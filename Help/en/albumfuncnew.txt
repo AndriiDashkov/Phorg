@@ -1,0 +1,59 @@
+<html><body><p>
+<b>
+New album dialog</b><br>
+________________
+<br><br>
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The &nbsp;first &nbsp;thing you &nbsp;should do &nbsp;is &nbsp;to an &nbsp;album. &nbsp;You &nbsp;need at least &nbsp;one album &nbsp;in  &nbsp;order <br>
+to have a possibility to work with your images. A new album can&nbsp; be created &nbsp;with the help of &nbsp;the <br> 
+'New album' menu. The dialog window  has the following albums properties:
+<br><br>
+
+- name of the album<br>
+- parent album<br>
+- folder to save images of the album<br>
+- date of album<br>
+- comments<br>
+- load album after creation<br>
+<br><br>
+Only  some of  them will be explained,  because  the  meaning  of other  options is obvious.<br><br>
+
+<b> 
+- Parent album
+</b><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Albums&nbsp; &nbsp;can &nbsp;be&nbsp; included &nbsp;to &nbsp;each &nbsp;other,&nbsp; so &nbsp;every&nbsp; album &nbsp;can &nbsp;have&nbsp; not &nbsp;only images<br> 
+inside &nbsp;&nbsp;itself,&nbsp; but&nbsp; &nbsp;other &nbsp;albums, &nbsp;too. &nbsp;This&nbsp; helps&nbsp; to&nbsp; construct&nbsp; suitable &nbsp;logical &nbsp;structures &nbsp;for<br> 
+your &nbsp;images.  For  example, it  is a good &nbsp;idea to create  albums &nbsp;"January", "February", "March" etc. <br>
+inside the album "2014 year".
+<br><br>
+
+<b>
+- Folder to save albums images
+</b><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This folder &nbsp;is a so-called &nbsp;'standard' folder &nbsp;of album. You &nbsp;can change&nbsp; this &nbsp;value&nbsp; to &nbsp;any<br>
+location,&nbsp; but &nbsp;initially &nbsp;the &nbsp;software &nbsp;uses the&nbsp; folder&nbsp;&nbsp; C:\Users\YourUserName\Documents\Phorg <br>
+\photos as a place to save &nbsp;images . Every &nbsp;album saves its &nbsp;images &nbsp;in a&nbsp; separate &nbsp;folder with &nbsp;a <br> 
+specific name inside the mentioned path.
+<br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The idea of a 'standard' folder&nbsp; is &nbsp;easy: images can be added to the album as links,&nbsp;without<br> 
+physical&nbsp; coping &nbsp;the images from&nbsp; their current &nbsp;places. In this&nbsp; case it will be dangerous&nbsp; to  &nbsp;allow <br>
+the&nbsp;deleting or moving operations &nbsp;for these &nbsp;files, because they can be &nbsp;linked to other projects, &nbsp;or <br>
+workspace, &nbsp;etc. &nbsp;But&nbsp; if&nbsp; files&nbsp; are &nbsp;in &nbsp;the &nbsp;'standard' &nbsp;album &nbsp; folder they &nbsp;are believed to&nbsp; be in &nbsp;the <br>
+area &nbsp;of responsibility &nbsp;of the system, &nbsp;and&nbsp; physical files operations &nbsp;are &nbsp;safe in this&nbsp; case. &nbsp;That's<br>
+why &nbsp;the &nbsp;application &nbsp;has&nbsp; a &nbsp;lot of&nbsp; options to deal&nbsp; with &nbsp;the &nbsp;situation &nbsp;when &nbsp;an &nbsp;image is &nbsp;in&nbsp; the<br> 
+standard &nbsp;folder&nbsp; Every &nbsp;&nbsp;image&nbsp; which &nbsp;was&nbsp; added as&nbsp; a &nbsp;link&nbsp; to&nbsp; &nbsp;an &nbsp;album&nbsp; can&nbsp; be&nbsp; copied &nbsp;into <br>
+standard folder any time. This is especially useful when the user wishes to concentrate &nbsp;all &nbsp;images <br>
+of the album in one place performing one operation.<br>
+<br><br>
+<b>- Option 'load album after creation'
+</b><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;When there are a lot of created &nbsp;albums,  &nbsp;only one &nbsp;album&nbsp; can &nbsp;be &nbsp;loaded and its images <br>
+are shown in the main view panel. In fact, to &nbsp;see images of&nbsp; a &nbsp;particular album &nbsp;'load' album &nbsp;and<br>
+ make it current. The option allows to &nbsp;load a newly &nbsp;created&nbsp; album &nbsp;immediately after its &nbsp;creation.<br>
+ It's empty at that moment, &nbsp; but images can be added to it&nbsp; without &nbsp;delay.<br>
+
+
+</p></body></html>

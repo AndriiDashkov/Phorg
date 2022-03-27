@@ -1,0 +1,62 @@
+<html><body><p>
+<b>
+Filter images</b><br>
+_____________
+<br><br>
+	
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The filter operation is very useful to search for &nbsp;a  set of&nbsp; images which have  common <br> 
+characteristics: period of dates &nbsp;and used &nbsp;subjects. The dialog &nbsp;has the &nbsp;following&nbsp; options:
+<br><br><b>
+- album filter options
+<br><br></b>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- in all the albums
+<br><br>	
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;In this case the filter allows to filter all the scope of  albums; the special window is<br> 
+opened &nbsp;where &nbsp;are all&nbsp; the &nbsp;filtered images &nbsp;are  from &nbsp;all the albums. In this form  a  lot &nbsp;of  <br>
+operations can be done,  including creation  of a new  album for all the filtered images.
+<br><br>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- in the album ....
+<br><br>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The filter will work with the current album only, and results &nbsp;of filtration will be  in the<br> 
+ main view panel. The header of the main  view  panel  has  a special &nbsp;icon  to  indicate that &nbsp;the <br>
+ filter &nbsp;is &nbsp;active &nbsp;now. That&nbsp; helps the &nbsp;user to&nbsp; understand &nbsp;why &nbsp;sometimes &nbsp;the number&nbsp; of<br> 
+ images in the main view panel &nbsp;is &nbsp;fewer &nbsp;than the total&nbsp; number &nbsp;of  images &nbsp;in  the &nbsp;album - <br>
+ the answer is -part of the images have been filtered out.
+
+<br><br><b>
+- subjects for the filter.
+<br><br></b>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;It is possible to choose a &nbsp;set of subjects &nbsp;to be used in the filter. In &nbsp;this case&nbsp; only<br>
+ images with &nbsp;selected &nbsp;subjects &nbsp;will  pass the &nbsp;filter. For  subjects  filter does&nbsp; a  nonexclusive<br>
+ find: &nbsp;an &nbsp;image &nbsp;can have &nbsp;other subjects  not &nbsp;only  &nbsp;selected. &nbsp;The images &nbsp; which &nbsp;have&nbsp; no<br>
+ selected subjects at  all&nbsp; or  have no &nbsp;subjects from the &nbsp;selected  list will be filtered  out.<br> 
+
+
+<br><br><b>
+- ignoring while filtration
+<br><br></b>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+This panel has a &nbsp;set of &nbsp;options which &nbsp;should &nbsp;be &nbsp; activated  &nbsp;if the user&nbsp; wants  &nbsp;to <br>  
+exclude &nbsp; them &nbsp;from&nbsp;  the &nbsp;filtration &nbsp; process. &nbsp; For  &nbsp;example,  &nbsp;if  &nbsp;the &nbsp;user does not want  &nbsp;to<br> 
+filter &nbsp;images &nbsp;according &nbsp;to &nbsp;bookmarked &nbsp;state, &nbsp;then &nbsp;he &nbsp;should &nbsp;activate &nbsp;an&nbsp; &nbsp;appropriate <br> 
+checkbox.  It is&nbsp; necessary&nbsp; to &nbsp;switch off at least  &nbsp;one checkbox on &nbsp; this &nbsp; panel in  order to &nbsp; <br> 
+start  &nbsp;filtration,  because ignoring all the data has no sense during the filtration process. 
+<br><br><b>
+- filtration for
+<br><br></b>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This panel helps to choose the rule of &nbsp; filtration for  &nbsp;data which can &nbsp; be in two states. <br> 
+For example, if &nbsp; you want your &nbsp; filtration results  &nbsp;to have  &nbsp;images &nbsp; with activated bookmarks <br> 
+ &nbsp;only, then  click  appropriative checkbox, &nbsp; and vice versa - if you need to see  &nbsp;inactive <br> 
+ &nbsp;bookmarks only,  &nbsp;check  &nbsp;the checkbox  &nbsp;with the label  &nbsp;'not activated bookmark'.<br> 
+
+
+<br><br><b>
+- date
+<br><br></b>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Choose a &nbsp;period of dates&nbsp; here. All &nbsp;the images &nbsp; which  are out of  this  period &nbsp;will &nbsp; be <br>
+filtered out.
+
+</p></body></html>
+
+

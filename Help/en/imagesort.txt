@@ -1,0 +1,35 @@
+<html><body><p>
+<b>
+Sorting of images</b><br>
+_________________
+<br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The sort operation is performed with the usage of the combobox on the main toolbar. There are  <br>
+five sort options which can be selected:
+<br><br>
+- date<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The images are sorted according to their 'Date' property.
+<br><br>
+- insert order<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The images are sorted according to their order of insertion to the album.
+<br><br>
+- custom<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The &nbsp;images are  &nbsp;sorted according to  the custom  order. This  order can be set using the drag<br>
+and  drop operation.  After loading &nbsp; the album  &nbsp;choose &nbsp;the 'Custom sort &nbsp;order' item  &nbsp;in &nbsp;the &nbsp;'Sorting' <br> 
+combobox  on the main toolbar and start to  drag and  drop &nbsp;images on to &nbsp;the main  &nbsp;view &nbsp;panel  to&nbsp; get  <br>
+ the&nbsp;desirable order&nbsp; of  &nbsp;them. &nbsp;After saving &nbsp;the album &nbsp;this &nbsp; custom  order &nbsp;will  be saved and  &nbsp;can &nbsp;be  &nbsp;   <br>
+restored or changed.  Pay  attention that the &nbsp; drag and  drop operation  &nbsp;is  available  &nbsp;only after  &nbsp;'Custom <br> 
+sorting' item activation in the sorting combobox.
+<br><br>
+- printed<br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This sorting  order makes the  images with the printed mark to be first on the main&nbsp; view panel.
+<br><br>
+- bookmarked<br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; This sorting order makes  the  images with the 'bookmarked' mark to be first &nbsp;in  the main view<br>
+panel.
+
+</p></body></html>
+
+

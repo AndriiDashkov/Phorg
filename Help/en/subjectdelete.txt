@@ -1,0 +1,26 @@
+<html><body><p>
+<b>
+Delete subject</b><br>
+______________
+<br><br>
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;To delete the subject use menu Subjects -> Delete.<br>
+The&nbsp; operation &nbsp; is carried out&nbsp;  with currently &nbsp; selected subjects in the subjects&nbsp;  table (list).There is <br>
+one &nbsp;problem about &nbsp;subjects deletion: a&nbsp; subject&nbsp; can &nbsp;be &nbsp;used  in&nbsp; the&nbsp; existing &nbsp;albums. So &nbsp;the<br> 
+dialog window offers some options in this situation.  
+<br><br>
+- Clear subjects links from the selected albums
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Sometimes there is a need to remove a subject&nbsp; from all the images in a certain album. The <br> 
+delete operation with this option clears links to &nbsp;the subject from all &nbsp;the &nbsp;images in the &nbsp;album, &nbsp;but <br>
+subjects themselves are not deleted from the subjects list.
+<br><br>
+- Clear subjects links from all the albums and delete the subject itself
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This &nbsp;option &nbsp;helps &nbsp;to delete&nbsp; the &nbsp;selected&nbsp; subject&nbsp; at &nbsp;all. The &nbsp;operation with this &nbsp;option <br> 
+clears &nbsp;the links &nbsp;from &nbsp;ALL albums &nbsp;and &nbsp;then deletes &nbsp;the &nbsp;subject from &nbsp;the &nbsp;list. This &nbsp;is the &nbsp;only <br> 
+option that allows to remove the subject at &nbsp;all, because &nbsp;images &nbsp; can't &nbsp;have links to &nbsp;the &nbsp;subject <br>
+which doesn't exist, that is why links for the selected subject are removed from all the albums.
+
+</p></body></html> 

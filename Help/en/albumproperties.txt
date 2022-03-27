@@ -1,0 +1,9 @@
+<html><body><p>
+<b>
+Properties</b><br>
+__________
+<br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This dialog shows general information about an album: name, creation date,<br> 
+standard folder path, number of child's albums, and even subjects which are used. <br>
+</p></body></html>

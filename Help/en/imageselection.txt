@@ -1,0 +1,26 @@
+<html><body><p>
+<b>
+Selection of images</b><br>
+_________________
+<br><br>
+
+The context menu on the main view panel allows to perform some operations with the selected images.
+<br><br>
+Creation of a new album.
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Select the desired images &nbsp;and use the&nbsp; menu &nbsp;item "Create &nbsp;album &nbsp;for selection". The &nbsp;dialog<br>
+window for adding a new album opens; after that choose the name of a new album and other properties. <br>
+Take &nbsp;into &nbsp;account&nbsp; that &nbsp;the selected &nbsp;images &nbsp;will &nbsp;be inserted &nbsp;into &nbsp;a &nbsp;new album &nbsp;according to&nbsp; their <br>
+positions in the source albums: images&nbsp; from standard folders&nbsp; are inserted into a &nbsp;standard folder &nbsp;of a <br>
+new album  with physical coping; linked images are inserted as links.
+<br><br>
+
+Copy selection.<br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; This menu item allows to copy selected images into the targeted album. Two options are available:<br>
+copy all the images to the standard folder of the selected &nbsp;album or copy all the images to the&nbsp; selected <br>
+album as links.
+
+</p></body></html>
+
+

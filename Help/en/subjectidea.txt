@@ -1,0 +1,36 @@
+<html><body><p>
+<b>
+Subjects</b><br>
+_________
+<br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'Subjects' are &nbsp;meant to give the &nbsp;user a possibility to &nbsp;create cross-album&nbsp; links &nbsp;between<br> 
+images. One separate image can belong to different &nbsp;albums. For &nbsp;example,  the&nbsp; photo of a &nbsp;child <br>
+can be related to the album 'Disneyland 2014' and "Birthday celebration 2015" at the same&nbsp; time.<br> 
+This task can be solved by adding links&nbsp; to the image in different&nbsp; albums, &nbsp;but usually &nbsp;this is not <br>
+very &nbsp;easy. It &nbsp;is&nbsp; convenient &nbsp;to &nbsp;have&nbsp; &nbsp;a &nbsp;special &nbsp;general &nbsp;list &nbsp;of 'subjects' &nbsp;or 'terms'&nbsp; which &nbsp;are<br>
+connected with one's family, with friends, job, style of life and so&nbsp; on. There &nbsp;is no &nbsp;limitations&nbsp; on<br> 
+the range of these &nbsp;subjects. After that&nbsp; use &nbsp;the subject&nbsp; to &nbsp;mark &nbsp;images in different &nbsp;albums - <br>
+ this will establish a&nbsp; relation between them. Certainly, this is time consuming, but as the  &nbsp;benefit <br>
+the user will &nbsp;have a&nbsp;possibility to find &nbsp;all&nbsp; the&nbsp; photos of &nbsp;his child, or&nbsp;some event (for &nbsp;example) <br>
+through out all the albums and even separate them (may be temporarily) in a new  album in order  <br>
+to show them to friend or relatives. These are two main tips on  management of subject's list:
+<br><br>
+1)This list should not be too long. Remember that idea of the 'subject' is generalization above the<br> 
+structure of albums. For example, 'my child' is a good idea for a subject, because it is a constant  <br>
+thing through out many years, events, etc. But 'my wedding' or "beer with friends" is  a good &nbsp;idea  <br>
+for an album, not for a subject.
+<br><br>
+2) Avoid subjects logical duplication on the subject list. Don't have two subjects 'John'&nbsp; and 'Son' if <br>
+they mean the same person. You&nbsp; will be able to find images &nbsp;with 'Son' or with 'John'&nbsp; separately  <br>
+only, because the application can't know &nbsp;that these two subjects mean &nbsp;actually the same. &nbsp;You <br> 
+can add both subjects to all images with 'John/Son', it will work, but this will cause without <br>
+ any benefits. 
+<br><br>
+
+Subjects table/list<br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The subjects list is available in a separate window which has a context menu with various<br>
+ subject operations.
+
+</p></body></html>

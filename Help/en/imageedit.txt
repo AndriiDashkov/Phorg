@@ -1,0 +1,45 @@
+<html><body><p>
+<b>
+Edit image</b><br>
+__________
+<br><br>
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The &nbsp;edit&nbsp; operation in &nbsp;this &nbsp;context&nbsp; means &nbsp;not &nbsp; &nbsp;changing the &nbsp;graphical content &nbsp;of the<br> 
+image, &nbsp;but &nbsp;&nbsp;changing &nbsp;&nbsp;the&nbsp; &nbsp;album &nbsp;&nbsp; &nbsp;information &nbsp;&nbsp;about &nbsp;&nbsp;it&nbsp; &nbsp;(for &nbsp;&nbsp;graphical &nbsp;&nbsp;modifications &nbsp;use <br>
+'Instruments' window). The edit operation can change all the information concerning with an image.<br>
+ The  dialog form is very similar to&nbsp; the 'add&nbsp; new image' dialog &nbsp;window. You &nbsp;can change&nbsp;the name, &nbsp; <br>
+date, comments, subjects list and other information.
+<br><br><b>
+Delete image</b><br>
+____________
+<br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This operation can delete an image from an album using the following options:
+<br><br>
+- delete the image from the current album
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The image will be removed from the current loaded album only.
+<br><br>
+- delete the image from all the albums
+<br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  The links to the image&nbsp; will be removed from &nbsp;all albums (the same&nbsp; image can be inserted<br> 
+into different albums as a link). The image will be searched for using a path to its physical&nbsp; location<br> 
+in the file system during this operation.
+<br><br>
+- without deleting images from the disk
+<br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;In this &nbsp;case only &nbsp;links to&nbsp; this &nbsp;image (images) &nbsp;will &nbsp;be removed&nbsp; from an album or albums<br> 
+(it depends on previous options). The files themselves will be safe in the file system.
+<br><br>
+- with deleting the images from the disk 
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;In this case image files  will be physically removed from the file system.<br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Take into account &nbsp;that the delete &nbsp;operation allows multiremoving: use the&nbsp;mouse &nbsp;click with <br>
+Shift  &nbsp;to  &nbsp;select more &nbsp; than &nbsp;one image  &nbsp;and &nbsp;then use &nbsp; the  &nbsp;operation: &nbsp;all &nbsp;selected&nbsp; images will&nbsp; be<br> 
+removed.
+
+</p></body></html>

@@ -1,0 +1,10 @@
+<html><body><p>
+<b>
+Internationalization</b><br>
+____________________
+<br><br>
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;To change the current language use menu Instruments -> Settings -> Localization tab. <br>
+Then change the values 'Country' and 'Language'. After that restart the application.
+</p></body></html>

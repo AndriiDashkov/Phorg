@@ -1,0 +1,14 @@
+<html><body><p>
+<b>
+Find images by name</b><br>
+_____________________
+<br><br>
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This operation can be done in the popup menu on the images list (table). Click the right mouse button<br>
+on the table  and choose the 'Find' item. &nbsp;Enter the image name &nbsp;there. There &nbsp;is no &nbsp;need to &nbsp;enter the &nbsp;entire <br>
+name, enter the part of the &nbsp;name. The next &nbsp;click on the &nbsp;find button &nbsp;finds the next &nbsp; occurrence of the name <br> 
+which  &nbsp;corresponds &nbsp;to  &nbsp;the entered &nbsp;symbols.  &nbsp;After getting the  &nbsp;targeted  &nbsp;image select &nbsp;it on the &nbsp; main view <br>
+panel with the 'Find in main panel' menu item.
+
+</p></body></html>

@@ -1,0 +1,39 @@
+<html><body><p>
+<b>
+Add group of images</b><br>
+___________________
+<br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Sometimes it is very useful to add images not one by one, but in groups, for example, all the images<br> 
+which are in the specific location (folder). This operation opens the dialog which has the following options:
+<br><br>
+- choosing a folder with images
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Choose  &nbsp;here the  &nbsp;folder with  &nbsp;images  to be added. Pay  &nbsp;attention that the operation  &nbsp;scans all   &nbsp;the <br> 
+included subfolders.
+<br><br>
+- options denoting operations with files
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Copy only the links for images – all the images will&nbsp; be added as links to&nbsp; the album &nbsp;without &nbsp;coping<br> 
+to &nbsp;the standard&nbsp; folder. &nbsp;After the&nbsp;operation&nbsp; has been completed &nbsp;the &nbsp;special &nbsp;icon &nbsp;on the image &nbsp;forms will <br>
+be activated to indicate that the images have been added as links.
+<br><br>
+- copying images to a standard album folder
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;All the images will be copied to a standard album folder.
+<br><br>
+- copying images to a selected folder
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;All  &nbsp;the &nbsp;images &nbsp;will  &nbsp;be added &nbsp;as &nbsp; links, but &nbsp;also they will be &nbsp;copied  &nbsp;to &nbsp;the chosen&nbsp; folder. If  &nbsp;a <br> 
+standard folder  &nbsp;is  &nbsp;chosen in this option, the images will be  added with the help of the option 'copy  &nbsp;images <br>
+to standard album folder'. 
+<br><br>
+- creating new albums for included folders
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;For some reason the user may want to save the hierarchy of folders and reflect it in the album tree<br> 
+hierarchy. Choose this option. In&nbsp; this&nbsp; case, all&nbsp; included folders with&nbsp; images will &nbsp;be treated&nbsp; as separate <br>
+albums &nbsp;&nbsp;and &nbsp;these &nbsp;new  &nbsp;albums&nbsp; will &nbsp;be &nbsp;created&nbsp; automatically. &nbsp;After the&nbsp;operation&nbsp; the &nbsp;hierarchy &nbsp; of <br>
+albums can be changed by changing the parent of every desired album.
+
+
+</p></body></html>

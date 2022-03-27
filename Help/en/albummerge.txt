@@ -1,0 +1,20 @@
+<html><body><p>
+<b>
+Albums merge
+</b><br>
+____________
+<br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Some albums can be merged to a target album. This operation is useful &nbsp;in a situation when<br> 
+the user would like to&nbsp; watch some&nbsp; albums &nbsp;as one unit. Create &nbsp;new album and &nbsp;merge the albums<br>
+in this &nbsp;one; the &nbsp;images in this &nbsp;case &nbsp;should be referenced as&nbsp; links.&nbsp; After&nbsp; being worked with &nbsp;this<br> 
+temporary album can &nbsp;be deleted without&nbsp; any &nbsp;harm to &nbsp;other albums&nbsp; and&nbsp; images. The &nbsp;dialog&nbsp; for <br> 
+the merge operation contains the combo box through which the user can&nbsp; choose the target&nbsp; album. <br>
+All other  albums will be merged in &nbsp;this album. The combobox list contains all the albums which the <br>
+user selected  in the album tree before opening of the dialog. Thus the operation allows to merge any  <br>
+number of albums using &nbsp; multiselection in&nbsp; the album &nbsp;tree. Choose the option concerning the&nbsp; type<br>
+of &nbsp;insertion of  images files. If you intend to work with a temporary album, then always switch on&nbsp; the  <br>
+option 'copy files as a links' before starting the operation.
+
+
+</p></body></html>

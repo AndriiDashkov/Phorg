@@ -1,0 +1,16 @@
+<html><body><p>
+<b>
+Quick insert</b><br>
+______________
+<br><br>
+
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;There is another, faster possibility to insert a subject into&nbsp; an image in comparison&nbsp; with &nbsp;using<br>
+the Images->Edit menu item. The subjects popup menu has the following item "Insert selected subject". <br>
+Just &nbsp;select the&nbsp; images &nbsp;(use Shift for&nbsp; multi-selection)&nbsp; on the&nbsp; main &nbsp;view panel &nbsp;and the subject &nbsp;you <br> 
+need on &nbsp;the list of subjects. Then use&nbsp; the mentioned&nbsp; item to insert&nbsp; the &nbsp;selected subject &nbsp;into all the  <br>
+selected images.
+
+
+</p></body></html>

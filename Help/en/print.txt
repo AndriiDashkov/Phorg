@@ -1,0 +1,15 @@
+<html><body><p>
+<b>
+Print operation</b><br>
+________________
+<br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Select &nbsp;one &nbsp;or many &nbsp;images&nbsp; on&nbsp; the &nbsp;view panel &nbsp;and click the &nbsp;button &nbsp;'Print' on the main toolbar.<br>
+The print dialog opens. This dialog &nbsp;has options which can &nbsp;help to perform &nbsp;different layouts of the&nbsp;selected <br>
+images in the standard format A4. Pay attention that after clicking on the button 'Print' the native print dialog<br> 
+opens and some print options can be changed in it.
+
+<br>
+</p></body></html>
+
+

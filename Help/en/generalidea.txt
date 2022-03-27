@@ -1,0 +1,75 @@
+<html><body>
+<p align="justify"><b>
+General idea<br>
+______________</b><br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The general idea of this software is to give a wide possibility in organization of the user's images and<br> 
+photos. The main points are as follows:<br><br>
+
+<b>1) Images can be collected in albums; albums can be inserted in each other.</b><br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;An album is a native structure to hold images &nbsp;and photos. Usually the idea for &nbsp;an &nbsp;album is&nbsp; chosen<br>
+according to the common&nbsp; period, &nbsp;event, person, &nbsp;etc. For &nbsp;example, &nbsp;the &nbsp;album &nbsp;called "2014 year", &nbsp;album <br>
+"Wedding", album "Baby" and&nbsp; so on.&nbsp; User can choose any idea &nbsp;for album theme and &nbsp;reflect it in the name <br>
+of an &nbsp;album.&nbsp; Also the&nbsp; user &nbsp;can include&nbsp; one album&nbsp; in&nbsp; another, thus &nbsp;this &nbsp;is the&nbsp; way &nbsp;to&nbsp; build a targeted <br>
+structure.
+<br><br>
+
+<b>
+2) Each image in an album has various properties, such as date, name, comment, <br>
+list of subjects, etc.
+</b>
+<br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The user can use these properties in order &nbsp;to extend the information about &nbsp;images in the albums. In<br> 
+other words the user has some kind of a database of his images.
+<br><br>
+
+<b>
+3) Images can be inserted into an album using two options: as a link, and with coping <br>
+into a "standard" album folder.
+</b><br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The first&nbsp; options is &nbsp;used when the user wants &nbsp;to &nbsp;save&nbsp;the current &nbsp;physical place&nbsp; of an image file. <br> 
+The second option is used when the user &nbsp;would like to &nbsp;concentrate &nbsp;all&nbsp;&nbsp; images &nbsp;of the&nbsp; album in&nbsp; the &nbsp;one &nbsp;<br>
+place. &nbsp;This&nbsp; place &nbsp;is &nbsp;called a&nbsp;"standard &nbsp;album &nbsp;folder" &nbsp;and &nbsp;it &nbsp;is &nbsp;an&nbsp;essential&nbsp; &nbsp; property of&nbsp; every &nbsp;album. <br>
+These two possibilities are mutual, so the album can &nbsp;have &nbsp;such &nbsp;images &nbsp;  as&nbsp; links, &nbsp;and&nbsp; physical &nbsp; copies<br>
+in a standard &nbsp;folder at &nbsp;the same time. Links&nbsp; are&nbsp; &nbsp;suitable &nbsp;when&nbsp; &nbsp;you &nbsp;don't&nbsp; want&nbsp; to&nbsp; change&nbsp;the &nbsp;current <br>
+hierarchy of images on&nbsp; the disk. Also &nbsp;links can be &nbsp;used&nbsp; to &nbsp;collect&nbsp; the album&nbsp; from &nbsp;very&nbsp; different places <br>
+on &nbsp;the disk&nbsp; and &nbsp;after that move&nbsp; all the images &nbsp;to&nbsp; the standard&nbsp; &nbsp;folder to&nbsp; have &nbsp;one &nbsp;place for &nbsp;an&nbsp;album.<br>
+It&nbsp; is up to&nbsp;the user &nbsp;to decide what&nbsp; option&nbsp; is more&nbsp; suitable. &nbsp;Having &nbsp;these &nbsp;options means &nbsp;the &nbsp;following:<br>
+every&nbsp; album &nbsp;operation&nbsp; which&nbsp; can&nbsp; potentially &nbsp;change the&nbsp; location &nbsp;of &nbsp;file  &nbsp;has &nbsp;an option to choose&nbsp; how<br>
+to deal &nbsp;with images&nbsp; during &nbsp;&nbsp;performing -&nbsp; using&nbsp; the links &nbsp;paradigm &nbsp;or "standard folder" paradigm.<br><br>
+
+	
+<b>4) The software has a lot of special operations which help user to manage images.</b>
+<br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This&nbsp; means &nbsp;that &nbsp;the user&nbsp;can &nbsp;copy, &nbsp;edit, delete, &nbsp;move,&nbsp; merge, filter and sort images &nbsp;inside his <br>
+albums and even do crossalbums operations.The idea of these &nbsp;operations is to give a possibility to manage <br>
+images in a flexible and suitable manner.
+<br> <br> 
+
+<b>5) Images can have a special value - list of subjects, which can maintain the cross album <br>
+union.</b>
+<br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The idea of subjects is simple. All albums usually have &nbsp;cross-albums links. For example&nbsp; you have<br>
+two family albums called "2014" and "2013". But in both years your family &nbsp;had a trip to the&nbsp; seaside. So&nbsp; it <br>
+is a good&nbsp; idea to create the &nbsp;subject "seaside" and&nbsp; mark &nbsp;with &nbsp;it the&nbsp; appropriative images in both albums.<br>
+This helps the user to find&nbsp; images with subject like this &nbsp;through &nbsp;out all&nbsp; the albums, &nbsp;and it will&nbsp; even &nbsp;give<br>
+a possibility to&nbsp; create&nbsp; a new album&nbsp; based on &nbsp;this &nbsp;&nbsp;subject &nbsp;in &nbsp;order, &nbsp;for&nbsp; &nbsp;example,&nbsp; to &nbsp;show &nbsp;sea &nbsp;trips<br>
+together to guests or&nbsp; relatives.&nbsp; Another &nbsp;good idea is &nbsp;to &nbsp;have names&nbsp; of &nbsp;one's&nbsp; relatives as &nbsp;subjects. So<br>
+using albums in&nbsp; combination with subjects&nbsp; gives a &nbsp;possibility to  &nbsp;create &nbsp;a desirable&nbsp; architecture&nbsp; of your<br>
+images.&nbsp; &nbsp;Subjects are in a &nbsp;list which&nbsp; common for all the albums. The image &nbsp;in the &nbsp;album can&nbsp; have &nbsp;any&nbsp; <br>
+number of&nbsp; subjects from &nbsp;the list as its property.
+<br> <br> 
+
+<b>6) The software holds all the information about images in the set of xml files in a special<br> 
+format.
+</b><br><br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This set of files is&nbsp; different for &nbsp;different users on the same&nbsp; computer. So&nbsp; every user has his &nbsp;own<br>
+structure &nbsp;of &nbsp;albums. Usually &nbsp;these xml&nbsp; structures&nbsp; and &nbsp;standard &nbsp;folders are &nbsp;in the&nbsp; user's &nbsp;'Document'<br>
+folder.
+</p></body></html>
