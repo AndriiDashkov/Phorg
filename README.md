@@ -1,4 +1,4 @@
-![Poster](/assets/poster.png)
+![Poster](/asserts/poster.png)
 # About
 The desktop Java application for management of your images and photos, ML labeling, image processing, etc.
 * albums management
