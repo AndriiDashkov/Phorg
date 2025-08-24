@@ -30,6 +30,4 @@ Start phorg.jar directly or via scripts. Please use the Help menu in the applica
 ## 
 Some algorithms and functionality can be under development at the moment.
 # Donation
-This application has been created by a Ukrainian programming engineer, whose family now are refugees in Slovakia.
-You can use this application for free, but if you want to help them, please use the PayPal account
-avdkharkov@gmail.com
+PayPal account avdkharkov@gmail.com
