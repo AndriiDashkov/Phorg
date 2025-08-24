@@ -1,8 +1,8 @@
-package PaCollection;
+package pacollection;
 /** 
  * This class is a representative of single subject
  * Subject can be insert into image properties; the link is made through the  id
- * @author avd
+ * @author Andrii Dashkov
  */
 public class PaSubject implements Comparable<PaSubject> {
 

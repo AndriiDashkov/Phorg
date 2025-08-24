@@ -1,8 +1,9 @@
 
-package PaCollection;
+package pacollection;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.*;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.*;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -17,13 +18,14 @@ import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 import javax.xml.stream.XMLStreamWriter;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaGlobal.PaUtils;
+
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paglobal.PaUtils;
 
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * Container for saving and loading the information about recently used files and data
  */
 public class PaRecentData {

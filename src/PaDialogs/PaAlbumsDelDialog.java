@@ -1,4 +1,6 @@
-package PaDialogs;
+package padialogs;
+
+import static paglobal.PaUtils.*;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
@@ -18,11 +20,11 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.border.Border;
-import PaForms.PaAlbumsTreeForm;
-import PaForms.PaAlbumsTreeForm.ALBOMS_CLEAR_TYPES;
-import PaGlobal.PaButtonEnter;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.*;
+
+import paforms.PaAlbumsTreeForm;
+import paforms.PaAlbumsTreeForm.ALBOMS_CLEAR_TYPES;
+import paglobal.PaButtonEnter;
+import paglobal.PaUtils;
 
 public class PaAlbumsDelDialog extends JDialog{
 	
@@ -56,7 +58,7 @@ public class PaAlbumsDelDialog extends JDialog{
 	
 	public PaAlbumsDelDialog (JFrame jf, String name_alb) {
 		
-		super (jf, " " + getGuiStrs("clearAndDeleteAlbomCaption") + "  " + name_alb, true); //""Очистка\\Удаление альбома : "
+		super (jf, " " + getGuiStrs("clearAndDeleteAlbomCaption") + "  " + name_alb, true); //""пїЅпїЅпїЅпїЅпїЅпїЅпїЅ\\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ : "
 		
 		albomName = new String(name_alb);
 		
@@ -158,7 +160,7 @@ public class PaAlbumsDelDialog extends JDialog{
 	 	
 	/**
 	 * 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 * <p>Event listener for buttons m_Ok and m_Cancel</p>
 	 */
 	class Forwarder implements ActionListener {

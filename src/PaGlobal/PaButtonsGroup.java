@@ -1,4 +1,4 @@
-package PaGlobal;
+package paglobal;
 
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
@@ -8,15 +8,16 @@ import javax.swing.Box;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import PaEvents.PaEventAlbumResizePanel;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaEvents.PaEventInt;
+
+import paevents.PaEventAlbumResizePanel;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paevents.PaEventInt;
 
 /**
  * Button group class to show in the caption of the main panel
  * can change it's text and icons
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaButtonsGroup {

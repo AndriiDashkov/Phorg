@@ -1,17 +1,18 @@
 
-package PaROI;
+package paroi;
+
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.*;
 
 import java.util.*;
 import javax.swing.JTable;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.AbstractTableModel;
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.*;
 
 /**
  * Model class for the table of ROI types. The model has the extra column - "Statistics". This column is not a part
  * of data itself, it's just for information about current number of ROIs of different types.
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaRoiTypesTableModel extends AbstractTableModel {
@@ -80,7 +81,7 @@ public class PaRoiTypesTableModel extends AbstractTableModel {
 		
 		switch (column) { 
 		
-        	case 0: return "¹";  
+        	case 0: return "ï¿½";  
         	
         	case 1: return getGuiStrs("roiTableTypeColInsLabel");
         	

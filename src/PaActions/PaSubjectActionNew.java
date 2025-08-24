@@ -1,17 +1,19 @@
-package PaActions;
+package paactions;
+
+import static paglobal.PaUtils.*;
 
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.*;
+
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paglobal.PaUtils;
 
 /**
  * Action for the creation of a new subject.
  * Subjects are notion used to unite images in the albums.
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaSubjectActionNew extends PaAction {

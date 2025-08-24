@@ -1,8 +1,9 @@
-package PaCollection;
+package pacollection;
 
-import static PaGlobal.PaLog.*;
-import static PaGlobal.PaUtils.NEXT_ROW;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.*;
+import static paglobal.PaUtils.NEXT_ROW;
+import static paglobal.PaUtils.getMessagesStrs;
+
 import java.awt.Cursor;
 import java.awt.Toolkit;
 import java.beans.PropertyChangeEvent;
@@ -18,14 +19,15 @@ import javax.swing.JOptionPane;
 import javax.swing.ProgressMonitor;
 import javax.swing.SwingWorker;
 import javax.xml.stream.XMLStreamException;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaGlobal.PaUtils;
+
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paglobal.PaUtils;
 
 /**
  * The class represents the main container, which contains all albums
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaMainConainer {
@@ -95,7 +97,7 @@ public class PaMainConainer {
 		
 		if(photoContainer != null) {
 			
-				String s = PaUtils.get().getAlbomXMLFilePath(Id_albom);
+				String s = PaUtils.get().getAlbumXMLFilePath(Id_albom);
 		
 				try {
 					if (!Files.deleteIfExists(Paths.get(s))) {

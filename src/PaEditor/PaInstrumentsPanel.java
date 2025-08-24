@@ -1,7 +1,8 @@
-package PaEditor;
+package paeditor;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.*;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.*;
+
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -30,17 +31,18 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
-import PaCollection.PaImage;
-import PaEnums.PaInstrumentTypeEnum;
-import PaGlobal.PaUtils;
-import PaROI.PaCutRoiButton;
-import PaROI.PaCutRoiInstrument;
-import PaROI.PaInstrumentsRoiPanel;
-import PaROI.PaPixSaveButton;
-import PaROI.PaPixSaveInstrument;
-import PaROI.PaRoiChangeButton;
-import PaROI.PaRoiChangeInstrument;
-import PaROI.PaRoiPanel;
+
+import pacollection.PaImage;
+import paenums.PaInstrumentTypeEnum;
+import paglobal.PaUtils;
+import paroi.PaCutRoiButton;
+import paroi.PaCutRoiInstrument;
+import paroi.PaInstrumentsRoiPanel;
+import paroi.PaPixSaveButton;
+import paroi.PaPixSaveInstrument;
+import paroi.PaRoiChangeButton;
+import paroi.PaRoiChangeInstrument;
+import paroi.PaRoiPanel;
 
 
 public class PaInstrumentsPanel extends JPanel implements ComponentListener, MouseListener {
@@ -874,7 +876,7 @@ public class PaInstrumentsPanel extends JPanel implements ComponentListener, Mou
 	
 	/**
 	 * Factory method pattern for creation instruments
-	 * @author avd
+	 * @author Andrii Dashkov
 	 *
 	 */
 	public class InstrumentsFactory {
@@ -953,7 +955,7 @@ public class PaInstrumentsPanel extends JPanel implements ComponentListener, Mou
 	}
 	/**
 	 * Registration of some key action; some instruments need a key reaction
-	 * @author Andrey Dashkov
+	 * @author Andrii Dashkov
 	 *
 	 */
 	protected void registerKeys_W_A_S_D_Action(){

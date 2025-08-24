@@ -1,20 +1,22 @@
-package PaImage;
+package paimage;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.NEXT_ROW;
-import static PaGlobal.PaUtils.concatPathName;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.NEXT_ROW;
+import static paglobal.PaUtils.concatPathName;
+import static paglobal.PaUtils.getMessagesStrs;
+
 import java.awt.Image;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.IIOException;
 import javax.imageio.ImageIO;
-import PaAlgorithms.PaAlgoTransform;
-import PaGlobal.PaUtils;
+
+import paalgorithms.PaAlgoTransform;
+import paglobal.PaUtils;
 
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaViewRunnable implements Runnable {

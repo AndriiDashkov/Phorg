@@ -1,8 +1,9 @@
-package PaDialogs;
+package padialogs;
 
-import static PaGlobal.PaUtils.NEXT_ROW;
-import static PaGlobal.PaUtils.getGuiStrs;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaUtils.NEXT_ROW;
+import static paglobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getMessagesStrs;
+
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
@@ -19,7 +20,7 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.border.Border;
 
-import PaGlobal.PaUtils;
+import paglobal.PaUtils;
 
 public class PaImageDelDialog extends JDialog {
 	

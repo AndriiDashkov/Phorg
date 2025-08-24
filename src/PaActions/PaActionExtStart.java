@@ -1,15 +1,16 @@
-package PaActions;
+package paactions;
 
 
 
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
-import PaGlobal.PaUtils;
+
+import paglobal.PaUtils;
 
 
 /**
  * <p> Start an external image editor action</p>
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaActionExtStart extends PaAction {

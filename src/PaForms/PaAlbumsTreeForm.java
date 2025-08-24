@@ -1,12 +1,13 @@
 
-package PaForms;
+package paforms;
 
-import static PaGlobal.PaLog.*;
-import static PaGlobal.PaUtils.GUI_DATE_FORMAT;
-import static PaGlobal.PaUtils.NEXT_ROW;
-import static PaGlobal.PaUtils.getGuiStrs;
-import static PaGlobal.PaUtils.getMessagesStrs;
-import static PaGlobal.PaUtils.stringToDate;
+import static paglobal.PaLog.*;
+import static paglobal.PaUtils.GUI_DATE_FORMAT;
+import static paglobal.PaUtils.NEXT_ROW;
+import static paglobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getMessagesStrs;
+import static paglobal.PaUtils.stringToDate;
+
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Cursor;
@@ -36,31 +37,31 @@ import javax.swing.tree.DefaultTreeCellRenderer;
 import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.TreePath;
 import javax.swing.tree.TreeSelectionModel;
-import PaActions.PaActionsMngr;
-import PaCollection.PaAlbum;
-import PaCollection.PaAlbumContainer;
-import PaCollection.PaMainConainer;
-import PaLong.PaMoveToStandardTask;
-import PaCollection.PaImage;
-import PaCollection.PaImageContainer;
-import PaDialogs.PaAlbumFindDialog;
-import PaDialogs.PaAlbumNewDialog;
-import PaDialogs.PaAlbumPropDialog;
-import PaDialogs.PaAlbumsDelDialog;
-import PaDialogs.PaAlbumsMergeDialog;
-import PaDialogs.PaAlbumsMoveDialog;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaEvents.PaEventInt;
-import PaGlobal.PaButtonsGroup;
-import PaGlobal.PaCloseFlag;
-import PaGlobal.PaUtils;
-import PaUndoRedo.PaUndoRedoDeque;
 
+import paactions.PaActionsMngr;
+import pacollection.PaAlbum;
+import pacollection.PaAlbumContainer;
+import pacollection.PaImage;
+import pacollection.PaImageContainer;
+import pacollection.PaMainConainer;
+import padialogs.PaAlbumFindDialog;
+import padialogs.PaAlbumNewDialog;
+import padialogs.PaAlbumPropDialog;
+import padialogs.PaAlbumsDelDialog;
+import padialogs.PaAlbumsMergeDialog;
+import padialogs.PaAlbumsMoveDialog;
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paevents.PaEventInt;
+import paglobal.PaButtonsGroup;
+import paglobal.PaCloseFlag;
+import paglobal.PaUtils;
+import palong.PaMoveToStandardTask;
+import paundoredo.PaUndoRedoDeque;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * <p>This panel supports album tree view and all operations around it</p>
  */
 public class PaAlbumsTreeForm extends JPanel implements TreeSelectionListener {
@@ -73,7 +74,7 @@ public class PaAlbumsTreeForm extends JPanel implements TreeSelectionListener {
 	   
 	   private PaAlbumTreeNode m_root;
 	   
-	   private PaAlbomPopupMenu m_popupMenu;
+	   private PaAlbumPopupMenu m_popupMenu;
 	   
 	   private ArrayList<PaAlbumTreeNode> m_nodes;
 	   
@@ -88,23 +89,23 @@ public class PaAlbumsTreeForm extends JPanel implements TreeSelectionListener {
 	   private boolean m_customIconsEnabled = PaUtils.get().getSettings().isCustomIconsEnabled();
 	   
 		{
-			PaEventDispatcher.get().addConnect(PaEventDispatcher.ALBUM_REFRESH_EVENT, this, "refreshAlbomsForm");
+			PaEventDispatcher.get().addConnect(PaEventDispatcher.ALBUM_REFRESH_EVENT, this, "refreshAlbumsForm");
 			
-			PaEventDispatcher.get().addConnect(PaEventDispatcher.IMAGE_PASTE_EVENT, this, "pasteBufferInSelectedAlbom");
+			PaEventDispatcher.get().addConnect(PaEventDispatcher.IMAGE_PASTE_EVENT, this, "pasteBufferInSelectedAlbum");
 			
-			PaEventDispatcher.get().addConnect(PaEventDispatcher.ALBUM_NEW_ICON_EVENT, this, "refreshAlbomIcon");
+			PaEventDispatcher.get().addConnect(PaEventDispatcher.ALBUM_NEW_ICON_EVENT, this, "refreshAlbumIcon");
 					
 			PaEventDispatcher.get().addConnect(PaEventDispatcher.ALBUM_NEW_EVENT, this, "addAlbom");
 			
-			PaEventDispatcher.get().addConnect(PaEventDispatcher.ALBUM_EDIT_EVENT, this, "editAlbom");
+			PaEventDispatcher.get().addConnect(PaEventDispatcher.ALBUM_EDIT_EVENT, this, "editAlbum");
 			
-			PaEventDispatcher.get().addConnect(PaEventDispatcher.ALBUM_DEL_EVENT, this, "delAlbom");
+			PaEventDispatcher.get().addConnect(PaEventDispatcher.ALBUM_DEL_EVENT, this, "delAlbum");
 			
-			PaEventDispatcher.get().addConnect(PaEventDispatcher.ALBUM_MOVE_EVENT, this, "moveAlbom");
+			PaEventDispatcher.get().addConnect(PaEventDispatcher.ALBUM_MOVE_EVENT, this, "moveAlbum");
 			
-			PaEventDispatcher.get().addConnect(PaEventDispatcher.ALBUM_MERGE_EVENT, this, "mergeAlboms");
+			PaEventDispatcher.get().addConnect(PaEventDispatcher.ALBUM_MERGE_EVENT, this, "mergeAlbums");
 			
-			PaEventDispatcher.get().addConnect(PaEventDispatcher.ALBUM_FIND_EVENT, this, "findAlbom");
+			PaEventDispatcher.get().addConnect(PaEventDispatcher.ALBUM_FIND_EVENT, this, "findAlbum");
 			
 			PaEventDispatcher.get().addConnect(PaEventDispatcher.REFRESH_EVENT, this, "refreshView");
 			
@@ -131,7 +132,7 @@ public class PaAlbumsTreeForm extends JPanel implements TreeSelectionListener {
 			
 			m_root.setId(PaUtils.ALBUM_TOP_PARENT_ID);
 			
-			m_root.setAlbomName(PaUtils.getAlbomsRootName());
+			m_root.setAlbumName(PaUtils.getAlbomsRootName());
 			
 			m_nodes.add(m_root);
 			
@@ -139,7 +140,7 @@ public class PaAlbumsTreeForm extends JPanel implements TreeSelectionListener {
 			
 			m_scrollPanel = new JScrollPane(m_tree);
 			   		   
-			m_popupMenu = new PaAlbomPopupMenu();
+			m_popupMenu = new PaAlbumPopupMenu();
 			
 			m_popupMenu.add_mouseAdapter( m_tree);
 			
@@ -195,7 +196,7 @@ public class PaAlbumsTreeForm extends JPanel implements TreeSelectionListener {
 	 				
 	 				top.setId(x.getId());
 	 				
-	 				top.setAlbomName(x.getName());
+	 				top.setAlbumName(x.getName());
 	 				
 	 				m_nodes.add(top);
 	 				
@@ -229,7 +230,7 @@ public class PaAlbumsTreeForm extends JPanel implements TreeSelectionListener {
 			   
 			   child.setId(al.getId());
 			   
-			   child.setAlbomName(al.getName());
+			   child.setAlbumName(al.getName());
 			   
 			   root.add(child);
 			   
@@ -239,10 +240,10 @@ public class PaAlbumsTreeForm extends JPanel implements TreeSelectionListener {
 		   }	   
 	   }
 		/** 
-		 * <p>Reloads all nodes in the albom's tree from albom's container. Posts the events to control access to GUI elements</p>
+		 * <p>Reloads all nodes in the albom's tree from album's container. Posts the events to control access to GUI elements</p>
 		 * @param e - refresh event
 		 */
-		public void refreshAlbomsForm (PaEvent e) {
+		public void refreshAlbumsForm (PaEvent e) {
 			
 			if (e.getEventType() != PaEventDispatcher.ALBUM_REFRESH_EVENT  ) { return; }
 			
@@ -269,7 +270,7 @@ public class PaAlbumsTreeForm extends JPanel implements TreeSelectionListener {
 		 * <p>Inserts the images from the buffer in the selected albom. The selected albom can no be current albom</p>
 		 * @param e - refresh event
 		 */
-	    public void pasteBufferInSelectedAlbom ( PaEvent e) {
+	    public void pasteBufferInSelectedAlbum ( PaEvent e) {
 	    	
 	    	if (e.getEventType() != PaEventDispatcher.IMAGE_PASTE_EVENT ) { return; }
 	    		 	
@@ -409,7 +410,7 @@ public class PaAlbumsTreeForm extends JPanel implements TreeSelectionListener {
 		/**
 		 * <p>Invokes the add album dialog window and performs adding operation after that</p>
 		 */
-		public void addAlbom(PaEvent event) {
+		public void addAlbum(PaEvent event) {
 			
 			if ( event.getEventType() !=  PaEventDispatcher.ALBUM_NEW_EVENT ) { return; }
 			try {	
@@ -511,7 +512,7 @@ public class PaAlbumsTreeForm extends JPanel implements TreeSelectionListener {
 		/**
 		 * <p>Invokes the edit albom dialog window and performs edit operation after that</p>
 		 */
-		public void editAlbom(PaEvent event) {
+		public void editAlbum(PaEvent event) {
 
 			if (event.getEventType() != PaEventDispatcher.ALBUM_EDIT_EVENT ) { return; }
 			
@@ -977,7 +978,7 @@ public class PaAlbumsTreeForm extends JPanel implements TreeSelectionListener {
 		 * <p>Opens alboms find dialog.The function is in the event framework, connected through dispatcher.</p>
 		 * @param event - find event
 		 */
-		public void findAlbom(PaEvent event) {
+		public void findAlbum(PaEvent event) {
 
 			if (event.getEventType() != PaEventDispatcher.ALBUM_FIND_EVENT ) { return; } 
 			
@@ -1339,7 +1340,7 @@ public class PaAlbumsTreeForm extends JPanel implements TreeSelectionListener {
 		}
 		/**
 		 * Listener to catch the mouse double click event and start the album edit operation
-		 * @author avd
+		 * @author Andrii Dashkov
 		 *
 		 */
 		private class MouseList implements MouseListener {

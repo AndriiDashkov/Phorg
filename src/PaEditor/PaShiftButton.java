@@ -1,14 +1,16 @@
 /**
  * 
  */
-package PaEditor;
+package paeditor;
 
 import java.awt.Dimension;
 import javax.swing.ImageIcon;
-import static PaGlobal.PaLog.*;
-import static PaGlobal.PaUtils.NEXT_ROW;
-import static PaGlobal.PaUtils.getGuiStrs;
-import static PaGlobal.PaUtils.getMessagesStrs;
+
+import static paglobal.PaLog.*;
+import static paglobal.PaUtils.NEXT_ROW;
+import static paglobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getMessagesStrs;
+
 import java.awt.Cursor;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
@@ -28,12 +30,13 @@ import javax.swing.SpinnerNumberModel;
 import javax.swing.WindowConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
-import PaLong.PaBlurImageOperation;
+
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
+import palong.PaBlurImageOperation;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * <p>This class determines the complex button for contrast operation; 
  * the special parameters panel creates here</p>
  */
@@ -93,7 +96,7 @@ public class PaShiftButton extends PaComplexButton {
 
 	/**
 	 * 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 * <p>Special parameter panel class with all components; the link with button is performed 
 	 * through m_coeff member of PaContrastButton.
 	 * Special parameters frame appears next to the instrument button by using 
@@ -247,7 +250,7 @@ public class PaShiftButton extends PaComplexButton {
 		
 		/**
 		 * 
-		 * @author avd
+		 * @author Andrii Dashkov
 		 * <p>Listener class to listen all spinners; also listens the focus event because
 		 * during the manual change of the value in spinners the event stateChange isnt't invoked </p>
 		 *

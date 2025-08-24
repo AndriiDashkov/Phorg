@@ -1,11 +1,12 @@
 
-package PaEditor;
+package paeditor;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.NEXT_ROW;
-import static PaGlobal.PaUtils.getGuiStrs;
-import static PaGlobal.PaUtils.getMenusStrs;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.NEXT_ROW;
+import static paglobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getMenusStrs;
+import static paglobal.PaUtils.getMessagesStrs;
+
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -30,14 +31,15 @@ import javax.swing.WindowConstants;
 import javax.swing.border.TitledBorder;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import PaAlgorithms.PaAlgoConvert;
-import PaEnums.PaInstrumentTypeEnum;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
+
+import paalgorithms.PaAlgoConvert;
+import paenums.PaInstrumentTypeEnum;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * <p>This class determines the complex button for binary operation; 
  * the special parameters side panel creates here also. Binary operation is an operation which converts an image to
  * black/white state with using some thresholds</p>
@@ -127,7 +129,7 @@ public class PaBinaryButton extends PaComplexButton {
 
 	/**
 	 * 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 * <p>Special parameter panel class with all components; the link with button is performed 
 	 * through members of the class
 	 * Special parameters side panel appears next to the instrument button while using the small menu 
@@ -314,7 +316,7 @@ public class PaBinaryButton extends PaComplexButton {
 		
 		/**
 		 * 
-		 * @author avd
+		 * @author Andrii Dashkov
 		 * <p>Listener class to listen the combo box</p>
 		 *
 		 */
@@ -353,7 +355,7 @@ public class PaBinaryButton extends PaComplexButton {
 			}
 		}
 		/**
-		 * @author avd
+		 * @author Andrii Dashkov
 		 * <p>Listener class to listen all spinners</p>
 		 */
 		private class SpinnerListener implements ChangeListener {

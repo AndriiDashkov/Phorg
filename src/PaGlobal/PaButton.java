@@ -1,4 +1,4 @@
-package PaGlobal;
+package paglobal;
 
 import java.awt.Insets;
 import javax.swing.AbstractButton;

@@ -1,15 +1,16 @@
 /**
  * 
  */
-package PaCollection;
+package pacollection;
 
-import static PaGlobal.PaUtils.*;
+import static paglobal.PaUtils.*;
+
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *<p>The class is intend for saving filter information and it is used in PaImageContainer</p>
  */
 public class PaFilterInfo {

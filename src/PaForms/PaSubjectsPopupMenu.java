@@ -1,13 +1,14 @@
-package PaForms;
+package paforms;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JComponent;
 import javax.swing.JPopupMenu;
-import PaActions.PaActionsMngr;
+
+import paactions.PaActionsMngr;
 /**
  * 
- * @author avd
+ * @author Andrii Dashkov
  *<p>Popup menu for subjects table  </p>
  */
 public class PaSubjectsPopupMenu {

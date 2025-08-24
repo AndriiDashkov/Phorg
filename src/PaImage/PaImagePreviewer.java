@@ -1,4 +1,4 @@
-package PaImage;
+package paimage;
 
 import java.awt.Dimension;
 import java.awt.Image;
@@ -11,7 +11,7 @@ import javax.swing.JFileChooser;
 import javax.swing.JLabel;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  */
 public class PaImagePreviewer extends JLabel {
 	

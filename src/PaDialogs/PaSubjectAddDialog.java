@@ -1,4 +1,7 @@
-package PaDialogs;
+package padialogs;
+
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.*;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -14,18 +17,18 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import PaCollection.PaSubject;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaButtonEnter;
-import PaGlobal.PaCloseFlag;
-import PaGlobal.PaTokenizer;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.*;
+
+import pacollection.PaSubject;
+import paglobal.PaButtonEnter;
+import paglobal.PaCloseFlag;
+import paglobal.PaGuiTools;
+import paglobal.PaTokenizer;
+import paglobal.PaUtils;
+
 import java.awt.event.KeyAdapter;
 /**
  * 
- * @author avd
+ * @author Andrii Dashkov
  * <p>Dialog for add new subject</p>
  */
 public class PaSubjectAddDialog extends JDialog {
@@ -149,7 +152,7 @@ public class PaSubjectAddDialog extends JDialog {
 	}
 	/**
 	 * 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 * <p>Listener for Enter button event </p>
 	 */
 	private class ButtonEnterListener extends KeyAdapter {
@@ -171,7 +174,7 @@ public class PaSubjectAddDialog extends JDialog {
 	}
 	/**
 	 * 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 * <p>Listener for all actions in the dialog</p>
 	 */
 	private class ActListener implements ActionListener {
@@ -310,7 +313,7 @@ public class PaSubjectAddDialog extends JDialog {
 	
 	/**
 	 * 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 * <p>Sets tab order for all elements<p>
 	 */
 	 private class TabOrder extends FocusTraversalPolicy {

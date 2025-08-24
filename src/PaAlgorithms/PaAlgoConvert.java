@@ -1,7 +1,7 @@
 /**
  * 
  */
-package PaAlgorithms;
+package paalgorithms;
 
 import java.awt.Color;
 import java.awt.Image;
@@ -11,7 +11,7 @@ import java.io.PrintWriter;
 
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  *
  */
 public class PaAlgoConvert {

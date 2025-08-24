@@ -1,5 +1,8 @@
 
-package PaEditor;
+package paeditor;
+
+import static paglobal.PaLog.writeLogOnly;
+import static paglobal.PaUtils.*;
 
 import java.awt.Dimension;
 import java.awt.Point;
@@ -17,16 +20,14 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JToggleButton;
 
-import PaDialogs.PaSpecialDialog;
-import PaDialogs.PaSpecialDialog.DialogType;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaLog.writeLogOnly;
-import static PaGlobal.PaUtils.*;
+import padialogs.PaSpecialDialog;
+import padialogs.PaSpecialDialog.DialogType;
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paglobal.PaUtils;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  * <p>The base class for complex buttons in image editor which works with instruments; 
  * It has two buttons - one is a main button for operation start, and other is a
  * 'menu' or 'special'  button which is for opening a special parameters dialog for additional 

@@ -1,7 +1,7 @@
-package PaDialogs;
+package padialogs;
 
-import PaCollection.PaAlbumContainer;
-import PaGlobal.*;
+import static paglobal.PaUtils.*;
+
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
@@ -24,8 +24,9 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
-import PaGlobal.PaGuiTools;
-import static PaGlobal.PaUtils.*;
+
+import pacollection.PaAlbumContainer;
+import paglobal.*;
 /**
  * <p>Dialog class for choosing of merge operation options</p>
  */
@@ -154,7 +155,7 @@ public class PaAlbumsMergeDialog extends JDialog {
 		
 		JPanel panel_set = PaGuiTools.createHorizontalPanel();
 		
-		JLabel jrez = new JLabel(getGuiStrs("chooseResultAlbomMergeAlbomsCaption"));//Выбор итогового альбома:  ");
+		JLabel jrez = new JLabel(getGuiStrs("chooseResultAlbomMergeAlbomsCaption"));//пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ:  ");
 		
 		jrez.setFont(m_font);
 		

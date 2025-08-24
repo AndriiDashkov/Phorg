@@ -1,8 +1,9 @@
 
-package PaEditor;
+package paeditor;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.NEXT_ROW;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.NEXT_ROW;
+
 import java.lang.reflect.Field;
 
 
@@ -10,7 +11,7 @@ import java.lang.reflect.Field;
  * This class can allocated memory beyond the scope of JVM proccess. It is used for
  * creation of an extremly large arrays . This array is 2 dimensional and can set and get the values
  * of short,float and double type. The generic can work with three types only - Double,Float and Short
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public  class PaHeapArray2{

@@ -1,15 +1,16 @@
 /**
  * 
  */
-package PaActions;
+package paactions;
 
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
+
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  *
  */
 public class PaAction extends AbstractAction {

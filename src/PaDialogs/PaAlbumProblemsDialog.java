@@ -1,8 +1,9 @@
 
-package PaDialogs;
+package padialogs;
 
-import static PaGlobal.PaUtils.VERT_STRUT;
-import static PaGlobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.VERT_STRUT;
+import static paglobal.PaUtils.getGuiStrs;
+
 import java.awt.Font;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
@@ -14,12 +15,13 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
+
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaAlbumProblemsDialog extends JDialog {

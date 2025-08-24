@@ -1,17 +1,19 @@
-package PaActions;
+package paactions;
+
+import static paglobal.PaUtils.*;
 
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.*;
+
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paglobal.PaUtils;
 
 /**
  * 
- * @author avd
+ * @author Andrii Dashkov
  *<p> Cut image action</p>
  */
 public class PaPhotoActionCut extends PaAction {

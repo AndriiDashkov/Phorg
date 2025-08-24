@@ -1,13 +1,13 @@
 /**
  * 
  */
-package PaEditor;
+package paeditor;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.NEXT_ROW;
-import static PaGlobal.PaUtils.getGuiStrs;
-import static PaGlobal.PaUtils.getMenusStrs;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.NEXT_ROW;
+import static paglobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getMenusStrs;
+import static paglobal.PaUtils.getMessagesStrs;
 
 import java.awt.Cursor;
 import java.awt.Dimension;
@@ -31,15 +31,15 @@ import javax.swing.WindowConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import PaAlgorithms.PaAlgorithms;
-import PaEnums.PaInstrumentTypeEnum;
-import PaEnums.PaMorphTypes;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
+import paalgorithms.PaAlgorithms;
+import paenums.PaInstrumentTypeEnum;
+import paenums.PaMorphTypes;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * <p>This class determines the complex button for erosion/dilatation operation.</p>
  */
 public class PaErosionButton extends PaComplexButton {
@@ -94,7 +94,7 @@ public class PaErosionButton extends PaComplexButton {
 
 	/**
 	 * 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 * <p>Special parameter panel class with all components; the link with button is performed 
 	 * through members of the class
 	 * Special parameters side panel appears next to the instrument button while using the small menu 
@@ -228,7 +228,7 @@ public class PaErosionButton extends PaComplexButton {
 		
 		/**
 		 * 
-		 * @author avd
+		 * @author Andrii Dashkov
 		 * <p>Listener class to listen the combo box</p>
 		 *
 		 */
@@ -240,7 +240,7 @@ public class PaErosionButton extends PaComplexButton {
 			}
 		}
 		/**
-		 * @author avd
+		 * @author Andrii Dashkov
 		 * <p>Listener class to listen all spinners</p>
 		 */
 		private class SpinnerListener implements ChangeListener {

@@ -1,4 +1,4 @@
-package PaExif;
+package paexif;
 
 import java.io.ByteArrayOutputStream;
 import java.io.EOFException;
@@ -13,13 +13,14 @@ import java.util.Vector;
 import javax.imageio.stream.FileImageInputStream;
 import javax.imageio.stream.IIOByteBuffer;
 import javax.imageio.stream.ImageInputStream;
-import PaEnums.PaPair;
-import PaGlobal.PaLog;
-import PaGlobal.PaUtils;
+
+import paenums.PaPair;
+import paglobal.PaLog;
+import paglobal.PaUtils;
 
 /**
  * <p>Class for reading the exif metadata</p>
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaExifLoader {

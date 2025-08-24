@@ -1,9 +1,10 @@
 /**
  * 
  */
-package PaDialogs;
+package padialogs;
 
-import static PaGlobal.PaUtils.*;
+import static paglobal.PaUtils.*;
+
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -24,14 +25,15 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.ListSelectionModel;
 import javax.swing.ProgressMonitor;
-import PaCollection.PaAlbum;
-import PaCollection.PaImageContainer;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
-import PaLong.PaAlbumImageControl;
+
+import pacollection.PaAlbum;
+import pacollection.PaImageContainer;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
+import palong.PaAlbumImageControl;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaAlbumPropDialog extends JDialog {
@@ -133,29 +135,29 @@ public class PaAlbumPropDialog extends JDialog {
 	
 		JPanel gridPanel = PaGuiTools.createVerticalPanel();
 
-		JLabel nameAlbomLabel = new JLabel(getGuiStrs("nameAlbomPropDialog")+  "  "); 
+		JLabel nameAlbumLabel = new JLabel(getGuiStrs("nameAlbomPropDialog")+  "  "); 
 		
-		JLabel nameAlbom = new JLabel(m_album.getName());
+		JLabel nameAlbum = new JLabel(m_album.getName());
 		
-		nameAlbomLabel.setFont(f);
+		nameAlbumLabel.setFont(f);
 		
-		nameAlbom.setFont(f);
+		nameAlbum.setFont(f);
 		
 		JPanel panel1 = PaGuiTools.createHorizontalPanel();
 		
-		panel1.add(nameAlbomLabel);  panel1.add(nameAlbom); panel1.add(Box.createHorizontalGlue());
+		panel1.add(nameAlbumLabel);  panel1.add(nameAlbum); panel1.add(Box.createHorizontalGlue());
 		
-		JLabel dateAlbomLabel = new JLabel(getGuiStrs("dateAlbomPropDialog")+  "  ");
+		JLabel dateAlbumLabel = new JLabel(getGuiStrs("dateAlbomPropDialog")+  "  ");
 		
 		JLabel dateAlbom = new JLabel(dateToString(m_album.getDate(),GUI_DATE_FORMAT)); 
 		
-		dateAlbomLabel.setFont(f);
+		dateAlbumLabel.setFont(f);
 		
 		dateAlbom.setFont(f);
 		
 		JPanel panel2 = PaGuiTools.createHorizontalPanel();
 		
-		panel2.add(dateAlbomLabel);  panel2.add(dateAlbom); panel2.add(Box.createHorizontalGlue());
+		panel2.add(dateAlbumLabel);  panel2.add(dateAlbom); panel2.add(Box.createHorizontalGlue());
 		
 		
 		JLabel childsLabel = new JLabel(getGuiStrs("childsCountAlbomPropDialog")+  "  ");
@@ -252,9 +254,9 @@ public class PaAlbumPropDialog extends JDialog {
 		
 		panel10.add(usedSubjectsLabel);  panel10.add(Box.createHorizontalGlue());
 		
-		 PaGuiTools.makeSameSize(new JComponent[] { nameAlbomLabel,childsLabel ,numberOfImagesLabel,
+		 PaGuiTools.makeSameSize(new JComponent[] { nameAlbumLabel,childsLabel ,numberOfImagesLabel,
 				 numberOfStandLabel, pathLabel, numberOfBookmarkLabel, numberOfPrintLabel, commentLabel,
-				 usedSubjectsLabel, dateAlbomLabel});
+				 usedSubjectsLabel, dateAlbumLabel});
 		
 		gridPanel.add(panel1);
 		
@@ -362,7 +364,7 @@ public class PaAlbumPropDialog extends JDialog {
 	}
 	/**
 	 * Listens the check button for deleted images
-	 * @author avd
+	 * @author Andrii Dashkov
 	 *
 	 */
 	private class ButtonListener implements ActionListener {

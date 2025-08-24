@@ -1,7 +1,7 @@
 /**
  * 
  */
-package PaAlgorithms;
+package paalgorithms;
 
 import java.awt.Graphics2D;
 import java.awt.Image;
@@ -11,7 +11,7 @@ import java.awt.image.AffineTransformOp;
 import java.awt.image.BufferedImage;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  *
  */
 public class PaAlgoTransform {

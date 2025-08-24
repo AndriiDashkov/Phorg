@@ -1,8 +1,8 @@
 
-package PaEditor;
+package paeditor;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  * This enum contains all instruments types
  */

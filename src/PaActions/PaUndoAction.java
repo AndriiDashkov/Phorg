@@ -1,7 +1,7 @@
 
-package PaActions;
+package paactions;
 
-import static PaGlobal.PaUtils.getMenusStrs;
+import static paglobal.PaUtils.getMenusStrs;
 
 import java.awt.event.ActionEvent;
 
@@ -9,15 +9,14 @@ import javax.swing.AbstractAction;
 //import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-//import PaEvents.PaEventEnable;
-import PaGlobal.PaUtils;
-import PaUndoRedo.PaUndoRedoDeque;
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paglobal.PaUtils;
+import paundoredo.PaUndoRedoDeque;
 
 /**
  * Undo action. Not all actions can be undone.
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaUndoAction extends PaAction {

@@ -1,10 +1,12 @@
 /**
  * 
  */
-package PaAlgorithms;
+package paalgorithms;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaLog.writeLogOnly;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaLog.writeLogOnly;
+import static paglobal.PaUtils.NEXT_ROW;
+import static paglobal.PaUtils.getMessagesStrs;
 
 import java.awt.Color;
 import java.awt.Cursor;
@@ -25,22 +27,19 @@ import java.util.Collections;
 import java.util.Random;
 import javax.imageio.ImageIO;
 import javax.swing.JOptionPane;
-import PaEditor.PaHeapArray;
-import PaEditor.PaInstrumentsWindow;
-import PaEditor.PaSharpButton.FILTER_TYPE;
-import PaEnums.PaMaskTypeEnum;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.NEXT_ROW;
-import static PaGlobal.PaUtils.getMessagesStrs;
+
+import paeditor.PaHeapArray;
+import paeditor.PaInstrumentsWindow;
+import paeditor.PaSharpButton.FILTER_TYPE;
+import paenums.PaMaskTypeEnum;
+import paglobal.PaUtils;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * <p>Class for the variety of image algorithms</p>
  */
 public class PaAlgorithms {
 
-	
-	
 	private class Pair {
 		
 		public Pair(int x, int y/*, int res*/) {
@@ -60,7 +59,7 @@ public class PaAlgorithms {
 	/**
 	 * This shift enum for determination of shift operation of matrix while calculations;
 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 *
 	 */
 	private static  enum Shift {

@@ -1,12 +1,13 @@
 
-package PaExif;
+package paexif;
 
-import static PaGlobal.PaUtils.*;
+import static paglobal.PaUtils.*;
+
 import java.math.BigDecimal;
 import java.util.Vector;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaExifElement {

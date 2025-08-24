@@ -1,7 +1,8 @@
 
-package PaROI;
+package paroi;
 
-import static PaGlobal.PaLog.writeLog;
+import static paglobal.PaLog.writeLog;
+
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Dimension;
@@ -17,12 +18,13 @@ import java.awt.geom.Line2D;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import javax.swing.SwingUtilities;
-import PaEditor.PaComplexButton;
-import PaEditor.PaZoomRectInstrument;
-import PaGlobal.PaUtils;
+
+import paeditor.PaComplexButton;
+import paeditor.PaZoomRectInstrument;
+import paglobal.PaUtils;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  * Instrument for crop a part of image using rectangle of fixed size, and then save it to
  * chosen folder. The naming of results files is automatic.
  * Allows to make blur the central area of the rectangle.  

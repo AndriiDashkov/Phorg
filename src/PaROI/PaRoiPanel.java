@@ -1,9 +1,10 @@
-package PaROI;
+package paroi;
 
-import static PaGlobal.PaUtils.getGuiStrs;
-import static PaGlobal.PaUtils.getMenusStrs;
-import static PaGlobal.PaUtils.getMessagesStrs;
-import static PaGlobal.PaUtils.getSeparator;
+import static paglobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getMenusStrs;
+import static paglobal.PaUtils.getMessagesStrs;
+import static paglobal.PaUtils.getSeparator;
+
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.FocusAdapter;
@@ -30,15 +31,16 @@ import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import PaActions.PaAction;
-import PaEditor.PaInstrumentsWindow;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
+
+import paactions.PaAction;
+import paeditor.PaInstrumentsWindow;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 
 
 /**
  * <p>The panel represents the ROI information: two tables with ROIs and ROI types. </p>
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaRoiPanel extends JPanel {

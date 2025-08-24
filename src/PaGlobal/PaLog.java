@@ -1,9 +1,10 @@
 /**
  * 
  */
-package PaGlobal;
+package paglobal;
 
-import static PaGlobal.PaUtils.*;
+import static paglobal.PaUtils.*;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -13,7 +14,7 @@ import java.util.Calendar;
 
 /**
  * <p>Log class</p>
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaLog {

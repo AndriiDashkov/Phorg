@@ -1,7 +1,8 @@
 
-package PaEditor;
+package paeditor;
 
-import static PaGlobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getGuiStrs;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.concurrent.ArrayBlockingQueue;
@@ -9,16 +10,17 @@ import javax.swing.Box;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
+
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  * This panel class has three button to control the circle buffer and choose
  * next data from buffer, save data to buffer, clear buffer. It usually appears on most right
  * side of parameters panel of complex button
  * The main purpose of this class is to support different set of parameters
- * for every instrument in Editor. Data are saveâ in special container outside the Editor
+ * for every instrument in Editor. Data are saveï¿½ in special container outside the Editor
  * in order to save the information.
  * See use of  HashMap<PaEnumInstrumentNames, ArrayBlockingQueue<Object>> m_instrumnetsData
  * in PaViewPanel class. This class always works with examples of PaComplexButton which
@@ -96,7 +98,7 @@ public class PaQueuePanel extends JPanel {
 	}
 	/**
 	 * 
-	 * @author Andrey Dashkov
+	 * @author Andrii Dashkov
 	 * Custom listener to control buttons in the circle way
 	 *
 	 */

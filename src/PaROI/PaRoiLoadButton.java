@@ -1,7 +1,8 @@
 
-package PaROI;
+package paroi;
 
-import static PaGlobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getGuiStrs;
+
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -20,13 +21,14 @@ import javax.swing.JRadioButton;
 import javax.swing.WindowConstants;
 import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
-import PaEditor.PaComplexButton;
-import PaEditor.PaEnumInstrumentNames;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
+
+import paeditor.PaComplexButton;
+import paeditor.PaEnumInstrumentNames;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * <p>This class determines the complex button for save image or ROI file operation; 
  * the special parameters panel creates here</p>
  */
@@ -213,7 +215,7 @@ public class PaRoiLoadButton extends PaComplexButton {
 		
 		/**
 		 * 
-		 * @author avd
+		 * @author Andrii Dashkov
 		 * <p>Listener class to listen  buttons</p>
 		 *
 		 */

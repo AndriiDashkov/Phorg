@@ -1,9 +1,9 @@
 
-package PaAlgorithms;
+package paalgorithms;
 
 /**
  * Fixed sin and cos values, for some algorithms speed optimization
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  *
  */
 public class PaAlgoConsts {

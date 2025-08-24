@@ -1,16 +1,17 @@
 
-package PaROI;
+package paroi;
+
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.*;
 
 import java.util.*;
 import javax.swing.JTable;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.AbstractTableModel;
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.*;
 
 /**
  * 
- * @author avd
+ * @author Andrii Dashkov
  * The table model for the representation of the list of ROIs for the current image
  *
  */
@@ -66,7 +67,7 @@ public class PaRoiTableModel extends AbstractTableModel {
 		
 		switch (column) {  
 		
-	        case 0: return "¹";  
+	        case 0: return "ï¿½";  
 	        
 	        case 1: return "x";  
 	        

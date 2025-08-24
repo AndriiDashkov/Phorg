@@ -1,4 +1,4 @@
-package PaActions;
+package paactions;
 
 
 import java.util.HashMap;
@@ -6,7 +6,7 @@ import javax.swing.AbstractAction;
 
 /**
  * <p>The actions manager class. All actions must be registered here. Any access to action must be implemented via this singletone class</p>
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaActionsMngr {

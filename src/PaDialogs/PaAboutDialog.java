@@ -1,4 +1,6 @@
-package PaDialogs;
+package padialogs;
+
+import static paglobal.PaUtils.*;
 
 import java.awt.BorderLayout;
 import javax.swing.BorderFactory;
@@ -8,11 +10,11 @@ import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.*;
+
+import paglobal.PaUtils;
 /**
  * 
- * @author avd
+ * @author Andrii Dashkov
  * <p>"About" dialog</p>
  */
 public class PaAboutDialog extends JDialog {

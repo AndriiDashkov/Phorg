@@ -1,11 +1,12 @@
 
-package PaROI;
+package paroi;
 
 import java.awt.event.MouseWheelEvent;
-import PaEditor.PaScrollView;
+
+import paeditor.PaScrollView;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  *
  * Inherited scroll panel class, mainly intended for the control of mouse wheel event. All mouse wheel events
  * are controlled here by an instrument resize operations, not by vertical scroll.

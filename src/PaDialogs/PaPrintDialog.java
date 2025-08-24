@@ -1,10 +1,10 @@
 /**
  * 
  */
-package PaDialogs;
+package padialogs;
 
-import static PaGlobal.PaUtils.getGuiStrs;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaUtils.*;
+
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Dimension;
@@ -49,15 +49,16 @@ import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.TitledBorder;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import PaAlgorithms.PaAlgoTransform;
-import PaCollection.PaImage;
-import PaCollection.PaImageContainer;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaLog;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.*;
+
+import paalgorithms.PaAlgoTransform;
+import pacollection.PaImage;
+import pacollection.PaImageContainer;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paglobal.PaGuiTools;
+import paglobal.PaLog;
+import paglobal.PaUtils;
+
 import java.awt.Graphics;
 import java.awt.print.PageFormat;
 import java.awt.print.Printable;
@@ -68,7 +69,7 @@ import java.awt.print.PrinterJob;
 /**
  * 
  * Printing dialog. It can print the multiselection on the one page
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaPrintDialog extends JDialog {
@@ -731,7 +732,7 @@ public class PaPrintDialog extends JDialog {
 				
 				break;
 			}
-			case 4 : { //215,9  279,4 ìì
+			case 4 : { //215,9  279,4 ï¿½ï¿½
 				
 				im = getPrintStandardImage(pageIndex,portrait,m_comboNumber.getItemAt(m_comboNumber.getSelectedIndex()),
 						realSize,margins, 27.94,21.59,originalImageOnly);
@@ -1140,7 +1141,7 @@ public class PaPrintDialog extends JDialog {
    
 	/**
 	 * 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 * <p>Listener class to listen the radio buttons</p>
 	 *
 	 */
@@ -1191,15 +1192,15 @@ public class PaPrintDialog extends JDialog {
 				
 				m_comboNumber.removeAllItems();
 				
-				m_comboNumber.addItem(new Integer(1));
+				m_comboNumber.addItem(1);
 				
-				m_comboNumber.addItem(new Integer(2));
+				m_comboNumber.addItem(2);
 				
-				m_comboNumber.addItem(new Integer(4));
+				m_comboNumber.addItem(4);
 				
-				m_comboNumber.addItem(new Integer(6));
+				m_comboNumber.addItem(6);
 				
-				m_comboNumber.addItem(new Integer(9));
+				m_comboNumber.addItem(9);
 				
 				m_comboNumber.setSelectedIndex(0);
 				
@@ -1209,11 +1210,11 @@ public class PaPrintDialog extends JDialog {
 				
 				m_comboNumber.removeAllItems();
 				
-				m_comboNumber.addItem(new Integer(1));
+				m_comboNumber.addItem(1);
 				
-				m_comboNumber.addItem(new Integer(2));
+				m_comboNumber.addItem(2);
 				
-				m_comboNumber.addItem(new Integer(4));
+				m_comboNumber.addItem(4);
 				
 				m_comboNumber.setSelectedIndex(0);
 				break;
@@ -1224,9 +1225,9 @@ public class PaPrintDialog extends JDialog {
 				
 				m_comboNumber.removeAllItems();
 				
-				m_comboNumber.addItem(new Integer(1));
+				m_comboNumber.addItem(1);
 				
-				m_comboNumber.addItem(new Integer(2));
+				m_comboNumber.addItem(2);
 				
 				m_comboNumber.setSelectedIndex(0);
 				
@@ -1236,7 +1237,7 @@ public class PaPrintDialog extends JDialog {
 				
 				m_comboNumber.removeAllItems();
 				
-				m_comboNumber.addItem(new Integer(1));
+				m_comboNumber.addItem(1);
 				
 				break;
 			}
@@ -1261,7 +1262,7 @@ public class PaPrintDialog extends JDialog {
 
     /**
      * 
-     * @author avd
+     * @author Andrii Dashkov
      * Class which is responsible for start of print process.
      */
     private class PaPrintRun implements Runnable {
@@ -1329,7 +1330,7 @@ public class PaPrintDialog extends JDialog {
         }
         /**
          * 
-         * @author avd
+         * @author Andrii Dashkov
          *
          */
         private class PaPrintable implements Printable {
@@ -1470,7 +1471,7 @@ public class PaPrintDialog extends JDialog {
 
 	/**
 	 * 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 * <p>Listener class to listen all spinners </p>
 	 *
 	 */

@@ -1,7 +1,7 @@
-package PaEvents;
+package paevents;
 
-import PaGlobal.PaButton;
-import PaGlobal.PaButtonsGroup;
+import paglobal.PaButton;
+import paglobal.PaButtonsGroup;
 
 
 

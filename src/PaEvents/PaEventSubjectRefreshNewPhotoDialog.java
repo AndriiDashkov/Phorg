@@ -1,9 +1,9 @@
-package PaEvents;
+package paevents;
 
-import PaCollection.PaSubject;
+import pacollection.PaSubject;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * 
  */
 public class PaEventSubjectRefreshNewPhotoDialog extends PaEvent {

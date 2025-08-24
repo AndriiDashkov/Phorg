@@ -1,20 +1,20 @@
-package PaForms;
+package paforms;
+
+import static paglobal.PaUtils.*;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JComponent;
 import javax.swing.JMenu;
 import javax.swing.JPopupMenu;
-import PaActions.PaActionsMngr;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaGlobal.PaUtils;
 
-
-import static PaGlobal.PaUtils.*;
+import paactions.PaActionsMngr;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paglobal.PaUtils;
 /**
  * Context menu for main view panel
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaImagePopupMenu {

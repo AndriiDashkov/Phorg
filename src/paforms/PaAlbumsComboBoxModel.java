@@ -1,10 +1,11 @@
-package PaForms;
+package paforms;
 
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.AbstractListModel;
 import javax.swing.ComboBoxModel;
-import PaCollection.PaAlbum;
+
+import pacollection.PaAlbum;
 
 
 /**
@@ -13,7 +14,7 @@ import PaCollection.PaAlbum;
  */
 
 @SuppressWarnings("rawtypes")
-public class PaAlbomsComboBoxModel extends AbstractListModel implements ComboBoxModel {
+public class PaAlbumsComboBoxModel extends AbstractListModel implements ComboBoxModel {
 	
 	private static final long serialVersionUID = 1L;
 
@@ -21,7 +22,7 @@ public class PaAlbomsComboBoxModel extends AbstractListModel implements ComboBox
 	
 	private Object  _selectedObject;
 
-	public PaAlbomsComboBoxModel () {
+	public PaAlbumsComboBoxModel () {
 		
         _itemsList = new ArrayList<PaAlbum>();
 	}

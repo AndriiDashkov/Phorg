@@ -1,5 +1,5 @@
 
-package PaROI;
+package paroi;
 
 import java.awt.Dimension;
 import java.awt.Rectangle;
@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map.Entry;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  * The class to calculate the ROI statistics. Can calculate average and median values, overlapping, creates the map of ROI positions.
  * It operates on the base of ROI file, a ROI file is source of data for this class.
  */

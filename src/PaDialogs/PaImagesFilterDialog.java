@@ -1,4 +1,6 @@
-package PaDialogs;
+package padialogs;
+
+import static paglobal.PaUtils.*;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -12,12 +14,13 @@ import java.awt.event.ItemListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.ArrayList;
-import PaCollection.PaFilterInfo;
-import PaCollection.PaSubject;
-import PaForms.PaSubjectsPanel;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.*;
+
+import pacollection.PaFilterInfo;
+import pacollection.PaSubject;
+import paforms.PaSubjectsPanel;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
+
 import javax.swing.BorderFactory;
 import javax.swing.Box;
 import javax.swing.ButtonGroup;
@@ -34,7 +37,7 @@ import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 
@@ -593,12 +596,12 @@ public class PaImagesFilterDialog extends JDialog {
 						panel_MAIN },
 									Component.RIGHT_ALIGNMENT);
 		
-		PaGlobal.PaGuiTools.createRecommendedMargin(new JButton[] { m_Ok, m_Cancel, m_ClearFiltr } );
+		paglobal.PaGuiTools.createRecommendedMargin(new JButton[] { m_Ok, m_Cancel, m_ClearFiltr } );
 
 		//this removes the endless height of these fields
-		PaGlobal.PaGuiTools.fixTextFieldSize(m_dateFrom);
+		paglobal.PaGuiTools.fixTextFieldSize(m_dateFrom);
 		
-		PaGlobal.PaGuiTools.fixTextFieldSize(m_dateTo);
+		paglobal.PaGuiTools.fixTextFieldSize(m_dateTo);
 
 		panel_MAIN.add(Box.createVerticalGlue());
 		

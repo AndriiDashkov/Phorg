@@ -1,4 +1,4 @@
-package PaEvents;
+package paevents;
 
 import java.util.ArrayList;
 
@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Collects into ArrayList all receivers, represented by classes PaEventObjectMethod
  * and saves the type of event for collected receivers.
  * PaEventListener collects only those receivers, which are collected to one type of event 
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  *
  */
 public class PaEventListeners {

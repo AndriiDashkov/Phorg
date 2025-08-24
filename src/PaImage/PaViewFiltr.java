@@ -1,4 +1,7 @@
-package PaImage;
+package paimage;
+
+import static paglobal.PaLog.*;
+import static paglobal.PaUtils.*;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -23,35 +26,34 @@ import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
 import javax.swing.JScrollPane;
 import javax.swing.ProgressMonitor;
-import PaAlgorithms.PaAlgoTransform;
-import PaCollection.PaAlbum;
-import PaCollection.PaAlbumContainer;
-import PaCollection.PaImage;
-import PaCollection.PaImageContainer;
-import PaCollection.PaMainConainer;
-import PaCollection.PaSelectedImages;
-import PaDialogs.PaAlbumNewDialog;
-import PaDialogs.PaImageEditDialog;
-import PaDialogs.PaImageMoveDialog;
-import PaDialogs.PaImagePropertiesDialog;
-import PaDialogs.PaSpecialDialog;
-import PaDialogs.PaSpecialDialog.DialogType;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaEvents.PaEventInt;
-import PaForms.PaAlbumTreeNode;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaDesktopPane;
-import PaGlobal.PaUtils;
-import PaLong.PaCopyToAlbumTask;
-import static PaGlobal.PaUtils.*;
-import static PaGlobal.PaLog.*;
+
+import paalgorithms.PaAlgoTransform;
+import pacollection.PaAlbum;
+import pacollection.PaAlbumContainer;
+import pacollection.PaImage;
+import pacollection.PaImageContainer;
+import pacollection.PaMainConainer;
+import pacollection.PaSelectedImages;
+import padialogs.PaAlbumNewDialog;
+import padialogs.PaImageEditDialog;
+import padialogs.PaImageMoveDialog;
+import padialogs.PaImagePropertiesDialog;
+import padialogs.PaSpecialDialog;
+import padialogs.PaSpecialDialog.DialogType;
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paevents.PaEventInt;
+import paforms.PaAlbumTreeNode;
+import paglobal.PaDesktopPane;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
+import palong.PaCopyToAlbumTask;
 
 
 /**
  * Viewer for filter results over all albums
- * @author avd
+ * @author Andrii Dashkov
  */
 public class PaViewFiltr extends JDialog implements Runnable {
 
@@ -99,7 +101,7 @@ public class PaViewFiltr extends JDialog implements Runnable {
 
 	public PaViewFiltr (JFrame jfrm, PaImageContainer container, int number ) {
 		
-		super (jfrm, getGuiStrs("filterDialogCaptionName")+"   "+getGuiStrs("filterDialogImagesCaptionName")+"  "+Integer.toString(number), true); //"Результат применения фильтра :"
+		super (jfrm, getGuiStrs("filterDialogCaptionName")+"   "+getGuiStrs("filterDialogImagesCaptionName")+"  "+Integer.toString(number), true); //"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ :"
 		
 		setLayout(new BorderLayout()); 
 		
@@ -239,7 +241,7 @@ public class PaViewFiltr extends JDialog implements Runnable {
 				
 				panel.removeAll();
 
-				writeLog(getGuiStrs("viewPanelCaptionAlbomEmpty"),null, true, true, false) ; //"Альбом пуст.");
+				writeLog(getGuiStrs("viewPanelCaptionAlbomEmpty"),null, true, true, false) ; //"пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ.");
 			}	
 		} else {
 			
@@ -297,7 +299,7 @@ public class PaViewFiltr extends JDialog implements Runnable {
 		
 		private JMenuItem itemDel =null;
 		
-		private JMenuItem itemNewAlbom =null;
+		private JMenuItem itemNewAlbum =null;
 		
 		private JMenuItem itemMove =null;
 		
@@ -383,15 +385,15 @@ public class PaViewFiltr extends JDialog implements Runnable {
 		    
 		    add(itemDel);
 		    
-		    itemNewAlbom = new JMenuItem(getMenusStrs("createAlbomInFilterMenuName"));
+		    itemNewAlbum = new JMenuItem(getMenusStrs("createAlbomInFilterMenuName"));
 		    
-		    itemNewAlbom.setActionCommand(CREATE_ALBOM_COMMAND);
+		    itemNewAlbum.setActionCommand(CREATE_ALBOM_COMMAND);
 		    
-		    itemNewAlbom.addActionListener(listener);
+		    itemNewAlbum.addActionListener(listener);
 		    
-		    itemNewAlbom.setIcon( new ImageIcon(PaUtils.get().getIconsPath() + "paselectnewalbom.png"));
+		    itemNewAlbum.setIcon( new ImageIcon(PaUtils.get().getIconsPath() + "paselectnewalbom.png"));
 		    
-		    add(itemNewAlbom);
+		    add(itemNewAlbum);
 		    
 		    itemMove = new JMenuItem(getMenusStrs("moveToAlbomInFilterMenuName"));
 		    
@@ -422,7 +424,7 @@ public class PaViewFiltr extends JDialog implements Runnable {
 			
 			itemDel.setEnabled(true);		
 			
-			itemNewAlbom.setEnabled(true);
+			itemNewAlbum.setEnabled(true);
 			
 			itemMove.setEnabled(true);	
 			
@@ -434,7 +436,7 @@ public class PaViewFiltr extends JDialog implements Runnable {
 				
 				itemDel.setEnabled(false);
 				
-				itemNewAlbom.setEnabled(false);
+				itemNewAlbum.setEnabled(false);
 				
 				itemMove.setEnabled(false);
 				
@@ -851,7 +853,7 @@ public class PaViewFiltr extends JDialog implements Runnable {
 		
 		PaAlbumTreeNode rootNode = new PaAlbumTreeNode();
 		
-		rootNode.setAlbomName(PaUtils.getAlbomsRootName());
+		rootNode.setAlbumName(PaUtils.getAlbomsRootName());
 		
 		rootNode.setId(PaUtils.ALBUM_TOP_PARENT_ID);
 		
@@ -861,7 +863,7 @@ public class PaViewFiltr extends JDialog implements Runnable {
 			
 			PaAlbumTreeNode node = new PaAlbumTreeNode();
 			
-			node.setAlbomName(al.getName());
+			node.setAlbumName(al.getName());
 			
 			node.setId(al.getId());
 			

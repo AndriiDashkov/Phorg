@@ -1,5 +1,7 @@
 
-package PaEditor;
+package paeditor;
+
+import static paglobal.PaUtils.*;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -9,10 +11,9 @@ import java.awt.GridBagLayout;
 import java.awt.Insets;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import static PaGlobal.PaUtils.*;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaStatInfoPanel extends JPanel {

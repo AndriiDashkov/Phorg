@@ -1,11 +1,11 @@
-package PaForms;
+package paforms;
 
 
 import javax.swing.JTable;
 import javax.swing.table.TableColumnModel;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaExtEditorTable extends JTable {

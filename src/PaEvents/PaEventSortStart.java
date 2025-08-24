@@ -1,8 +1,8 @@
 
-package PaEvents;
+package paevents;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * 
  */
 public class PaEventSortStart extends PaEvent {

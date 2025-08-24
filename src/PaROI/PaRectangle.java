@@ -1,8 +1,8 @@
 
-package PaROI;
+package paroi;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  *
  */
 public class PaRectangle {

@@ -1,4 +1,6 @@
-package PaActions;
+package paactions;
+
+import static paglobal.PaUtils.*;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
@@ -7,15 +9,13 @@ import javax.swing.AbstractAction;
 import javax.swing.Action;
 import javax.swing.KeyStroke;
 
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-
-import static PaGlobal.PaUtils.*;
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
 
 /**
  * <p>Opens properties window for an image</p>
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaPhotoActionProperties extends PaAction {

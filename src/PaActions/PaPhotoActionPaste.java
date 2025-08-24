@@ -1,4 +1,6 @@
-package PaActions;
+package paactions;
+
+import static paglobal.PaUtils.*;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
@@ -6,15 +8,15 @@ import javax.swing.AbstractAction;
 import javax.swing.Action;
 import javax.swing.ImageIcon;
 import javax.swing.KeyStroke;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.*;
+
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paglobal.PaUtils;
 
 /**
- * Ñopy image objects from buffer
- * @author avd
+ * ï¿½opy image objects from buffer
+ * @author Andrii Dashkov
  *
  */
 public class PaPhotoActionPaste extends PaAction {

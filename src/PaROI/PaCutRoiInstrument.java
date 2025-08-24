@@ -1,7 +1,7 @@
 
-package PaROI;
+package paroi;
 
-import static PaGlobal.PaLog.writeLog;
+import static paglobal.PaLog.writeLog;
 
 import java.awt.Cursor;
 import java.awt.Dimension;
@@ -26,12 +26,13 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.SwingUtilities;
-import PaEditor.PaComplexButton;
-import PaEditor.PaZoomRectInstrument;
-import PaGlobal.PaUtils;
+
+import paeditor.PaComplexButton;
+import paeditor.PaZoomRectInstrument;
+import paglobal.PaUtils;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  * The instrument for the crop a part of image using a rectangle of fixed size, and then save coordinates  to
  * the current ROI txt file.   
  *

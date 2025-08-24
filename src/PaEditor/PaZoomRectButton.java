@@ -1,18 +1,20 @@
 
-package PaEditor;
+package paeditor;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.getMenusStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.getMenusStrs;
+
 import java.awt.Dimension;
 import java.util.HashMap;
 import java.util.concurrent.ArrayBlockingQueue;
 import javax.swing.ImageIcon;
 import javax.swing.JDialog;
-import PaEnums.PaInstrumentTypeEnum;
-import PaGlobal.PaUtils;
+
+import paenums.PaInstrumentTypeEnum;
+import paglobal.PaUtils;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * <p>This class determines the complex button for zoom operation; 
  * the special parameters panel creates here</p>
  */

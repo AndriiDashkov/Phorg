@@ -1,18 +1,20 @@
 /**
  * 
  */
-package PaActions;
+package paactions;
 
-import static PaGlobal.PaUtils.getMenusStrs;
+import static paglobal.PaUtils.getMenusStrs;
+
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaGlobal.PaSortOrderEnum;
-import PaGlobal.PaUtils;
+
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paglobal.PaSortOrderEnum;
+import paglobal.PaUtils;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaSortMenuAction extends PaAction {

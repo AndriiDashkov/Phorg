@@ -1,8 +1,10 @@
 
-package PaEditor;
+package paeditor;
 
 
-import static PaGlobal.PaLog.writeLog;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.*;
+
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.image.BufferedImage;
@@ -10,13 +12,13 @@ import java.util.HashMap;
 import java.util.concurrent.ArrayBlockingQueue;
 import javax.swing.ImageIcon;
 import javax.swing.JDialog;
-import PaAlgorithms.PaAlgorithms;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.*;
+
+import paalgorithms.PaAlgorithms;
+import paglobal.PaUtils;
 
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * <p>This class determines the complex button for linearization; the special parameters panel is
  *  created here</p>
  */

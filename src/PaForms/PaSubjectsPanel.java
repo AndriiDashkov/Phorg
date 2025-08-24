@@ -1,4 +1,6 @@
-package PaForms;
+package paforms;
+
+import static paglobal.PaUtils.*;
 
 import java.awt.Component;
 import java.awt.Dimension;
@@ -21,14 +23,14 @@ import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import PaCollection.PaSubject;
-import PaCollection.PaSubjectContainer;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventSubjectRefreshNewPhotoDialog;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.*;
+
+import pacollection.PaSubject;
+import pacollection.PaSubjectContainer;
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paevents.PaEventSubjectRefreshNewPhotoDialog;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 
 /**
  * 

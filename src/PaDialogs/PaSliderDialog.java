@@ -1,9 +1,9 @@
-package PaDialogs;
+package padialogs;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.NEXT_ROW;
-import static PaGlobal.PaUtils.getGuiStrs;
-import static PaGlobal.PaUtils.DATE_FORMAT;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.DATE_FORMAT;
+import static paglobal.PaUtils.NEXT_ROW;
+import static paglobal.PaUtils.getGuiStrs;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -34,18 +34,17 @@ import javax.swing.JToggleButton;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import PaAlgorithms.PaAlgoTransform;
-import PaCollection.PaImage;
-
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaGlobal.PaDesktopPane;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
+import paalgorithms.PaAlgoTransform;
+import pacollection.PaImage;
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paglobal.PaDesktopPane;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 
 /**
  * <p>Slider window to show images statically or dynamically w</p>
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaSliderDialog extends JFrame  {
@@ -429,7 +428,7 @@ public class PaSliderDialog extends JFrame  {
 	}
 	/**
 	 * <p>Class provides the navigation functionality: previous, next, fist, last image</p>
-	 * @author avd
+	 * @author Andrii Dashkov
 	 *
 	 */
 	private class PaImageQueue {
@@ -581,7 +580,7 @@ public class PaSliderDialog extends JFrame  {
 	
 	/**
 	 * <p>This timer task makes images to be changed in the period of time</p>
-	 * @author avd
+	 * @author Andrii Dashkov
 	 *
 	 */
 	private class PaTimerTask extends TimerTask {

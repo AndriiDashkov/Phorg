@@ -1,4 +1,6 @@
-package PaActions;
+package paactions;
+
+import static paglobal.PaUtils.*;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
@@ -6,16 +8,16 @@ import javax.swing.AbstractAction;
 import javax.swing.Action;
 import javax.swing.ImageIcon;
 import javax.swing.KeyStroke;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaEvents.PaEventInt;
-import PaEvents.PaEventPhotoGroupNew;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.*;
+
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paevents.PaEventInt;
+import paevents.PaEventPhotoGroupNew;
+import paglobal.PaUtils;
 
 /**
  * 
- * @author avd
+ * @author Andrii Dashkov
  * <p>Action for dialog off group images adding</p>
  */
 public class PaPhotoActionAddGroup extends PaAction {

@@ -1,13 +1,14 @@
 /**
  * 
  */
-package PaEditor;
+package paeditor;
 
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.NEXT_ROW;
-import static PaGlobal.PaUtils.getGuiStrs;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.NEXT_ROW;
+import static paglobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getMessagesStrs;
+
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.Image;
@@ -19,13 +20,14 @@ import java.awt.image.BufferedImage;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
-import PaAlgorithms.PaAlgoConvert;
-import PaEnums.PaInstrumentTypeEnum;
-import PaGlobal.PaUtils;
+
+import paalgorithms.PaAlgoConvert;
+import paenums.PaInstrumentTypeEnum;
+import paglobal.PaUtils;
 
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * The instrument to select area for converting to grayscale or binary image; inherits the zoom rectangle instrument
  */
 public class  PaBinaryInstrument extends  PaZoomRectInstrument {

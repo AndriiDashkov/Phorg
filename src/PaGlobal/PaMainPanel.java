@@ -1,19 +1,19 @@
-package PaGlobal;
+package paglobal;
 
 import java.awt.Dimension;
 
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 
-import PaEvents.PaEventAlbumResizePanel;
-import PaEvents.PaEventDispatcher;
-import PaForms.PaAlbumsTreeForm;
-import PaForms.PaImageTable;
-import PaForms.PaSubjectsForm;
-import PaImage.PaViewPanel;
+import paevents.PaEventAlbumResizePanel;
+import paevents.PaEventDispatcher;
+import paforms.PaAlbumsTreeForm;
+import paforms.PaImageTable;
+import paforms.PaSubjectsForm;
+import paimage.PaViewPanel;
 /**
  * 
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaMainPanel extends JPanel {

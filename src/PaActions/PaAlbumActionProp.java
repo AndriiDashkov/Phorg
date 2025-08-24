@@ -1,19 +1,21 @@
 /**
  * 
  */
-package PaActions;
+package paactions;
 
-import static PaGlobal.PaUtils.getMenusStrs;
+import static paglobal.PaUtils.getMenusStrs;
+
 import java.awt.event.ActionEvent;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaGlobal.PaUtils;
+
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paglobal.PaUtils;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *<p>Action for properties dialog</p>
  */
 public class PaAlbumActionProp extends PaAction {

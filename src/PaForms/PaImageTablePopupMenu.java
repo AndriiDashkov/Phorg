@@ -1,16 +1,17 @@
-package PaForms;
+package paforms;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JComponent;
 import javax.swing.JPopupMenu;
-import PaActions.PaActionsMngr;
-import PaActions.PaPhotoActionEnsureVisible;
-import PaActions.PaPhotoFormActionFind;
+
+import paactions.PaActionsMngr;
+import paactions.PaPhotoActionEnsureVisible;
+import paactions.PaPhotoFormActionFind;
 
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  */
 public class PaImageTablePopupMenu {
 

@@ -1,8 +1,9 @@
 
-package PaEditor;
+package paeditor;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.getGuiStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.getGuiStrs;
+
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.Graphics2D;
@@ -14,8 +15,9 @@ import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import javax.swing.ImageIcon;
 import javax.swing.SwingUtilities;
-import PaEnums.PaInstrumentTypeEnum;
-import PaGlobal.PaUtils;
+
+import paenums.PaInstrumentTypeEnum;
+import paglobal.PaUtils;
 
 
 

@@ -1,4 +1,7 @@
-package PaROI;
+package paroi;
+
+import static paglobal.PaLog.*;
+import static paglobal.PaUtils.*;
 
 import java.awt.Dimension;
 import java.awt.Font;
@@ -6,8 +9,7 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import static PaGlobal.PaLog.*;
-import static PaGlobal.PaUtils.*;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedWriter;
@@ -34,15 +36,16 @@ import javax.swing.JTextField;
 import javax.swing.WindowConstants;
 import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
-import PaEditor.PaComplexButton;
-import PaEditor.PaEnumInstrumentNames;
-import PaEditor.PaQueuePanel;
-import PaEnums.PaInstrumentTypeEnum;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
+
+import paeditor.PaComplexButton;
+import paeditor.PaEnumInstrumentNames;
+import paeditor.PaQueuePanel;
+import paenums.PaInstrumentTypeEnum;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  * <p>New ROI crop operation button.</p>
  */
 public class PaPixSaveButton extends PaComplexButton {
@@ -180,7 +183,7 @@ public class PaPixSaveButton extends PaComplexButton {
 	
 	/**
 	 * 
-	 * @author Andrey Dashkov
+	 * @author Andrii Dashkov
 	 * <p>Special parameter panel class with all components; the link with button is performed 
 	 * through m_coeff member of PaContrastButton.
 	 * Special parameters frame appears next to the instrument button by using 

@@ -1,8 +1,8 @@
 
-package PaEnums;
+package paenums;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  * This enum contains all instruments types. Add every new instrument to this enum
  */

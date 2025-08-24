@@ -1,4 +1,4 @@
-package PaImage;
+package paimage;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -41,47 +41,49 @@ import javax.swing.JScrollPane;
 import javax.swing.ProgressMonitor;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
-import PaAlgorithms.PaAlgoTransform;
-import PaCollection.PaAlbum;
-import PaCollection.PaAlbumContainer;
-import PaCollection.PaImage;
-import PaCollection.PaImageContainer;
-import PaDialogs.PaAlbumNewDialog;
-import PaDialogs.PaImageMoveDialog;
-import PaDialogs.PaSliderDialog;
-import PaDialogs.PaSpecialDialog;
-import PaDialogs.PaSpecialDialog.DialogType;
-import PaEditor.PaEnumInstrumentNames;
-import PaEditor.PaInstrumentsWindow;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaEvents.PaEventInt;
-import PaEvents.PaEventSelect;
-import PaEvents.PaEventSortStart;
-import PaExif.PaExifLoader;
-import PaExif.PaImageExf;
-import PaForms.PaAlbumTreeNode;
-import PaForms.PaImageTable;
-import PaGlobal.PaButtonsGroup;
-import PaGlobal.PaCloseFlag;
-import PaGlobal.PaSortOrderEnum;
-import PaGlobal.PaUtils;
-import PaGlobal.PaUtils.OSType;
-import PaLong.PaCopyToAlbumTask;
-import PaLong.PaMoveToStandardTask;
-import PaUndoRedo.PaDelCommand;
-import PaUndoRedo.PaUndoRedoDeque;
-import static PaExif.PaTagParser.getString;
-import static PaGlobal.PaLog.*;
-import static PaGlobal.PaUtils.*;
-import PaROI.PaRectangle;
-import PaROI.PaRoiWindow;
+
+import paalgorithms.PaAlgoTransform;
+import pacollection.PaAlbum;
+import pacollection.PaAlbumContainer;
+import pacollection.PaImage;
+import pacollection.PaImageContainer;
+import padialogs.PaAlbumNewDialog;
+import padialogs.PaImageMoveDialog;
+import padialogs.PaSliderDialog;
+import padialogs.PaSpecialDialog;
+import padialogs.PaSpecialDialog.DialogType;
+import paeditor.PaEnumInstrumentNames;
+import paeditor.PaInstrumentsWindow;
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paevents.PaEventInt;
+import paevents.PaEventSelect;
+import paevents.PaEventSortStart;
+import paexif.PaExifLoader;
+import paexif.PaImageExf;
+import paforms.PaAlbumTreeNode;
+import paforms.PaImageTable;
+import paglobal.PaButtonsGroup;
+import paglobal.PaCloseFlag;
+import paglobal.PaSortOrderEnum;
+import paglobal.PaUtils;
+import paglobal.PaUtils.OSType;
+import palong.PaCopyToAlbumTask;
+import palong.PaMoveToStandardTask;
+import paroi.PaRectangle;
+import paroi.PaRoiWindow;
+import paundoredo.PaDelCommand;
+import paundoredo.PaUndoRedoDeque;
+
+import static paexif.PaTagParser.getString;
+import static paglobal.PaLog.*;
+import static paglobal.PaUtils.*;
 
 
 /**
  * <p>The main view panel of the application</p>
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  *
  */
 
@@ -816,7 +818,7 @@ public class PaViewPanel extends JPanel {
 		
 			String path = f.getImage().getFullPath();
 			
-			m_photoContainer.getAlbum().setAlbomIcon(path);
+			m_photoContainer.getAlbum().setAlbumIcon(path);
 		}
 		
 		
@@ -1022,7 +1024,7 @@ public class PaViewPanel extends JPanel {
 		cont.createSpecialLoadImage(p);
 		
 		//then we have to refresh image on the form; some geometry recalculation are needed
-		String fileName = new String( new Integer(id).toString());
+		String fileName = new String( Integer.toString(id));
 		
 		String fullBoostImagePath = concatPathName( PaUtils.get().getPathToBoostIcons(cont), fileName+".jpeg");
 		
@@ -1650,7 +1652,7 @@ public class PaViewPanel extends JPanel {
 		
 		PaAlbumTreeNode node = new PaAlbumTreeNode();
 		
-		node.setAlbomName(albumContainer.getAlbum(parentId).getName());
+		node.setAlbumName(albumContainer.getAlbum(parentId).getName());
 		
 		node.setId(parentId);
 		
@@ -1794,7 +1796,7 @@ public class PaViewPanel extends JPanel {
 	
 	
 	/**
-	 * @author avd
+	 * @author Andrii Dashkov
 	 *
 	 */
 

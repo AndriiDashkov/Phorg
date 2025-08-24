@@ -1,21 +1,23 @@
 /**
  * 
  */
-package PaActions;
+package paactions;
 
-import static PaGlobal.PaUtils.getMenusStrs;
+import static paglobal.PaUtils.getMenusStrs;
+
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaGlobal.PaUtils;
-import PaUndoRedo.PaUndoRedoDeque;
+
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paglobal.PaUtils;
+import paundoredo.PaUndoRedoDeque;
 
 /**
  * Redo action. Precaution: not all user actions can be redone.
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaRedoAction extends PaAction {

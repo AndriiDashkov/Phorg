@@ -1,7 +1,9 @@
 /**
  * 
  */
-package PaActions;
+package paactions;
+
+import static paglobal.PaUtils.*;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
@@ -10,13 +12,13 @@ import javax.swing.Action;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.KeyStroke;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.*;
+
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paglobal.PaUtils;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 class PaActionExit extends PaAction {

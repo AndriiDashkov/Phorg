@@ -1,15 +1,16 @@
 
-package PaUndoRedo;
+package paundoredo;
 
 import java.util.ArrayList;
-import PaCollection.PaImage;
-import PaCollection.PaImageContainer;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaGlobal.PaUtils;
+
+import pacollection.PaImage;
+import pacollection.PaImageContainer;
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paglobal.PaUtils;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 

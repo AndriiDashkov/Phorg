@@ -1,21 +1,23 @@
-package PaActions;
+package paactions;
+
+import static paglobal.PaUtils.*;
 
 import java.awt.event.ActionEvent;
 
 import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
 import javax.swing.ProgressMonitor;
-import PaCollection.PaImageContainer;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaGlobal.PaUtils;
-import PaLong.PaRefreshBoostIcons;
-import static PaGlobal.PaUtils.*;
+
+import pacollection.PaImageContainer;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paglobal.PaUtils;
+import palong.PaRefreshBoostIcons;
 
 
 /**
  * <p>Refreshes all visible icons in an album (case when images my be modified from the outside)</p>
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  *
  */
 public class PaPhotoActionRefreshIcons extends PaAction {

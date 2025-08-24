@@ -1,8 +1,7 @@
-package PaDialogs;
+package padialogs;
 
-import PaCollection.PaAlbumContainer;
-import PaGlobal.*;
-import static PaGlobal.PaUtils.*;
+import static paglobal.PaUtils.*;
+
 import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.Font;
@@ -31,11 +30,13 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
-import PaGlobal.PaGuiTools;
+
+import pacollection.PaAlbumContainer;
+import paglobal.*;
 
 /**
  * 
- * @author avd
+ * @author Andrii Dashkov
  * <p>Dialog for move albom's files in other place</p>
  */
 public class PaAlbumsMoveDialog extends JDialog {
@@ -163,7 +164,7 @@ public class PaAlbumsMoveDialog extends JDialog {
 		
 		JPanel panel_check_2 = new JPanel( new FlowLayout( FlowLayout.LEFT, 0, 0));
 		
-		m_checkBox2 = new JCheckBox(getGuiStrs("deleteOldAlbomFolder"));//удалить старую папку хранения");
+		m_checkBox2 = new JCheckBox(getGuiStrs("deleteOldAlbomFolder"));//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 		
 		m_checkBox2.setFont(font);
 		
@@ -474,7 +475,7 @@ public class PaAlbumsMoveDialog extends JDialog {
 	 
 	 /**
 	  * Key listener to verify the text input for bad symbols &*%$ etc
-	  * @author avd
+	  * @author Andrii Dashkov
 	  *
 	  */
 	 class KeyEnterListener implements DocumentListener {

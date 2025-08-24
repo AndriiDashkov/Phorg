@@ -1,14 +1,16 @@
-package PaActions;
+package paactions;
+
+import static paglobal.PaUtils.*;
 
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
-import PaDialogs.PaSettingsDialog;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.*;
+
+import padialogs.PaSettingsDialog;
+import paglobal.PaUtils;
 
 /**
  * 
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaAlbumActionSettings extends PaAction {

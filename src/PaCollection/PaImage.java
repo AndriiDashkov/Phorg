@@ -1,5 +1,7 @@
 
-package PaCollection;
+package pacollection;
+
+import static paglobal.PaUtils.*;
 
 import java.awt.Image;
 import java.io.FileInputStream;
@@ -8,13 +10,13 @@ import java.io.IOException;
 import java.nio.channels.FileChannel;
 import java.util.*;
 import javax.swing.ImageIcon;
-import static PaGlobal.PaUtils.*;
-import PaGlobal.PaUtils;
+
+import paglobal.PaUtils;
 
 
 /**
  * The main container class to hold the properties of a single image
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaImage implements Comparable<PaImage> {

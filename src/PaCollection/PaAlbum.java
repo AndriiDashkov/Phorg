@@ -1,4 +1,7 @@
-package PaCollection;
+package pacollection;
+
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.*;
 
 import java.awt.Image;
 import java.awt.image.BufferedImage;
@@ -7,14 +10,13 @@ import java.io.IOException;
 import java.util.Date;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.*;
-import PaImage.PaBufImageBuilder;
+
+import paglobal.PaUtils;
+import paimage.PaBufImageBuilder;
 
 /**
  * The main class to represent an album
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaAlbum implements Comparable<PaAlbum>{
@@ -242,7 +244,7 @@ public class PaAlbum implements Comparable<PaAlbum>{
 		else {
 			
 			String defaultPath = concatPathName(PaUtils.get().getIconsPath () , 
-					PaUtils.get().getDefaultAlbomsIconName());
+					PaUtils.get().getDefaultAlbumsIconName());
 			
 			File f1 = new File( defaultPath  );
 			
@@ -254,7 +256,7 @@ public class PaAlbum implements Comparable<PaAlbum>{
 	}
 	
 	
-	public void setAlbomIcon(String path)  {
+	public void setAlbumIcon(String path)  {
 		
 		BufferedImage im = null;
 		

@@ -1,4 +1,4 @@
-package PaEditor;
+package paeditor;
 
 import java.awt.Color;
 import java.awt.Cursor;
@@ -12,7 +12,7 @@ import java.awt.image.BufferedImage;
 /**
  * <p>Abstract instrument class; the visitor pattern is used here; all instruments which are inhereted from this
  * class are visitors for instrument panel class </p>
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  */
 public abstract class PaInstrument {
 	 
@@ -59,7 +59,7 @@ public abstract class PaInstrument {
 	  * <p>In most cases this function calculates the geometry of instruments shapes in Work area</p>
 	  * @param b - button of instrument - it is possible that we will need to control button's state from instrument
 	  * @param c - color of instrument (visible color of all shapes, lines and markers of instrument)
-	  * @author Andrey Dashkov
+	  * @author Andrii Dashkov
 	  */
 	public PaInstrument(PaComplexButton b, Color c, String name) {
 		
@@ -76,7 +76,7 @@ public abstract class PaInstrument {
 	  * <p>In most cases this function calculates the geometry of instruments shapes in Work area</p>
 	  * @param e - mouse event that can be captured in order to change instrument geometry.
 	  * @return true if we want to redraw the instrument 
-	  * @author Andrey Dashkov
+	  * @author Andrii Dashkov
 	  */
 	abstract public boolean filterMouseEvent(MouseEvent e) ;
 	 /**
@@ -85,7 +85,7 @@ public abstract class PaInstrument {
 	  * @param e - a key event that can be captured in order to change the instrument geometry.
 	  * @return true if we want to redraw the instrument; for the base class we always return false
 	  * in order to make instruments which don't need arrows not to handle key events 
-	  * @author Andrey Dashkov
+	  * @author Andrii Dashkov
 	  */
 
 	public boolean filterKeyEvent(int keyCode) { return false; }
@@ -96,7 +96,7 @@ public abstract class PaInstrument {
 	abstract public void  drawShape(Graphics2D g2);
 
 	 /**
-	  * @author Andrey Dashkov
+	  * @author Andrii Dashkov
 	  * <p>Function generates result image (main or minor image) In most cases this image is used in Preview area.
 	  * This is the main instrument function - it makes all the magic. </p>
 	  * <p>getResultView function receives MouseEvent; if we don't want for some events to have repaint image in preview area

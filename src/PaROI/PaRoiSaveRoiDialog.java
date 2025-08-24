@@ -1,5 +1,7 @@
 
-package PaROI;
+package paroi;
+
+import static paglobal.PaUtils.*;
 
 import java.awt.Dimension;
 import java.awt.Font;
@@ -40,18 +42,18 @@ import javax.swing.ProgressMonitor;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
-import PaAlgorithms.PaAlgoTransform;
-import PaAlgorithms.PaAlgorithms;
-import PaGlobal.PaButtonEnter;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
-import PaLong.PaRoiGenerateSaveTask;
-import static PaGlobal.PaUtils.*;
+
+import paalgorithms.PaAlgoTransform;
+import paalgorithms.PaAlgorithms;
+import paglobal.PaButtonEnter;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
+import palong.PaRoiGenerateSaveTask;
 
 /**
  * Dialog windows for cutting and saving ROI subimages as separate images according to there coordinates and types.
  * (dataset creation)
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  *
  */
 public class PaRoiSaveRoiDialog extends JDialog {
@@ -163,7 +165,7 @@ public class PaRoiSaveRoiDialog extends JDialog {
 		m_typesCombo = new JComboBox<String> (m_types);
 		
 		
-		SpinnerNumberModel saveNegmodel = new SpinnerNumberModel(new Float(0.25), new Float(0.0), new Float(1.0), new Float(0.01)); 
+		SpinnerNumberModel saveNegmodel = new SpinnerNumberModel(0.25, 0.0, 1.0, 0.01); 
 		
 		m_negOverlapSpinner = new JSpinner(saveNegmodel);
 		
@@ -211,7 +213,7 @@ public class PaRoiSaveRoiDialog extends JDialog {
 		
 		PaGuiTools.setComponentFixedWidth(m_neg_heightSpinner, 60);
 		
-		SpinnerNumberModel spModelNegStart = new SpinnerNumberModel(new Float(0.15), new Float(0.05), new Float(10.0), new Float(0.01));
+		SpinnerNumberModel spModelNegStart = new SpinnerNumberModel(0.15, 0.05, 10.0, 0.01);
 		
 		m_negStartScaleSpinner = new JSpinner(spModelNegStart);
 		
@@ -219,7 +221,7 @@ public class PaRoiSaveRoiDialog extends JDialog {
 		
 		PaGuiTools.setComponentFixedWidth(m_negStartScaleSpinner, 60);
 		
-		SpinnerNumberModel spModelNegEnd = new SpinnerNumberModel(new Float(2.0), new Float(0.05), new Float(10.0), new Float(0.01));
+		SpinnerNumberModel spModelNegEnd = new SpinnerNumberModel(2.0, 0.05, 10.0, 0.01);
 		
 		m_negEndScaleSpinner = new JSpinner(spModelNegEnd);
 		
@@ -543,7 +545,7 @@ public class PaRoiSaveRoiDialog extends JDialog {
 	
 	/**
 	 * 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 * <p>Event listener for all buttons</p>
 	 */
 	class Forwarder implements ActionListener {

@@ -1,7 +1,8 @@
-package PaROI;
+package paroi;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.getMessagesStrs;
+
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics2D;
@@ -18,15 +19,16 @@ import javax.swing.BoxLayout;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import PaCollection.PaImage;
-import PaEditor.PaComplexButton;
-import PaEditor.PaInstrument;
-import PaEditor.PaInstrumentsPanel;
-import PaEnums.PaInstrumentTypeEnum;
-import PaGlobal.PaUtils;
+
+import pacollection.PaImage;
+import paeditor.PaComplexButton;
+import paeditor.PaInstrument;
+import paeditor.PaInstrumentsPanel;
+import paenums.PaInstrumentTypeEnum;
+import paglobal.PaUtils;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  * The main panel of ROI window which contains all instruments and image filed 
  * Inherited from  PaInstrumentsPanel
  * It performs all control over the process of drawing ROIs: input event interception, instruments control, getting the drawings from

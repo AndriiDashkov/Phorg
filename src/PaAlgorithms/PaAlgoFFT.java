@@ -1,11 +1,11 @@
 
-package PaAlgorithms;
+package paalgorithms;
 
-import PaEditor.PaComplexValue;
-import PaEditor.PaHeapArray;
+import paeditor.PaComplexValue;
+import paeditor.PaHeapArray;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  *
  */
 public class PaAlgoFFT {
@@ -227,7 +227,7 @@ public class PaAlgoFFT {
 		HeapArray3D<Double> FxvIm = new HeapArray3D<Double>(3,nTy,nTx);//imaginary part
 		
 		//Firstly, FFT for rows
-		//temporary results are â FxvRl
+		//temporary results are ï¿½ FxvRl
 		
 		for (int x = 0; x < nTx; ++x) {
 			

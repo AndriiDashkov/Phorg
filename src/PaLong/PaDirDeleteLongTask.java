@@ -1,8 +1,9 @@
 
-package PaLong;
+package palong;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.getMessagesStrs;
+
 import java.awt.Cursor;
 import java.awt.Toolkit;
 import java.beans.PropertyChangeEvent;
@@ -13,12 +14,13 @@ import java.nio.file.Files;
 import javax.swing.JOptionPane;
 import javax.swing.ProgressMonitor;
 import javax.swing.SwingWorker;
-import PaGlobal.PaUtils;
+
+import paglobal.PaUtils;
 
 
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 

@@ -1,9 +1,11 @@
-package PaForms;
+package paforms;
 
-import static PaGlobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getGuiStrs;
+
 import java.util.ArrayList;
 import javax.swing.table.AbstractTableModel;
-import PaCollection.PaSettings;
+
+import pacollection.PaSettings;
 
 public class PaExtEditorsTableModel extends AbstractTableModel {
 

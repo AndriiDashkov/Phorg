@@ -1,8 +1,8 @@
-package PaEvents;
+package paevents;
 
 /**
  * 
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  */
 
 public class PaEventSelect extends PaEvent {

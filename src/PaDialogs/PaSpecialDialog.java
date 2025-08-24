@@ -1,10 +1,11 @@
 /**
  * 
  */
-package PaDialogs;
+package padialogs;
 
 
-import static PaGlobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getGuiStrs;
+
 import java.awt.Dimension;
 import java.awt.Frame;
 import java.awt.Toolkit;
@@ -21,11 +22,12 @@ import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
+
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * This is a special dialog which can "forget" itself; it has special check box "don't show any more"
  * The list of hidden dialogs is in the PaSettings class; the id parameter in the constructor of the dialog is for identification
  * of different dialogs. IMPORTANT: this id must be different for every new constructed dialog. So before to use another one,

@@ -1,20 +1,21 @@
-package PaForms;
+package paforms;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JComponent;
 import javax.swing.JPopupMenu;
-import PaActions.PaActionsMngr;
+
+import paactions.PaActionsMngr;
 
 /**
  * @author Andrii Dashkov
  *
  */
-public class PaAlbomPopupMenu {
+public class PaAlbumPopupMenu {
 
 	private JPopupMenu m_menu;
 
-	public PaAlbomPopupMenu () {
+	public PaAlbumPopupMenu () {
 
 		m_menu = new JPopupMenu();
 		

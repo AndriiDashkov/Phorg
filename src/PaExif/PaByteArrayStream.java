@@ -1,4 +1,4 @@
-package PaExif;
+package paexif;
 
 import java.io.ByteArrayInputStream;
 
@@ -49,7 +49,7 @@ public class PaByteArrayStream extends ByteArrayInputStream {
 		
 		if(m_byteOrder == PaByteOrder.BigEndian) {	
 			
-			return (int) ((v0 <<8) | (v1)); //TODO проверить варианты для BigEndian
+			return (int) ((v0 <<8) | (v1)); //TODO пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ BigEndian
 		}
 		
 		return (int) ((v0) | (v1 <<8) );

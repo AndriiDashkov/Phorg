@@ -1,7 +1,8 @@
-package PaGlobal;
+package paglobal;
 
 
-import static PaGlobal.PaLog.writeLog;
+import static paglobal.PaLog.writeLog;
+
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
@@ -39,29 +40,30 @@ import javax.swing.JMenu;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.ProgressMonitor;
-import PaActions.PaActionExtStart;
-import PaCollection.PaAlbumContainer;
-import PaCollection.PaMainConainer;
-import PaCollection.PaRecentData;
-import PaCollection.PaImage;
-import PaCollection.PaImageContainer;
-import PaCollection.PaSelectedImages;
-import PaCollection.PaSettings;
-import PaCollection.PaSubjectContainer;
-import PaDialogs.PaSpecialDialog;
-import PaDialogs.PaSpecialDialog.DialogType;
-import PaExif.PaByteOrder;
-import PaForms.PaAlbumsTreeForm;
-import PaForms.PaImagePopupMenu;
-import PaForms.PaImageTable;
-import PaForms.PaSubjectsForm;
-import PaImage.PaViewPanel;
-import PaLong.PaDirDeleteLongTask;
+
+import paactions.PaActionExtStart;
+import pacollection.PaAlbumContainer;
+import pacollection.PaImage;
+import pacollection.PaImageContainer;
+import pacollection.PaMainConainer;
+import pacollection.PaRecentData;
+import pacollection.PaSelectedImages;
+import pacollection.PaSettings;
+import pacollection.PaSubjectContainer;
+import padialogs.PaSpecialDialog;
+import padialogs.PaSpecialDialog.DialogType;
+import paexif.PaByteOrder;
+import paforms.PaAlbumsTreeForm;
+import paforms.PaImagePopupMenu;
+import paforms.PaImageTable;
+import paforms.PaSubjectsForm;
+import paimage.PaViewPanel;
+import palong.PaDirDeleteLongTask;
 
 
 /**
  * 
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaUtils {
@@ -83,7 +85,7 @@ public class PaUtils {
 
 	/**
 	 * enum for switch between types of operation systems
-	 * @author avd
+	 * @author Andrii Dashkov
 	 *
 	 */
 	public static enum OSType {
@@ -396,14 +398,14 @@ public class PaUtils {
     	return new String (getAppPath ()+"photos"+DIR_SEP);
     }
     
-    public String getAlbomsXMLName () {
+    public String getAlbumsXMLName () {
     	
     	return new String ("_albumSet.xml");
     }
     
-    public String getAlbomsXMLFullName () {
+    public String getAlbumsXMLFullName () {
     	
-    	return new String ( getXMLPath () +getAlbomsXMLName ());
+    	return new String ( getXMLPath () +getAlbumsXMLName ());
     }
 
     public String getTemsXMLName () {
@@ -435,10 +437,10 @@ public class PaUtils {
     }
     /**
      * 
-     * @param id - albom's id
+     * @param id - album's id
      * @return the full path to the albom's xml file
      */
-    public String getAlbomXMLFilePath(int id) {
+    public String getAlbumXMLFilePath(int id) {
     	
     	return new String (getPhotosXMLPath() + id + ".xml");
     }
@@ -476,7 +478,7 @@ public class PaUtils {
     	return this.getSettings().getSelectColor();
     }
     
-    public String getDefaultAlbomsIconName()
+    public String getDefaultAlbumsIconName()
     {   
  	   return "paalbomicon.png";
     }
@@ -538,7 +540,7 @@ public class PaUtils {
 		
 		_messagesStringSource = _settings.getResourceBundle("MessagesSource");
 		
-		m_mainAlbumContainer.loadAlbums(getXMLPath().concat(getAlbomsXMLName()));
+		m_mainAlbumContainer.loadAlbums(getXMLPath().concat(getAlbumsXMLName()));
 		
 		m_mainSubjectContainer.loadSubjects(getXMLPath().concat(getTemsXMLName()));
 		
@@ -1035,7 +1037,7 @@ public class PaUtils {
 
 		if(byteOrder == PaByteOrder.BigEndian) {	
 			
-			return (int) ((b[0] << 24 ) | (b[1] << 16) | (b[2] << 8) | (b[3] << 0)); //TODO проверить варианты для BigEndian
+			return (int) ((b[0] << 24 ) | (b[1] << 16) | (b[2] << 8) | (b[3] << 0)); //TODO пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ BigEndian
 		}
 		return (int) ((b[3] << 24 ) | (b[2] << 16) | (b[1] << 8) | (b[0] << 0));
 		
@@ -1511,7 +1513,7 @@ public class PaUtils {
 			
 			PaImageContainer cont = PaUtils.get().getMainContainer().getCurrentContainer();
 			
-			String fileName = new String( new Integer(id).toString());
+			String fileName = new String( Integer.toString(id));
 			
 			return  concatPathName( PaUtils.get().getPathToBoostIcons(cont), fileName+".jpeg");
 			

@@ -1,12 +1,13 @@
-package PaImage;
+package paimage;
 
 import java.io.File;
 import java.io.FileFilter;
-import PaGlobal.PaUtils;
+
+import paglobal.PaUtils;
 
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  */
 public class PaImageFileFilter implements FileFilter {
 	

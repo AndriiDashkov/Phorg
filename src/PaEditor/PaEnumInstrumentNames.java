@@ -1,10 +1,10 @@
 /**
  * 
  */
-package PaEditor;
+package paeditor;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  * The enum which represents the names of instrument. It is used 
  * for save current parameters of instruments outside the Editor
  */

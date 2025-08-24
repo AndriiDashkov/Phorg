@@ -1,9 +1,10 @@
 /**
  * 
  */
-package PaDialogs;
+package padialogs;
 
-import static PaGlobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getGuiStrs;
+
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -15,12 +16,13 @@ import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
+
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 
 /**
  * Just license dialog
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaLicenseDialog extends JDialog {
@@ -139,7 +141,7 @@ public class PaLicenseDialog extends JDialog {
 	
 	/**
 	 * 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 * <p>Listener class to listen the button</p>
 	 *
 	 */

@@ -1,9 +1,10 @@
 
-package PaEditor;
+package paeditor;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.NEXT_ROW;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.NEXT_ROW;
+import static paglobal.PaUtils.getMessagesStrs;
+
 import java.awt.Adjustable;
 import java.awt.Dimension;
 import java.awt.Point;
@@ -16,8 +17,9 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import PaAlgorithms.PaAlgoTransform;
-import PaGlobal.PaUtils;
+
+import paalgorithms.PaAlgoTransform;
+import paglobal.PaUtils;
 
 
 /**
@@ -29,9 +31,9 @@ import PaGlobal.PaUtils;
  * m_baseWindow - the part of base image or full base image; it determines the area which is in the m_viewImage;
  * base Window holds only size and point of top left relative to the base image. The image which is under base window and
  * in the view image is always the same, but the size of view image can be different
- * @author avd
- * Базовое окно m_baseWindow это отражение m_viewImage на реальное изображение; m_viewImage может быть больше чем
- * viewport; размер m_baseWindow все время синхронизирован с размером m_viewImage(но не одинаков)
+ * @author Andrii Dashkov
+ * пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ m_baseWindow пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ m_viewImage пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ; m_viewImage пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
+ * viewport; пїЅпїЅпїЅпїЅпїЅпїЅ m_baseWindow пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ m_viewImage(пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
  */
 public class PaScrollView extends JScrollPane {
 
@@ -312,8 +314,8 @@ public class PaScrollView extends JScrollPane {
 	}
 
 	/**
-	 * Дает новый размер для base Window для нового входящего rec - понимается как новый размер
-	 * для view Image; пересчет ведется через старый размер viewImage и baseWindow
+	 * пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ base Window пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ rec - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	 * пїЅпїЅпїЅ view Image; пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ viewImage пїЅ baseWindow
 	 * @param rec - rectangle 'inside' m_viewImage, relative to m_viewImage (the point of rec can be
 	 * negative in the case if new rec is > then m_viewImage)
 	 * @return new rectangle (position and size) for base window
@@ -654,7 +656,7 @@ public class PaScrollView extends JScrollPane {
 	/**
 	 * <p>Class listens the scrollbars. In the case when m_viewImage has the only part of base image, then
 	 * while scroll operation we must have a possibility to spread subimage in the m_viewImage</p>
-	 * @author avd
+	 * @author Andrii Dashkov
 	 *
 	 */
 	@SuppressWarnings("unused")

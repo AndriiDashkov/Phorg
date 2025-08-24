@@ -1,17 +1,18 @@
 
-package PaUndoRedo;
+package paundoredo;
 
 import java.util.ArrayDeque;
-import PaActions.PaActionsMngr;
-import PaActions.PaRedoAction;
-import PaActions.PaUndoAction;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
+
+import paactions.PaActionsMngr;
+import paactions.PaRedoAction;
+import paactions.PaUndoAction;
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
 
 
 /**
  * <p>This is singletone to deal with undo and redo operations</p>
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaUndoRedoDeque {

@@ -1,7 +1,8 @@
 
-package PaEditor;
+package paeditor;
 
-import static PaGlobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getGuiStrs;
+
 import java.awt.Font;
 import javax.swing.BorderFactory;
 import javax.swing.Box;
@@ -12,11 +13,12 @@ import javax.swing.JRadioButton;
 import javax.swing.border.TitledBorder;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import PaGlobal.PaUtils;
+
+import paglobal.PaUtils;
 
 /**
  * Panel with two radio buttons: use for the whole image and a region only; it is used for a lot  of instruments in the Instruments window.
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  *
  */
 public class PaOperationTypePanel extends JPanel {
@@ -97,7 +99,7 @@ public class PaOperationTypePanel extends JPanel {
 	
 	/**
 	 * 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 * <p>Listener class to listen the slider</p>
 	 *
 	 */

@@ -1,4 +1,4 @@
-package PaDialogs;
+package padialogs;
 
 
 import java.awt.Dimension;
@@ -24,20 +24,22 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
-import PaAlgorithms.PaAlgoTransform;
-import PaCollection.PaAlbum;
-import PaCollection.PaImage;
-import PaCollection.PaSubject;
-import PaExif.PaExtendedExf;
-import PaExif.PaImageExf;
-import PaExif.PaExifLoader;
-import PaForms.PaSubjectsListModel;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
-import PaImage.PaViewPhotosForm;
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.*;
-import static PaExif.PaTagParser.*;
+
+import paalgorithms.PaAlgoTransform;
+import pacollection.PaAlbum;
+import pacollection.PaImage;
+import pacollection.PaSubject;
+import paexif.PaExifLoader;
+import paexif.PaExtendedExf;
+import paexif.PaImageExf;
+import paforms.PaSubjectsListModel;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
+import paimage.PaViewPhotosForm;
+
+import static paexif.PaTagParser.*;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.*;
 
 public class PaImagePropertiesDialog extends JDialog {
 	

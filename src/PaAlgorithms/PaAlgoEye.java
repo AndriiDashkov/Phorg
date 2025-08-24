@@ -1,10 +1,11 @@
 /**
  * 
  */
-package PaAlgorithms;
+package paalgorithms;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.getMessagesStrs;
+
 import java.awt.Color;
 import java.awt.Point;
 import java.awt.Rectangle;
@@ -15,10 +16,11 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import javax.imageio.ImageIO;
 import javax.swing.JOptionPane;
-import PaGlobal.PaUtils;
+
+import paglobal.PaUtils;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  *
  * Algorithms class contains function for red eye correction. Under development at the moment.
  */
@@ -431,7 +433,7 @@ public class PaAlgoEye {
 	/**
 	 * Corects the red color for area (points) which is in the list.It's used for red eye instrument.
 	 * @param list - the container with red points ; this container should have the set of points
-	 * for single eye; the area of points must be coherent (связность) 
+	 * for single eye; the area of points must be coherent (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ) 
 	 * @param targetImage - target image
 	 * @return the set of colors which was used to correct the eye - it can be used while next cal of this function for next eye
 	 */

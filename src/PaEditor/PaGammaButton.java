@@ -1,9 +1,9 @@
 
-package PaEditor;
+package paeditor;
 
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.getGuiStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.getGuiStrs;
 
 import java.awt.Cursor;
 import java.awt.Dimension;
@@ -22,13 +22,14 @@ import javax.swing.SpinnerNumberModel;
 import javax.swing.WindowConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import PaAlgorithms.PaAlgorithms;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
+
+import paalgorithms.PaAlgorithms;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * <p>This class determines the complex button for the gamma correction operation; the special parameters panel is created here</p>
  */
 public class PaGammaButton extends PaComplexButton {
@@ -72,7 +73,7 @@ public class PaGammaButton extends PaComplexButton {
 
 	/**
 	 * 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 * <p>Special parameter panel class with all components; the link with button is perfomed through m_filterType and 
 	 * m_postProcType members of PaSharpButton.
 	 * Special parameters frame appears next to the instrument button while use the small menu button on the right side</p>
@@ -163,7 +164,7 @@ public class PaGammaButton extends PaComplexButton {
 		
 		/**
 		 * 
-		 * @author avd
+		 * @author Andrii Dashkov
 		 * <p>Listener class to listen all radio buttons</p>
 		 *
 		 */

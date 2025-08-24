@@ -1,10 +1,10 @@
 /**
  * 
  */
-package PaLong;
+package palong;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.getMessagesStrs;
 
 import java.awt.Toolkit;
 import java.beans.PropertyChangeEvent;
@@ -15,15 +15,15 @@ import java.util.Iterator;
 import javax.swing.ProgressMonitor;
 import javax.swing.SwingWorker;
 
-import PaCollection.PaImage;
-import PaCollection.PaImageContainer;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaGlobal.PaUtils;
+import pacollection.PaImage;
+import pacollection.PaImageContainer;
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paglobal.PaUtils;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 

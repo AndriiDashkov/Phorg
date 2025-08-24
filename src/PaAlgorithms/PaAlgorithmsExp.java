@@ -1,16 +1,18 @@
 /**
  * 
  */
-package PaAlgorithms;
+package paalgorithms;
 
-import static PaGlobal.PaLog.writeLogOnly;
+import static paglobal.PaLog.writeLogOnly;
+
 import java.awt.Image;
 import java.awt.image.BufferedImage;
-import PaEditor.PaSharpButton.FILTER_TYPE;
+
+import paeditor.PaSharpButton.FILTER_TYPE;
 
 /**
  * Experimental algorithms, they are not used 
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  *
  */
 public class PaAlgorithmsExp {
@@ -24,7 +26,7 @@ public class PaAlgorithmsExp {
 	/**
 	 * This shift enum for determination of shift operation of matrix while calculations;
 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 *
 	 */
 	private static  enum Shift {

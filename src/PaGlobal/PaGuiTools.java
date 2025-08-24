@@ -1,11 +1,11 @@
-package PaGlobal;
+package paglobal;
 
 import javax.swing.*;
 import java.awt.*;
 
 /**
  * Some useful tools to work with appearance of components
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaGuiTools {

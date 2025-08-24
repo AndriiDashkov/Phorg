@@ -1,13 +1,14 @@
 /**
  * 
  */
-package PaLong;
+package palong;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.concatPathName;
-import static PaGlobal.PaUtils.getGuiStrs;
-import static PaGlobal.PaUtils.getMessagesStrs;
-import static PaGlobal.PaUtils.NEXT_ROW;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.NEXT_ROW;
+import static paglobal.PaUtils.concatPathName;
+import static paglobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getMessagesStrs;
+
 import java.awt.Cursor;
 import java.awt.Toolkit;
 import java.beans.PropertyChangeEvent;
@@ -23,17 +24,18 @@ import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.ProgressMonitor;
 import javax.swing.SwingWorker;
-import PaCollection.PaImage;
-import PaCollection.PaImageContainer;
-import PaDialogs.PaAlbumProblemsDialog;
-import PaGlobal.PaUtils;
+
+import pacollection.PaImage;
+import pacollection.PaImageContainer;
+import padialogs.PaAlbumProblemsDialog;
+import paglobal.PaUtils;
 
 
 /**
- * <p>Class PaAlbomImageControl uses SwingWorker to start a long task into background. 
+ * <p>Class PaAlbumImageControl uses SwingWorker to start a long task into background. 
  * Here is the operation of albom's check (image and boost file existence, so on)
  * All results are saved in special table</p>
- *  @author avd
+ *  @author Andrii Dashkov
  */
  public class PaAlbumImageControl extends SwingWorker<Void, Void> implements PropertyChangeListener 
  {
@@ -127,7 +129,7 @@ import PaGlobal.PaUtils;
 				++m_counter;
 				
 				String fullBoostImagePath = concatPathName( PaUtils.get().getPathToBoostIcons(cont),
-						new Integer(im.getId()).toString()+".jpeg");
+						Integer.toString(im.getId())+".jpeg");
 				
 				File f = new File(sPath);
 				
@@ -287,7 +289,7 @@ import PaGlobal.PaUtils;
 	
 	/**
 	 * Holder for row of the info table
-	 * @author avd
+	 * @author Andrii Dashkov
 	 *
 	 */
 	private class Info {

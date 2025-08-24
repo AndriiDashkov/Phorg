@@ -1,10 +1,10 @@
 
-package PaEditor;
+package paeditor;
 
 import java.awt.image.BufferedImage;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  *
  */
 public class PaIntegralImageData {

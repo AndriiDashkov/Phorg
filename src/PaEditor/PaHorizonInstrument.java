@@ -1,10 +1,10 @@
-package PaEditor;
+package paeditor;
 
 
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.NEXT_ROW;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.*;
+
 import java.awt.Cursor;
 import java.awt.Graphics2D;
 import java.awt.Image;
@@ -18,8 +18,8 @@ import java.awt.image.BufferedImage;
 import java.math.BigDecimal;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.*;
+
+import paglobal.PaUtils;
 
 
 public class PaHorizonInstrument extends PaInstrument {
@@ -248,10 +248,11 @@ public class PaHorizonInstrument extends PaInstrument {
 		
 		BigDecimal x = new BigDecimal(a*180.0/Math.PI);
 		
-		x = x.setScale(2, BigDecimal.ROUND_HALF_UP);
+		//x = x.setScale(2, BigDecimal.ROUND_HALF_UP);
 
+		Integer xi = x.toBigInteger().intValue();
 	
-		g2.drawString(m_strAngle +" " +x.toString(),m_markers[0].x+m_markers[0].width+5, m_markers[0].y+m_markers[0].height+5);
+		g2.drawString(m_strAngle +" " +xi.toString(),m_markers[0].x+m_markers[0].width+5, m_markers[0].y+m_markers[0].height+5);
 		
 		//g2.fill(  m_markers[0]);
 		

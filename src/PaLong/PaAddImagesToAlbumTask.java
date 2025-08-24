@@ -1,11 +1,12 @@
 /**
  * 
  */
-package PaLong;
+package palong;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.concatPathName;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.concatPathName;
+import static paglobal.PaUtils.getMessagesStrs;
+
 import java.awt.Cursor;
 import java.awt.Toolkit;
 import java.beans.PropertyChangeEvent;
@@ -15,17 +16,18 @@ import java.util.ArrayList;
 import java.util.Date;
 import javax.swing.ProgressMonitor;
 import javax.swing.SwingWorker;
-import PaCollection.PaMainConainer;
-import PaCollection.PaImage;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaGlobal.PaUtils;
+
+import pacollection.PaImage;
+import pacollection.PaMainConainer;
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paglobal.PaUtils;
 
 /**
  * <p>Class LongTaskAddImages uses SwingWorker to start a long task into background. 
  * Here is the operation of group adding of images in album</p>
- *  @author avd
+ *  @author Andrii Dashkov
  */
  public class PaAddImagesToAlbumTask extends SwingWorker<Void, Void> implements PropertyChangeListener 
  {

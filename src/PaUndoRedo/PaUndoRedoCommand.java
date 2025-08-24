@@ -1,11 +1,12 @@
 
-package PaUndoRedo;
+package paundoredo;
 
 import java.util.ArrayList;
-import PaCollection.PaImage;
+
+import pacollection.PaImage;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaUndoRedoCommand {
@@ -41,7 +42,7 @@ public class PaUndoRedoCommand {
 		return m_photo;  
 	}
 	
-	public void setAlbomId(int id) { m_albumId = id; }
+	public void setAlbumId(int id) { m_albumId = id; }
 
 	public void undo() {}
 	

@@ -1,7 +1,7 @@
-package PaCollection;
+package pacollection;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.*;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.*;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -22,14 +22,15 @@ import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 import javax.xml.stream.XMLStreamWriter;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaForms.PaExtEditorTable;
-import PaGlobal.PaUtils;
+
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paforms.PaExtEditorTable;
+import paglobal.PaUtils;
 
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * Container for saving and loading settings of the application. Saved and loaded info can have various purpose: for example, recent
  * files informatio also is saved here.
  */
@@ -1089,7 +1090,7 @@ public class PaSettings {
 		
 		try {
 			
-			FileOutputStream out = new FileOutputStream( PaUtils.get().getAlbomsXMLFullName ());
+			FileOutputStream out = new FileOutputStream( PaUtils.get().getAlbumsXMLFullName ());
 			
 			out.write(b);
 			
@@ -1148,10 +1149,10 @@ public class PaSettings {
 	private void createDefaultAlbumIcon() throws IOException {
 				
 		String oldName = concatPathName(PaUtils.get().getIconsPath(), 
-				PaUtils.get().getDefaultAlbomsIconName());
+				PaUtils.get().getDefaultAlbumsIconName());
 		
 		String newName = concatPathName(PaUtils.get().getPathToAlbumsIcons(), 
-				PaUtils.get().getDefaultAlbomsIconName());
+				PaUtils.get().getDefaultAlbumsIconName());
 		
 		
 		File f = new File(newName );
@@ -1210,7 +1211,7 @@ public class PaSettings {
 			
 		}
 		
-		f = new File( PaUtils.get().getAlbomsXMLFullName() );
+		f = new File( PaUtils.get().getAlbumsXMLFullName() );
 		
 		if ( ! f.exists() ) { 
 			

@@ -1,16 +1,18 @@
-package PaCollection;
+package pacollection;
+
+import static paglobal.PaUtils.getMessagesStrs;
 
 import java.util.ArrayList;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaEvents.PaEventInt;
-import PaGlobal.PaLog;
-import PaImage.PaViewPhotosForm;
-import static PaGlobal.PaUtils.getMessagesStrs;
+
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paevents.PaEventInt;
+import paglobal.PaLog;
+import paimage.PaViewPhotosForm;
 
 /**
  * Class to control selected view forms in the main view panel
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaSelectedImages {

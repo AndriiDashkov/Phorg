@@ -1,8 +1,8 @@
 
-package PaEnums;
+package paenums;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  * types of masks for image operation
  */
 public enum PaMaskTypeEnum {

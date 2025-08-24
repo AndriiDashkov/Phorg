@@ -1,5 +1,7 @@
-package PaDialogs;
+package padialogs;
 
+
+import static paglobal.PaUtils.*;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -22,13 +24,13 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import PaForms.PaSubjectsTabModel;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.*;
+
+import paforms.PaSubjectsTabModel;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaSubjectFindDialog extends JDialog {
@@ -251,7 +253,7 @@ public class PaSubjectFindDialog extends JDialog {
 	
 	 /**
 	  * Cathes the Enter button press event to start the find operation
-	  * @author avd
+	  * @author Andrii Dashkov
 	  *
 	  */
 	 private class EnterListener implements KeyListener {
@@ -287,7 +289,7 @@ public class PaSubjectFindDialog extends JDialog {
 	 
 		/**
 		 * 
-		 * @author avd
+		 * @author Andrii Dashkov
 		 * <p>Sets tab order for all elements<p>
 		 */
 		 private class TabOrder extends FocusTraversalPolicy {

@@ -1,4 +1,7 @@
-package PaDialogs;
+package padialogs;
+
+import static paglobal.PaLog.*;
+import static paglobal.PaUtils.*;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -20,10 +23,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Date;
-
-import static PaGlobal.PaUtils.*;
-import static PaGlobal.PaLog.*;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -42,14 +41,14 @@ import javax.swing.JTextField;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
-import PaCollection.PaAlbum;
-import PaCollection.PaAlbumContainer;
-import PaForms.PaAlbumTreeNode;
-import PaGlobal.*;
+import pacollection.PaAlbum;
+import pacollection.PaAlbumContainer;
+import paforms.PaAlbumTreeNode;
+import paglobal.*;
 
 /**
  * Dialog for enter and edit an album
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaAlbumNewDialog extends JDialog {
@@ -386,9 +385,9 @@ public class PaAlbumNewDialog extends JDialog {
 			 
 			 if(m_id == 0 || idA != m_id ) { //control of absence "myself" in the list of "my" parents
 				 
-				 m_parentsCombo.addItem(n.getAlbomName());
+				 m_parentsCombo.addItem(n.getAlbumName());
 				 
-				 m_parentsMap.put(n.getAlbomName(),idA);
+				 m_parentsMap.put(n.getAlbumName(),idA);
 			 }
 		 }
 	 }
@@ -710,7 +709,7 @@ public class PaAlbumNewDialog extends JDialog {
 	 
 	 /**
 	  * Key listener to verify the text input for bad symbols &*%${@link #changedUpdate(DocumentEvent)}etc
-	  * @author avd
+	  * @author Andrii Dashkov
 	  *
 	  */
 	 class KeyEnterListener implements DocumentListener {

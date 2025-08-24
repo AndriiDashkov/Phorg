@@ -1,7 +1,8 @@
-package PaEditor;
+package paeditor;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.*;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.*;
+
 import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.Cursor;
@@ -32,19 +33,20 @@ import javax.swing.JOptionPane;
 import javax.swing.WindowConstants;
 import javax.swing.JPanel;
 import javax.swing.JToolBar;
-import PaCollection.PaImage;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaExif.PaExifLoader;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
-import PaGlobal.PaUtils.OSType;
-import PaImage.PaViewPanel;
+
+import pacollection.PaImage;
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paexif.PaExifLoader;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
+import paglobal.PaUtils.OSType;
+import paimage.PaViewPanel;
 
 
 /**
  * The main window for instruments manipulations
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class  PaInstrumentsWindow extends JFrame {
@@ -664,7 +666,7 @@ PaZoomRectButton butZoomRect = new PaZoomRectButton(this, size, m_parent.getData
 	  * <p>Saves changes of image file </p>
 	  * @param saveAs - true if we need the operation 'save as'
 	  * @return dialog window response code
-	  * @author Dashkov Andrey
+	  * @author Dashkov Andrii
 	  */
 	public int save(boolean saveAs) {
 		
@@ -821,7 +823,7 @@ PaZoomRectButton butZoomRect = new PaZoomRectButton(this, size, m_parent.getData
 	
 	 /**
 	  * <p>Action for editor's save image operation</p>
-	  * @author Dashkov Andrey
+	  * @author Dashkov Andrii
 	  */
 	public class PaSaveAction extends AbstractAction {
 		private static final long serialVersionUID = 1L;
@@ -1091,7 +1093,7 @@ PaZoomRectButton butZoomRect = new PaZoomRectButton(this, size, m_parent.getData
 	
 	/**
 	 * <p>Not just close, but send event about closing and check various conditions</p>
-	 * @author avd
+	 * @author Andrii Dashkov
 	 *
 	 */
 	private class CloseWinListener  extends WindowAdapter {

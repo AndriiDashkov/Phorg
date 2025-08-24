@@ -1,8 +1,10 @@
 
-package PaLong;
+package palong;
 
-import static PaGlobal.PaUtils.NEXT_ROW;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.*;
+import static paglobal.PaUtils.NEXT_ROW;
+import static paglobal.PaUtils.getMessagesStrs;
+
 import java.awt.Toolkit;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
@@ -10,20 +12,20 @@ import java.util.ArrayList;
 import java.util.Date;
 import javax.swing.ProgressMonitor;
 import javax.swing.SwingWorker;
-import PaCollection.PaFilterInfo;
-import PaCollection.PaImageContainer;
-import PaCollection.PaSubject;
-import PaGlobal.PaLog;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaLog.*;
-import PaImage.PaViewFiltr;
+
+import pacollection.PaFilterInfo;
+import pacollection.PaImageContainer;
+import pacollection.PaSubject;
+import paglobal.PaLog;
+import paglobal.PaUtils;
+import paimage.PaViewFiltr;
 
 
 
 /**
  * <p>Class PaMoveLongTask uses SwingWorker to start a long task into background. 
  * Here is the operation of coping images from current album to other album</p>
- * @author avd
+ * @author Andrii Dashkov
  */
 public class PaAllAlbumsFilterApply extends SwingWorker<Void, Void> implements PropertyChangeListener 
  {

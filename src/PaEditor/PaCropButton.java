@@ -1,5 +1,9 @@
 
-package PaEditor;
+package paeditor;
+
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getMenusStrs;
 
 import java.awt.Dimension;
 import java.awt.Font;
@@ -28,17 +32,14 @@ import javax.swing.border.TitledBorder;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import PaEnums.PaInstrumentTypeEnum;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.getGuiStrs;
-import static PaGlobal.PaUtils.getMenusStrs;
+import paenums.PaInstrumentTypeEnum;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 
 
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * <p>This class determines the complex button for the crop operation; </p>
  */
 public class PaCropButton extends PaComplexButton {
@@ -110,7 +111,7 @@ public class PaCropButton extends PaComplexButton {
 	
 	/**
 	 * 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 * <p>Special parameter panel class with all components; the link with button is performed 
 	 * through m_coeff member of PaContrastButton.
 	 * Special parameters frame appears next to the instrument button by using 
@@ -402,7 +403,7 @@ public class PaCropButton extends PaComplexButton {
 	   
 		/**
 		 * 
-		 * @author avd
+		 * @author Andrii Dashkov
 		 * <p>Listener class to listen all spinners; also listens the focus event because
 		 * during the manual change of the value in spinners the event stateChange isnt't invoked </p>
 		 *

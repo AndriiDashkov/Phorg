@@ -1,9 +1,10 @@
 
-package PaEditor;
+package paeditor;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.NEXT_ROW;
-import static PaGlobal.PaUtils.getGuiStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.NEXT_ROW;
+import static paglobal.PaUtils.getGuiStrs;
+
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Image;
@@ -17,13 +18,14 @@ import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import PaAlgorithms.PaAlgoTransform;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
+
+import paalgorithms.PaAlgoTransform;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaTabPreview extends JPanel {

@@ -1,4 +1,4 @@
-package PaForms;
+package paforms;
 
 import java.awt.BorderLayout;
 import java.awt.Component;
@@ -12,7 +12,7 @@ import javax.swing.event.MouseInputListener;
 
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  */
 public class PaResizable extends JComponent {
 

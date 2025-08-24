@@ -1,4 +1,6 @@
-package PaActions;
+package paactions;
+
+import static paglobal.PaUtils.*;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
@@ -8,17 +10,14 @@ import javax.swing.Action;
 import javax.swing.ImageIcon;
 import javax.swing.KeyStroke;
 
-
-
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaEvents.PaEventPhotoFilter;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.*;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paevents.PaEventPhotoFilter;
+import paglobal.PaUtils;
 
 /**
  * <p>Clear filter action</p>
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  *
  */
 public class PaPhotoActionFilterClear extends PaAction {

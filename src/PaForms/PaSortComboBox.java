@@ -1,14 +1,15 @@
 
-package PaForms;
+package paforms;
 
 
 import java.awt.Dimension;
 import javax.swing.JComboBox;
-import PaGlobal.PaSortOrderEnum;
-import PaGlobal.PaUtils;
+
+import paglobal.PaSortOrderEnum;
+import paglobal.PaUtils;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * <p>This is the combo box for sort order variants</p>
  */
 public class PaSortComboBox extends JComboBox<String> {

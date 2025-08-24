@@ -1,23 +1,25 @@
 /**
  * 
  */
-package PaActions;
+package paactions;
 
-import static PaGlobal.PaUtils.getMenusStrs;
+import static paglobal.PaUtils.getMenusStrs;
+
 import java.awt.event.ActionEvent;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
-import PaCollection.PaImage;
-import PaDialogs.PaPrintDialog;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaGlobal.PaUtils;
+
+import pacollection.PaImage;
+import padialogs.PaPrintDialog;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paglobal.PaUtils;
 
 /**
  * 
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaPrintAction extends PaAction {

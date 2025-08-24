@@ -1,5 +1,5 @@
 
-package PaGlobal;
+package paglobal;
 
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -8,7 +8,7 @@ import javax.swing.Icon;
 import javax.swing.JButton;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *<p>Common button class which has Enter press support</p>
  */
 public class PaButtonEnter extends JButton {
@@ -71,7 +71,7 @@ public class PaButtonEnter extends JButton {
 	
 	/**
 	 * 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 * <p>Listener for Enter button event </p>
 	 */
 	private class ButtonEnterListener extends KeyAdapter {

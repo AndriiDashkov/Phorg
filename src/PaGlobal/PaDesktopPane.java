@@ -1,9 +1,10 @@
-package PaGlobal;
+package paglobal;
 
-import static PaGlobal.PaLog.*;
-import static PaGlobal.PaUtils.NEXT_ROW;
-import static PaGlobal.PaUtils.getMenusStrs;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.*;
+import static paglobal.PaUtils.NEXT_ROW;
+import static paglobal.PaUtils.getMenusStrs;
+import static paglobal.PaUtils.getMessagesStrs;
+
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.EventQueue;
@@ -31,28 +32,29 @@ import javax.swing.JTextField;
 import javax.swing.JToolBar;
 import javax.swing.KeyStroke;
 import javax.swing.WindowConstants;
-import PaActions.PaActionsMngr;
-import PaActions.PaSortAction;
-import PaActions.PaSortMenuAction;
-import PaDialogs.PaAboutDialog;
-import PaDialogs.PaLicenseDialog;
-import PaEvents.PaEvent;
-import PaEvents.PaEventAlbumResizePanel;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaEvents.PaEventInt;
-import PaForms.PaAlbumsTreeForm;
-import PaForms.PaHelpBrowser;
-import PaForms.PaImageTable;
-import PaForms.PaSortComboBox;
-import PaForms.PaSubjectsForm;
-import PaImage.PaViewPanel;
-import PaUndoRedo.PaUndoRedoDeque;
+
+import paactions.PaActionsMngr;
+import paactions.PaSortAction;
+import paactions.PaSortMenuAction;
+import padialogs.PaAboutDialog;
+import padialogs.PaLicenseDialog;
+import paevents.PaEvent;
+import paevents.PaEventAlbumResizePanel;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paevents.PaEventInt;
+import paforms.PaAlbumsTreeForm;
+import paforms.PaHelpBrowser;
+import paforms.PaImageTable;
+import paforms.PaSortComboBox;
+import paforms.PaSubjectsForm;
+import paimage.PaViewPanel;
+import paundoredo.PaUndoRedoDeque;
 
 
 /**
  *  The main class to start the application. Creates inside all inner containers, toolbars, menus, view panel
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaDesktopPane extends JFrame {

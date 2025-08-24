@@ -1,8 +1,9 @@
 
-package PaEditor;
+package paeditor;
 
 
-import static PaGlobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getGuiStrs;
+
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.GridLayout;
@@ -18,10 +19,11 @@ import javax.swing.JRadioButton;
 import javax.swing.WindowConstants;
 import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
-import PaGlobal.PaUtils;
+
+import paglobal.PaUtils;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * <p>This class determines the complex button for save image or ROI file operation; 
  * the special parameters panel creates here</p>
  */
@@ -98,7 +100,7 @@ public class PaSaveButton extends PaComplexButton {
 
 	/**
 	 * 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 * <p>Special parameter panel class with all components; the link with button is performed 
 	 * through m_saveAsFlag member of the button class.
 	 * Special parameters frame appears next to the instrument button by using 
@@ -189,7 +191,7 @@ public class PaSaveButton extends PaComplexButton {
 		
 		/**
 		 * 
-		 * @author avd
+		 * @author Andrii Dashkov
 		 * <p>Listener class to listen  buttons</p>
 		 *
 		 */

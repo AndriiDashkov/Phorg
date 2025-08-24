@@ -1,10 +1,8 @@
 
-package PaForms;
+package paforms;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.getGuiStrs;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.getGuiStrs;
 
 import java.awt.Dimension;
 import java.awt.Font;
@@ -36,8 +34,11 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
+
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 

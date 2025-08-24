@@ -1,4 +1,6 @@
-package PaDialogs;
+package padialogs;
+
+import static paglobal.PaUtils.*;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -28,13 +30,13 @@ import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.*;
+
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 
 /**
  * Dialog for addition of group of images
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaImagesGroupNewDialog extends JDialog {
@@ -240,7 +242,7 @@ public class PaImagesGroupNewDialog extends JDialog {
 				new JComponent[] { m_path_ph, m_pathNew_ph, m_radioBut_1, m_radioBut_2, m_radioBut_3, path_ph_lab},
 											Component.CENTER_ALIGNMENT);
 
-		PaGlobal.PaGuiTools.createRecommendedMargin(new JButton[] { m_Ok, m_Cancel, m_selectPath, m_selectPathNew } );
+		paglobal.PaGuiTools.createRecommendedMargin(new JButton[] { m_Ok, m_Cancel, m_selectPath, m_selectPathNew } );
 
 		//reduce the endlecc height of components
 		PaGuiTools.fixTextFieldSize(m_path_ph);

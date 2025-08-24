@@ -1,11 +1,12 @@
 
-package PaLong;
+package palong;
 
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.NEXT_ROW;
-import static PaGlobal.PaUtils.getGuiStrs;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.NEXT_ROW;
+import static paglobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getMessagesStrs;
+
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Toolkit;
@@ -15,18 +16,19 @@ import java.beans.PropertyChangeListener;
 import javax.swing.JOptionPane;
 import javax.swing.ProgressMonitor;
 import javax.swing.SwingWorker;
-import PaAlgorithms.PaAlgoFFT;
-import PaAlgorithms.PaAlgoUtils;
-import PaEditor.PaComplexValue;
-import PaEditor.PaHeapArray;
-import PaEditor.PaInstrumentsWindow;
-import PaGlobal.PaUtils;
+
+import paalgorithms.PaAlgoFFT;
+import paalgorithms.PaAlgoUtils;
+import paeditor.PaComplexValue;
+import paeditor.PaHeapArray;
+import paeditor.PaInstrumentsWindow;
+import paglobal.PaUtils;
 
 
 /**
  * <p>Class PaBlurImageOperation uses SwingWorker to start a long task into background. 
  * Here is the operation of blur image</p>
- * @author avd
+ * @author Andrii Dashkov
  */
  public class PaBlurImageOperation extends SwingWorker<Void, Void> implements PropertyChangeListener 
  {

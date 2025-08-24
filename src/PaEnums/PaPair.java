@@ -1,8 +1,8 @@
-package PaEnums;
+package paenums;
 
 /**
  *  <p>'Pair' classs</p>
- * @author avd
+ * @author Andrii Dashkov
  * @param <F> - first element of pair
  * @param <S> - second element of pair
  */

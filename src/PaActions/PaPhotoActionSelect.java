@@ -1,4 +1,6 @@
-package PaActions;
+package paactions;
+
+import static paglobal.PaUtils.*;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
@@ -6,16 +8,16 @@ import javax.swing.AbstractAction;
 import javax.swing.Action;
 import javax.swing.ImageIcon;
 import javax.swing.KeyStroke;
-import PaCollection.PaImageContainer;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.*;
+
+import pacollection.PaImageContainer;
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paglobal.PaUtils;
 
 /**
  * <p>Selects all images in the loaded album</p>
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaPhotoActionSelect extends PaAction {

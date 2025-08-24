@@ -1,5 +1,5 @@
 
-package PaEditor;
+package paeditor;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -14,7 +14,7 @@ import javax.imageio.ImageIO;
 
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  * 
  * The class is intended to receive boundaries of the objects and chain codes of the boundaries.
  * The input data for this class is an image with binary data (black/white). Black color is treated as

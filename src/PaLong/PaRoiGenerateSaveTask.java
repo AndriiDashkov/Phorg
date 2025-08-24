@@ -1,22 +1,24 @@
 
-package PaLong;
+package palong;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.getMessagesStrs;
+
 import java.awt.Cursor;
 import java.awt.Toolkit;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import javax.swing.ProgressMonitor;
 import javax.swing.SwingWorker;
-import PaGlobal.PaUtils;
-import PaROI.PaRoiSaveRoiDialog;
+
+import paglobal.PaUtils;
+import paroi.PaRoiSaveRoiDialog;
 
 
 /**
  * <p>Class LongTaskAddImages uses SwingWorker to start a long task into background. 
  * Here is the operation of positive ROI nd negative samples generatio</p>
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  */
  public class PaRoiGenerateSaveTask extends SwingWorker<Void, Void> implements PropertyChangeListener 
  {

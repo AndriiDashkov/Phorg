@@ -1,5 +1,8 @@
-package PaImage;
+package paimage;
 
+
+import static paglobal.PaLog.*;
+import static paglobal.PaUtils.*;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -25,21 +28,20 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.TransferHandler;
-import PaAlgorithms.PaAlgoTransform;
-import PaCollection.PaImage;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaEvents.PaEventSelect;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaSortOrderEnum;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaLog.*;
-import static PaGlobal.PaUtils.*;
+
+import paalgorithms.PaAlgoTransform;
+import pacollection.PaImage;
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paevents.PaEventSelect;
+import paglobal.PaGuiTools;
+import paglobal.PaSortOrderEnum;
+import paglobal.PaUtils;
 
 /**
  * Main visual form to show images
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaViewPhotosForm extends JPanel implements MouseListener,MouseMotionListener,Transferable  {

@@ -1,8 +1,9 @@
 
-package PaEditor;
+package paeditor;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.NEXT_ROW;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.NEXT_ROW;
+
 import java.lang.reflect.Field;
 
 
@@ -10,7 +11,7 @@ import java.lang.reflect.Field;
  * This class can allocated memory beyond the scope of JVM proccess. It is used for
  * creation of an extremly large arrays . This array is 2 dimensional and can set and get the values
  * of short,float and double type. The generic can work with three types only - Double,Float and Short
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public  class PaHeapArray<T  extends Number> {
@@ -40,7 +41,6 @@ public  class PaHeapArray<T  extends Number> {
 	 * 
 	 * @return the Unsafe object which can allocated memory on the heap 
 	 */
-	@SuppressWarnings("restriction")
 	private sun.misc.Unsafe getUnsafe() {
 		
 		try {
@@ -66,7 +66,6 @@ public  class PaHeapArray<T  extends Number> {
 	 * @param row - number of rows in the array
 	 * @param col - number of columns in the array
 	 */
-	@SuppressWarnings("restriction")
 	public PaHeapArray(int row, int col) {
 		
 		if(m_type instanceof Short)  { BYTE_SIZE = 2; }
@@ -109,7 +108,6 @@ public  class PaHeapArray<T  extends Number> {
 	 * @param col - column index
 	 * @param val - value to set
 	 */
-	@SuppressWarnings("restriction")
 	public void set(int row, int col, T val) throws IndexOutOfBoundsException {
 
 		getUnsafe().putDouble(m_address + (row*m_columns+col) * BYTE_SIZE, val.doubleValue());
@@ -121,7 +119,7 @@ public  class PaHeapArray<T  extends Number> {
 	 * @param col - column index
 	 * @return
 	 */
-	@SuppressWarnings({ "restriction", "unchecked" })
+	@SuppressWarnings({ "unchecked" })
 	public T get(int row, int col) throws IndexOutOfBoundsException {
 
 			return (T)new Double(getUnsafe().getDouble(m_address + (row*m_columns+col) * BYTE_SIZE));
@@ -143,7 +141,6 @@ public  class PaHeapArray<T  extends Number> {
 	/**
 	 * Frees the allocated memory
 	 */
-	@SuppressWarnings("restriction")
 	public void free() {
 		
 		getUnsafe().freeMemory(m_address);

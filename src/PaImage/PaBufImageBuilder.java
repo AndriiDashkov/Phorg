@@ -1,5 +1,5 @@
 
-package PaImage;
+package paimage;
 
 
 
@@ -8,7 +8,7 @@ import java.awt.Image;
 import java.awt.image.BufferedImage;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaBufImageBuilder  {

@@ -1,15 +1,17 @@
 
-package PaActions;
+package paactions;
+
+import static paglobal.PaUtils.*;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.*;
+
+import paglobal.PaUtils;
 
 public class PaBookmarksResetAction extends PaAction {
 	

@@ -1,5 +1,8 @@
-package PaForms;
+package paforms;
 
+
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.*;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -8,21 +11,20 @@ import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.AbstractTableModel;
-import PaCollection.PaImage;
-import PaCollection.PaImageContainer;
-import PaCollection.PaSubject;
-import PaCollection.PaSubjectContainer;
-import PaDialogs.PaSubjectAddDialog;
-import PaDialogs.PaSubjectDeleteDialog;
-import PaDialogs.PaSubjectFindDialog;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaEvents.PaEventInt;
-import PaGlobal.PaCloseFlag;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.*;
+
+import pacollection.PaImage;
+import pacollection.PaImageContainer;
+import pacollection.PaSubject;
+import pacollection.PaSubjectContainer;
+import padialogs.PaSubjectAddDialog;
+import padialogs.PaSubjectDeleteDialog;
+import padialogs.PaSubjectFindDialog;
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paevents.PaEventInt;
+import paglobal.PaCloseFlag;
+import paglobal.PaUtils;
 
 public class PaSubjectsTabModel extends AbstractTableModel {
 
@@ -117,7 +119,7 @@ public class PaSubjectsTabModel extends AbstractTableModel {
 		
 		switch (column) {  
 		
-			case COLUMN_NUM: return "¹";  
+			case COLUMN_NUM: return "ï¿½";  
 			
 	        case COLUMN_ID: return "id";  
 	        

@@ -1,5 +1,8 @@
 
-package PaForms;
+package paforms;
+
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.*;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -21,44 +24,38 @@ import javax.swing.event.TableModelListener;
 import javax.swing.table.AbstractTableModel;
 import javax.swing.table.DefaultTableCellRenderer;
 
-import PaCollection.PaFilterInfo;
-import PaCollection.PaImage;
-import PaCollection.PaImageContainer;
-import PaDialogs.PaImageEditDialog;
-import PaDialogs.PaImagePropertiesDialog;
-import PaDialogs.PaImagesCopyInDialog;
-import PaDialogs.PaImageDelDialog;
-import PaDialogs.PaImagesFilterDialog;
-import PaDialogs.PaImagesGroupNewDialog;
-import PaDialogs.PaImageNewDialog;
-import PaDialogs.PaImagesFilterDialog.PaFilterType;
-import PaDialogs.PaSpecialDialog;
-import PaDialogs.PaSpecialDialog.DialogType;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaEvents.PaEventPhotoFilter;
-import PaEvents.PaEventPhotoGroupNew;
-
-
-import PaEvents.PaEventSelect;
-import PaGlobal.PaCloseFlag;
-import PaGlobal.PaLog;
-import PaGlobal.PaUtils;
-import PaImage.PaViewPhotosForm;
-import PaLong.PaAllAlbumsFilterApply;
-
-
-import PaUndoRedo.PaAddCommand;
-import PaUndoRedo.PaDelCommand;
-import PaUndoRedo.PaEditCommand;
-import PaUndoRedo.PaUndoRedoDeque;
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.*;
+import pacollection.PaFilterInfo;
+import pacollection.PaImage;
+import pacollection.PaImageContainer;
+import padialogs.PaImageDelDialog;
+import padialogs.PaImageEditDialog;
+import padialogs.PaImageNewDialog;
+import padialogs.PaImagePropertiesDialog;
+import padialogs.PaImagesCopyInDialog;
+import padialogs.PaImagesFilterDialog;
+import padialogs.PaImagesGroupNewDialog;
+import padialogs.PaSpecialDialog;
+import padialogs.PaImagesFilterDialog.PaFilterType;
+import padialogs.PaSpecialDialog.DialogType;
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paevents.PaEventPhotoFilter;
+import paevents.PaEventPhotoGroupNew;
+import paevents.PaEventSelect;
+import paglobal.PaCloseFlag;
+import paglobal.PaLog;
+import paglobal.PaUtils;
+import paimage.PaViewPhotosForm;
+import palong.PaAllAlbumsFilterApply;
+import paundoredo.PaAddCommand;
+import paundoredo.PaDelCommand;
+import paundoredo.PaEditCommand;
+import paundoredo.PaUndoRedoDeque;
 
 /**
  * 
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaImageTabModel extends AbstractTableModel {
@@ -196,7 +193,7 @@ public class PaImageTabModel extends AbstractTableModel {
 		
 		switch (column) {  
 		
-	        case 0: return "¹";  
+	        case 0: return "ï¿½";  
 	        
 	        case 1: return "id";  
 	        

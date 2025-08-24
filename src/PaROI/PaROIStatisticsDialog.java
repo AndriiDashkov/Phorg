@@ -1,5 +1,7 @@
 
-package PaROI;
+package paroi;
+
+import static paglobal.PaUtils.*;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -21,13 +23,13 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-import PaEditor.PaInstrumentsPanel;
-import PaGlobal.PaGuiTools;
-import PaROI.PaROIStatistics.TypesStatData;
-import static PaGlobal.PaUtils.*;
+
+import paeditor.PaInstrumentsPanel;
+import paglobal.PaGuiTools;
+import paroi.PaROIStatistics.TypesStatData;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  * The dialog window for choosing parameters for ROI statistic calculation.
  */
 

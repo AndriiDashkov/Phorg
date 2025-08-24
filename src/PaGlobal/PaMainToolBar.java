@@ -1,7 +1,8 @@
 
-package PaGlobal;
+package paglobal;
 
-import static PaGlobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getGuiStrs;
+
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -13,13 +14,14 @@ import javax.swing.JCheckBoxMenuItem;
 import javax.swing.JLabel;
 import javax.swing.JPopupMenu;
 import javax.swing.JToolBar;
-import PaActions.PaActionsMngr;
+
+import paactions.PaActionsMngr;
 
 
 
 /**
  * Creates main toolbar of application
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaMainToolBar extends JToolBar {
@@ -375,7 +377,7 @@ public class PaMainToolBar extends JToolBar {
 	}
 	/**
 	 * Adapter to show toolbarpopup menu
-	 * @author avd
+	 * @author Andrii Dashkov
 	 *
 	 */
 	class PopupMouseAdapter extends MouseAdapter {

@@ -1,6 +1,7 @@
-package PaExif;
+package paexif;
 
-import static PaGlobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getGuiStrs;
+
 import java.util.Vector;
 
 public class PaExifElementByte extends PaExifElement {

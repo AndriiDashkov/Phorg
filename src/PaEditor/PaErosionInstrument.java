@@ -1,11 +1,11 @@
 
-package PaEditor;
+package paeditor;
 
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.NEXT_ROW;
-import static PaGlobal.PaUtils.getGuiStrs;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.NEXT_ROW;
+import static paglobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getMessagesStrs;
 
 import java.awt.Cursor;
 import java.awt.Dimension;
@@ -20,13 +20,13 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
-import PaAlgorithms.PaAlgorithms;
-import PaEnums.PaInstrumentTypeEnum;
-import PaGlobal.PaUtils;
+import paalgorithms.PaAlgorithms;
+import paenums.PaInstrumentTypeEnum;
+import paglobal.PaUtils;
 
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * The instrument to select area for applying of erosion/dilataion ; 
  * inherits the zoom rectangle instrument
  */

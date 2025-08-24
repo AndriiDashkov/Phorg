@@ -1,4 +1,4 @@
-package PaEvents;
+package paevents;
 
 public class PaEventEnable extends PaEvent {
 

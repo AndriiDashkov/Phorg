@@ -1,20 +1,22 @@
 
-package PaEditor;
+package paeditor;
 
+
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.*;
 
 import java.awt.Dimension;
 import java.util.HashMap;
 import java.util.concurrent.ArrayBlockingQueue;
 import javax.swing.ImageIcon;
 import javax.swing.JDialog;
-import PaEnums.PaInstrumentTypeEnum;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.*;
+
+import paenums.PaInstrumentTypeEnum;
+import paglobal.PaUtils;
 
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * <p>This class determines the complex button for horizon operation; the special parameters panel is
  *  created here</p>
  */

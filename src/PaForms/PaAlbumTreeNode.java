@@ -1,5 +1,5 @@
 
-package PaForms;
+package paforms;
 
 import javax.swing.tree.DefaultMutableTreeNode;
 
@@ -42,8 +42,8 @@ public class PaAlbumTreeNode extends DefaultMutableTreeNode {
 	
 	public void setId(int i) { m_id = i; }
 	
-	public String getAlbomName() { return m_name; }
+	public String getAlbumName() { return m_name; }
 	
-	public void setAlbomName(String i) { m_name = i; }
+	public void setAlbumName(String i) { m_name = i; }
 
 }

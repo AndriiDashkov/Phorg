@@ -1,11 +1,13 @@
-package PaExif;
+package paexif;
 
-import static PaGlobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getGuiStrs;
+
 import java.math.BigDecimal;
 import java.math.MathContext;
 import java.util.Vector;
-import PaEnums.PaPair;
-import PaGlobal.PaLog;
+
+import paenums.PaPair;
+import paglobal.PaLog;
 
 public class PaExifElementRationalUn extends PaExifElement 
 {

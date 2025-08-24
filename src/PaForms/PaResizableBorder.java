@@ -1,4 +1,4 @@
-package PaForms;
+package paforms;
 
 import java.awt.Color;
 import java.awt.Component;

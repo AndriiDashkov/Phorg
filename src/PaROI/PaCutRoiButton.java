@@ -1,11 +1,13 @@
 
-package PaROI;
+package paroi;
+
+import static paglobal.PaLog.*;
+import static paglobal.PaUtils.*;
 
 import java.awt.Dimension;
 import java.awt.Font;
 import javax.swing.ImageIcon;
-import static PaGlobal.PaLog.*;
-import static PaGlobal.PaUtils.*;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.FocusEvent;
@@ -26,15 +28,16 @@ import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import PaEditor.PaComplexButton;
-import PaEditor.PaEnumInstrumentNames;
-import PaEditor.PaQueuePanel;
-import PaEnums.PaInstrumentTypeEnum;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
+
+import paeditor.PaComplexButton;
+import paeditor.PaEnumInstrumentNames;
+import paeditor.PaQueuePanel;
+import paenums.PaInstrumentTypeEnum;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  * <p>New ROI crop operation button.</p>
  */
 public class PaCutRoiButton extends PaComplexButton {
@@ -165,7 +168,7 @@ public class PaCutRoiButton extends PaComplexButton {
 	
 	/**
 	 * 
-	 * @author Andrey Dashkov
+	 * @author Andrii Dashkov
 	 * <p>Special parameter panel class with all components; the link with button is performed 
 	 * through m_coeff member of PaContrastButton.
 	 * Special parameters frame appears next to the instrument button by using 
@@ -363,7 +366,7 @@ public class PaCutRoiButton extends PaComplexButton {
 		
 		/**
 		 * 
-		 * @author avd
+		 * @author Andrii Dashkov
 		 * <p>Listener class to listen all spinners; also listens the focus event because
 		 * during the manual change of the value in spinners the event stateChange isnt't invoked </p>
 		 *

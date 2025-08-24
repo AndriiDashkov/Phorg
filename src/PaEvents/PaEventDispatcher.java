@@ -1,16 +1,17 @@
-package PaEvents;
+package paevents;
+
+import static paglobal.PaLog.*;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Iterator;
-import static PaGlobal.PaLog.*;
 
 
 /** 
  * 
  *  Events dispatcher - works in synchronous way. Every new created event must be registered here.
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 
@@ -236,13 +237,13 @@ public class PaEventDispatcher {
 
 		m_listeners.add(refrashNewTemPhotoEvent);							
 		
-		PaEventListeners refrashAlbom = new PaEventListeners(ALBUM_REFRESH_EVENT);		
+		PaEventListeners refrashAlbum = new PaEventListeners(ALBUM_REFRESH_EVENT);		
 
-		m_listeners.add(refrashAlbom);									
+		m_listeners.add(refrashAlbum);									
 		
-		PaEventListeners resizeAlbomPanel = new PaEventListeners( RESIZE_ALBOM_PANEL_EVENT );	
+		PaEventListeners resizeAlbumPanel = new PaEventListeners( RESIZE_ALBOM_PANEL_EVENT );	
 
-		m_listeners.add(resizeAlbomPanel);
+		m_listeners.add(resizeAlbumPanel);
 		
 	
 		PaEventListeners refrashViewPanel = new PaEventListeners(VIEWPANEL_REFRESH_EVENT);	
@@ -270,13 +271,13 @@ public class PaEventDispatcher {
 
 		m_listeners.add(delAlbomEvent);
 		
-		PaEventListeners moveAlbomEvent = new PaEventListeners(ALBUM_MOVE_EVENT);		
+		PaEventListeners moveAlbumEvent = new PaEventListeners(ALBUM_MOVE_EVENT);		
 
-		m_listeners.add(moveAlbomEvent);
+		m_listeners.add(moveAlbumEvent);
 		
-		PaEventListeners mergeAlbomEvent = new PaEventListeners(ALBUM_MERGE_EVENT);	
+		PaEventListeners mergeAlbumEvent = new PaEventListeners(ALBUM_MERGE_EVENT);	
 
-		m_listeners.add(mergeAlbomEvent);
+		m_listeners.add(mergeAlbumEvent);
 		
 		PaEventListeners findAlbomEvent = new PaEventListeners(ALBUM_FIND_EVENT);	
 

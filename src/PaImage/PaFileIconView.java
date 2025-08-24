@@ -1,4 +1,4 @@
-package PaImage;
+package paimage;
 
 import java.io.File;
 import javax.swing.Icon;
@@ -7,7 +7,7 @@ import javax.swing.filechooser.FileView;
 
 /**
  *
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaFileIconView extends FileView {

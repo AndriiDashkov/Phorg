@@ -1,4 +1,6 @@
-package PaForms;
+package paforms;
+
+import static paglobal.PaUtils.*;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -17,17 +19,17 @@ import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableRowSorter;
-import PaCollection.PaSubjectContainer;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaGlobal.PaButtonsGroup;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.*;
+
+import pacollection.PaSubjectContainer;
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paglobal.PaButtonsGroup;
+import paglobal.PaUtils;
 
 /**
  * Form to show and control the subjects
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaSubjectsForm extends JPanel {

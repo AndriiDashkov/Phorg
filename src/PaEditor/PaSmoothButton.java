@@ -1,10 +1,11 @@
 
-package PaEditor;
+package paeditor;
 
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.getGuiStrs;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getMessagesStrs;
+
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -26,12 +27,13 @@ import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
-import PaLong.PaBlurOperation;
+
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
+import palong.PaBlurOperation;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * <p>This class determines the complex button for blur change operation; 
  * the special parameters panel consists the slider which determines the range of changing of blur
  * value </p>
@@ -99,7 +101,7 @@ public class PaSmoothButton extends PaComplexButton {
 
 	/**
 	 * 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 * <p>Special parameter panel class with all components; the link with button is performed 
 	 * through m_saveAsFlag member of the button class.
 	 * Special parameters frame appears next to the instrument button by using 
@@ -211,7 +213,7 @@ public class PaSmoothButton extends PaComplexButton {
 		
 		/**
 		 * 
-		 * @author avd
+		 * @author Andrii Dashkov
 		 * <p>Listener class to listen the slider</p>
 		 *
 		 */

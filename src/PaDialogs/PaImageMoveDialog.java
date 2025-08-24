@@ -1,8 +1,7 @@
-package PaDialogs;
+package padialogs;
 
-import PaCollection.PaAlbum;
-import PaCollection.PaAlbumContainer;
-import PaGlobal.*;
+import static paglobal.PaUtils.*;
+
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
@@ -25,14 +24,16 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
-import PaGlobal.PaGuiTools;
-import static PaGlobal.PaUtils.*;
+
+import pacollection.PaAlbum;
+import pacollection.PaAlbumContainer;
+import paglobal.*;
 
 
 
 /**
  * Dialog for moving image 
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  *
  */
 public class PaImageMoveDialog extends JDialog {

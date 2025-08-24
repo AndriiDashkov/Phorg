@@ -1,4 +1,4 @@
-package PaExif;
+package paexif;
 
 public class PaExifElementAscii extends PaExifElement {
 

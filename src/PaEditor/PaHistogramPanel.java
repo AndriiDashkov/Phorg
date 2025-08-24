@@ -1,6 +1,6 @@
-package PaEditor;
+package paeditor;
 
-import static PaGlobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getGuiStrs;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -18,16 +18,17 @@ import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import PaAlgorithms.PaAlgorithms;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
+
+import paalgorithms.PaAlgorithms;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 
 
 /**
  * <p>This class can create and draw histogram for the image. Also there is an option
  * to show some base exif data about the image. Histogram can be shown in two variants -
  * with exif data and without exif data. </p>
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaHistogramPanel extends JPanel {
@@ -429,9 +430,9 @@ public class PaHistogramPanel extends JPanel {
 		
 		g2.draw(yLine);
 		
-		g2.drawString(new Integer(maxY).toString(), xGap/2+4, endYline.y + 8);//y caption
+		g2.drawString(Integer.toString(maxY), xGap/2+4, endYline.y + 8);//y caption
 		
-		g2.drawString(new Integer(maxX).toString(), endXline.x-25, endXline.y - 5);	//x caption
+		g2.drawString(Integer.toString(maxX), endXline.x-25, endXline.y - 5);	//x caption
 		
 	}
 	/**
@@ -609,7 +610,7 @@ public class PaHistogramPanel extends JPanel {
 	};
 	/**
 	 * <p>Class for graph panel, it draw the histogram</p>
-	 * @author avd
+	 * @author Andrii Dashkov
 	 *
 	 */
 	private class  GraphPanel extends JPanel {

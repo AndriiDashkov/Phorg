@@ -1,9 +1,9 @@
 
-package PaAlgorithms;
+package paalgorithms;
 
 /**
  * Filters, which are based on gradient operations
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  *
  */
 public class PaAlgoGradient {

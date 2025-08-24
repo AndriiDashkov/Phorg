@@ -1,7 +1,7 @@
-package PaDialogs;
+package padialogs;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.*;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.*;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -40,16 +40,17 @@ import javax.swing.SpinnerNumberModel;
 import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
 import javax.xml.stream.XMLStreamException;
-import PaCollection.PaSettings;
-import PaForms.PaExtEditorTable;
-import PaForms.PaExtEditorsTableModel;
-import PaForms.PaSortComboBox;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
+
+import pacollection.PaSettings;
+import paforms.PaExtEditorTable;
+import paforms.PaExtEditorsTableModel;
+import paforms.PaSortComboBox;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * Dialog window for settings manipulation. All data can be save to disk in xml format
  */
 public class PaSettingsDialog extends JDialog {

@@ -1,8 +1,8 @@
 
-package PaGlobal;
+package paglobal;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * <p> Enum has all possible flag for dialog closing variants</p>
  */
 public enum PaCloseFlag {

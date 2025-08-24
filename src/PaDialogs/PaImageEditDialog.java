@@ -1,13 +1,15 @@
 
-package PaDialogs;
+package padialogs;
 
-import static PaGlobal.PaUtils.*;
+import static paglobal.PaUtils.*;
+
 import javax.swing.JFrame;
-import PaCollection.PaImage;
-import PaCollection.PaImageContainer;
+
+import pacollection.PaImage;
+import pacollection.PaImageContainer;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaImageEditDialog extends PaImageNewDialog {

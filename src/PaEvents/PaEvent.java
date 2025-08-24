@@ -1,7 +1,7 @@
-package PaEvents;
+package paevents;
 /**
  *  Main event class
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaEvent implements PaEventInt {

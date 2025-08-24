@@ -1,7 +1,8 @@
-package PaROI;
+package paroi;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.*;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.*;
+
 import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.Cursor;
@@ -18,23 +19,24 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JToolBar;
-import PaCollection.PaImage;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaGlobal.PaUtils;
-import PaImage.PaViewPanel;
-import PaEditor.PaComplexButton;
-import PaEditor.PaInstrument;
-import PaEditor.PaSaveButton;
-import PaEditor.PaEnumInstrumentNames;
-import PaEditor.PaInstrumentsWindow;
-import PaEditor.PaZoomRectButton;
-import PaEditor.PaZoomButton;
+
+import pacollection.PaImage;
+import paeditor.PaComplexButton;
+import paeditor.PaEnumInstrumentNames;
+import paeditor.PaInstrument;
+import paeditor.PaInstrumentsWindow;
+import paeditor.PaSaveButton;
+import paeditor.PaZoomButton;
+import paeditor.PaZoomRectButton;
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paglobal.PaUtils;
+import paimage.PaViewPanel;
 
 
 /**
  * The main window for ROI  instruments
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class  PaRoiWindow extends PaInstrumentsWindow {
@@ -455,7 +457,7 @@ public class  PaRoiWindow extends PaInstrumentsWindow {
 	
 	/**
 	 * 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 * <p>Jumps to the first image which was not labeled with any ROI yet.</p>
 	 */
 	public class  PaMoveTolatestImageRoiAction extends AbstractAction {
@@ -557,7 +559,7 @@ public class  PaRoiWindow extends PaInstrumentsWindow {
 	  * <p>Saves changes of ROI file </p>
 	  * @param saveAs - true if we need the operation 'save as'
 	  * @return dialog window response code
-	  * @author Dashkov Andrey
+	  * @author Dashkov Andrii
 	  */
 	public int save(boolean saveAs) 
 	{

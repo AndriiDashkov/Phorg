@@ -1,8 +1,9 @@
 
-package PaEditor;
+package paeditor;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.getMessagesStrs;
+
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.Image;
@@ -15,13 +16,14 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.ProgressMonitor;
 import javax.swing.SwingUtilities;
-import PaEnums.PaInstrumentTypeEnum;
-import PaGlobal.PaUtils;
-import PaLong.PaBlurHiFOperation;
-import PaLong.PaBlurOperation;
+
+import paenums.PaInstrumentTypeEnum;
+import paglobal.PaUtils;
+import palong.PaBlurHiFOperation;
+import palong.PaBlurOperation;
 
 /**
- * @author Andrey Daskov
+ * @author Andrii Daskov
  * Instrument for the blur operation
  *
  */

@@ -1,4 +1,7 @@
-package PaCollection;
+package pacollection;
+
+import static paglobal.PaLog.*;
+import static paglobal.PaUtils.*;
 
 import java.awt.Cursor;
 import java.awt.image.BufferedImage;
@@ -26,24 +29,23 @@ import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 import javax.xml.stream.XMLStreamWriter;
-import PaAlgorithms.PaAlgoTransform;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaEvents.PaEventInt;
-import PaGlobal.PaSortOrderEnum;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaLog.*;
-import static PaGlobal.PaUtils.*;
-import PaImage.PaImageFileFilter;
-import PaImage.PaViewPhotosForm;
-import PaLong.PaAddAlbumRecursiveTask;
-import PaLong.PaAddImagesToAlbumTask;
+
+import paalgorithms.PaAlgoTransform;
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paevents.PaEventInt;
+import paglobal.PaSortOrderEnum;
+import paglobal.PaUtils;
+import paimage.PaImageFileFilter;
+import paimage.PaViewPhotosForm;
+import palong.PaAddAlbumRecursiveTask;
+import palong.PaAddImagesToAlbumTask;
 
 
 /**
  * Main container to hold and control image objects PaImage
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  *
  */
 public class PaImageContainer implements Cloneable{
@@ -281,7 +283,7 @@ public class PaImageContainer implements Cloneable{
 				
 				writeLog("IOException | SecurityException : " + NEXT_ROW, e, true, false, true);
 				
-		  		JOptionPane.showMessageDialog( PaUtils.get().getMainWindow(), //"Сбой операции копирования: "
+		  		JOptionPane.showMessageDialog( PaUtils.get().getMainWindow(), //"пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: "
 		  				getMessagesStrs("errorWhileCopyOperation") + NEXT_ROW + 
 		  		         getMessagesStrs("pathPartOfMessage")+newPath +getMessagesStrs("filePartOfMessage")+pp.getName(),
 	    			    getMessagesStrs("messageErrorCaption"),
@@ -399,7 +401,7 @@ public class PaImageContainer implements Cloneable{
 					 img = PaUtils.get().specialImageForVideo();
 				 }
 				 
-				 String fileName = new String( new Integer(pp.getId()).toString());
+				 String fileName = new String( Integer.toString(pp.getId()));
 					
 				 File outFile = new File( concatPathName( PaUtils.get().getPathToBoostIcons(this), fileName+".jpeg") );
 						
@@ -489,7 +491,7 @@ public class PaImageContainer implements Cloneable{
 	public void deleteSpecialLoadImage (int Id) {
 		
 		
-		String fileName = new String( new Integer(Id).toString());
+		String fileName = new String( Integer.toString(Id));
 		
 		File outFile = new File( concatPathName( PaUtils.get().getPathToBoostIcons(this), fileName+".jpeg") );
 		
@@ -1236,7 +1238,7 @@ public class PaImageContainer implements Cloneable{
 
 		//String str = path_name + id_albom + ".xml";
 		
-		String str = PaUtils.get().getAlbomXMLFilePath(id_albom);
+		String str = PaUtils.get().getAlbumXMLFilePath(id_albom);
 		
 		XMLOutputFactory factory = XMLOutputFactory.newInstance();
 		

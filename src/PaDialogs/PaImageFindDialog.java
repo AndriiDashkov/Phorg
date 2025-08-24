@@ -1,8 +1,8 @@
-package PaDialogs;
+package padialogs;
 
 
-import PaForms.PaImageTabModel;
-import PaGlobal.*;
+import static paglobal.PaUtils.*;
+
 import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -21,13 +21,14 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import PaGlobal.PaGuiTools;
-import static PaGlobal.PaUtils.*;
+
+import paforms.PaImageTabModel;
+import paglobal.*;
 
 
 /**
  * <p>Find image dialog class</p>
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaImageFindDialog extends JDialog {
@@ -238,7 +239,7 @@ public class PaImageFindDialog extends JDialog {
 	
 	 /**
 	  * Catches the Enter button press event to start the find operation
-	  * @author avd
+	  * @author Andrii Dashkov
 	  *
 	  */
 	 private class EnterListener implements KeyListener {

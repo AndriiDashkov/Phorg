@@ -1,5 +1,7 @@
-package PaDialogs;
+package padialogs;
 
+
+import static paglobal.PaUtils.*;
 
 import java.awt.Color;
 import java.awt.GridLayout;
@@ -18,14 +20,14 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import PaForms.PaAlbumsTreeForm;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaButtonEnter;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.*;
+
+import paforms.PaAlbumsTreeForm;
+import paglobal.PaButtonEnter;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 /**
  * 
- * @author avd
+ * @author Andrii Dashkov
  * <p>Dialog window for find album operation</p>
  */
 public class PaAlbumFindDialog extends JDialog {
@@ -261,7 +263,7 @@ public class PaAlbumFindDialog extends JDialog {
 	 
 	 /**
 	  * Controls the Enter button press event to start the find operation
-	  * @author avd
+	  * @author Andrii Dashkov
 	  *
 	  */
 	 private class EnterListener implements KeyListener {

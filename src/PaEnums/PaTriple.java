@@ -1,8 +1,8 @@
 
-package PaEnums;
+package paenums;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  * Struct with 3 values, it is ready to put into ArrayList, etc
  */ 
 public class PaTriple<F,S, K> {

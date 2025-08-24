@@ -1,16 +1,17 @@
 /**
  * 
  */
-package PaAlgorithms;
+package paalgorithms;
 
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
-import PaEnums.PaTriple;
+
+import paenums.PaTriple;
 
 /**
  * The class for implementation of the Harris/Stephens filter
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  *
  */
 public class PaAlgoCorners {

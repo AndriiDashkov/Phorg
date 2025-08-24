@@ -1,5 +1,5 @@
 
-package PaROI;
+package paroi;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -12,10 +12,11 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map.Entry;
-import PaGlobal.PaUtils;
+
+import paglobal.PaUtils;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  * This is the parser of the ROI file format
  *
  */

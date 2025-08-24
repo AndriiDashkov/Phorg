@@ -1,8 +1,9 @@
 
-package PaLong;
+package palong;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.getMessagesStrs;
+
 import java.awt.Cursor;
 import java.awt.Toolkit;
 import java.beans.PropertyChangeEvent;
@@ -10,15 +11,16 @@ import java.beans.PropertyChangeListener;
 import java.util.Iterator;
 import javax.swing.ProgressMonitor;
 import javax.swing.SwingWorker;
-import PaCollection.PaImage;
-import PaGlobal.PaUtils;
+
+import pacollection.PaImage;
+import paglobal.PaUtils;
 
 
 
 /**
  * <p>This class  uses SwingWorker to start a long task into background. 
  * Here is the operation of refresh of boost icons in album</p>
- * @author avd
+ * @author Andrii Dashkov
  */
  public class PaRefreshBoostIcons extends SwingWorker<Void, Void> implements PropertyChangeListener 
  {

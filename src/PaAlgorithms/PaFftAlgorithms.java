@@ -1,8 +1,9 @@
 
-package PaAlgorithms;
+package paalgorithms;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.NEXT_ROW;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.NEXT_ROW;
+
 import java.awt.Color;
 import java.awt.Point;
 import java.awt.image.BufferedImage;
@@ -10,11 +11,12 @@ import java.awt.image.DataBuffer;
 import java.awt.image.DataBufferByte;
 import java.awt.image.DataBufferInt;
 import java.util.ArrayList;
-import PaEditor.PaComplexValue;
-import PaEditor.PaHeapArray;
+
+import paeditor.PaComplexValue;
+import paeditor.PaHeapArray;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaFftAlgorithms {
@@ -645,10 +647,10 @@ public class PaFftAlgorithms {
 				}
 			}
 			
-			//перестановка по y
+			//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ y
 			dataReverse(l_Rl, l_Im, nT2, n2, false);
 
-			//прогонка по y 
+			//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ y 
 		
 			for(int y = 0; y < nT2; y++) {
 				

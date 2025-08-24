@@ -1,7 +1,8 @@
 
-package PaROI;
+package paroi;
 
-import static PaGlobal.PaLog.writeLog;
+import static paglobal.PaLog.writeLog;
+
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.Graphics2D;
@@ -13,12 +14,13 @@ import java.awt.event.MouseEvent;
 import java.awt.geom.Ellipse2D;
 import java.awt.image.BufferedImage;
 import javax.swing.SwingUtilities;
-import PaAlgorithms.PaAlgoConvert;
-import PaEditor.PaZoomRectInstrument;
-import PaGlobal.PaUtils;
+
+import paalgorithms.PaAlgoConvert;
+import paeditor.PaZoomRectInstrument;
+import paglobal.PaUtils;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class  PaPixSaveInstrument extends PaZoomRectInstrument {

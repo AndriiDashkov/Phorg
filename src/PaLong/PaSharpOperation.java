@@ -1,10 +1,11 @@
 
-package PaLong;
+package palong;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.NEXT_ROW;
-import static PaGlobal.PaUtils.getGuiStrs;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.NEXT_ROW;
+import static paglobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getMessagesStrs;
+
 import java.awt.Cursor;
 import java.awt.Point;
 import java.awt.Rectangle;
@@ -15,16 +16,17 @@ import java.beans.PropertyChangeListener;
 import javax.swing.JOptionPane;
 import javax.swing.ProgressMonitor;
 import javax.swing.SwingWorker;
-import PaAlgorithms.PaFftAlgorithms;
-import PaEditor.PaInstrumentsWindow;
-import PaGlobal.PaUtils;
+
+import paalgorithms.PaFftAlgorithms;
+import paeditor.PaInstrumentsWindow;
+import paglobal.PaUtils;
 
 
 /**
  * <p>Class PaSharpOperation uses SwingWorker to start a long task into background. 
  * Here is the operation of sharpness increase; it uses the frequency filtration using DFT
  * This operation also can be used for selection of image's contours - see appropriative flag in the constructor</p>\
- * @author avd
+ * @author Andrii Dashkov
  */
  public class PaSharpOperation extends SwingWorker<Void, Void> implements PropertyChangeListener 
  {

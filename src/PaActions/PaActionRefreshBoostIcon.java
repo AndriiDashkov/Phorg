@@ -1,25 +1,27 @@
 /**
  * 
  */
-package PaActions;
+package paactions;
+
+import static paglobal.PaUtils.*;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  *
  */
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import javax.swing.AbstractAction;
-import PaCollection.PaImage;
-import PaCollection.PaImageContainer;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.*;
+
+import pacollection.PaImage;
+import pacollection.PaImageContainer;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paglobal.PaUtils;
 
 /**
  * Action to refresh the single boost icons in view panel
- * @author Andrey
+ * @author Andrii
  *
  */
 public class PaActionRefreshBoostIcon extends PaAction {

@@ -1,5 +1,5 @@
 
-package PaImage;
+package paimage;
 
 import java.awt.datatransfer.Transferable;
 import java.awt.dnd.DragSourceDragEvent;
@@ -10,7 +10,7 @@ import javax.swing.TransferHandler;
 
 /**
  * <p>Transfer handler to use in drag and drop operation.</p>
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaTransferHandler extends TransferHandler implements DragSourceMotionListener 

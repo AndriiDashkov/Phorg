@@ -1,10 +1,11 @@
 
-package PaEditor;
+package paeditor;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.NEXT_ROW;
-import static PaGlobal.PaUtils.getGuiStrs;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.NEXT_ROW;
+import static paglobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getMessagesStrs;
+
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -22,14 +23,15 @@ import javax.swing.JSlider;
 import javax.swing.WindowConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import PaAlgorithms.PaAlgorithms;
-import PaEnums.PaInstrumentTypeEnum;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
+
+import paalgorithms.PaAlgorithms;
+import paenums.PaInstrumentTypeEnum;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * <p>This class determines the complex button for HSI balance change operation; 
  * the special parameters panel consists the sliders which determine the range of changing of red, green, blue color:
  * reduction of blue value is a warm direction and opposite is a cold direction </p>
@@ -98,7 +100,7 @@ public class  PaHSIbutton extends PaComplexButton {
 
 	/**
 	 * 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 * <p>Special parameter panel class with all control components.
 	 * Special parameters frame appears next to the instrument button by using 
 	 * the small menu button on the right side. This special window has all additional parameters
@@ -235,7 +237,7 @@ public class  PaHSIbutton extends PaComplexButton {
 		
 		/**
 		 * 
-		 * @author avd
+		 * @author Andrii Dashkov
 		 * <p>Listener class to listen the slider</p>
 		 *
 		 */

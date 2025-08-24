@@ -1,8 +1,8 @@
 
-package PaAlgorithms;
+package paalgorithms;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  * 
  * Class for auxiliary functions.
  *

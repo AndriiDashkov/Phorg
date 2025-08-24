@@ -1,13 +1,14 @@
-package PaForms;
+package paforms;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import javax.swing.AbstractListModel;
-import PaCollection.PaImage;
-import PaCollection.PaSubject;
-import PaCollection.PaSubjectContainer;
-import PaGlobal.PaUtils;
+
+import pacollection.PaImage;
+import pacollection.PaSubject;
+import pacollection.PaSubjectContainer;
+import paglobal.PaUtils;
 
 
 /**

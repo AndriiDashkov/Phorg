@@ -1,4 +1,7 @@
-package PaForms;
+package paforms;
+
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.*;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -15,18 +18,17 @@ import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableRowSorter;
-import PaCollection.PaImageContainer;
-import PaDialogs.PaImageFindDialog;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaGlobal.PaButtonsGroup;
-import PaGlobal.PaUtils;
-import PaImage.PaViewPanel;
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.*;
+
+import pacollection.PaImageContainer;
+import padialogs.PaImageFindDialog;
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paglobal.PaButtonsGroup;
+import paglobal.PaUtils;
+import paimage.PaViewPanel;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  * Class for the  table with list of  images
  */
 public class PaImageTable extends JPanel {

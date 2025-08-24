@@ -1,4 +1,7 @@
-package PaCollection;
+package pacollection;
+
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.*;
 
 import java.awt.Cursor;
 import java.awt.Toolkit;
@@ -26,29 +29,28 @@ import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 import javax.xml.stream.XMLStreamWriter;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaEvents.PaEventInt;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.*;
+
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paevents.PaEventInt;
+import paglobal.PaUtils;
 
 /**
  * Container for album's collection
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  * @version
  */
 public class PaAlbumContainer {
 
 
 	{
-		PaEventDispatcher.get().addConnect(PaEventDispatcher.SAVE_EVENT, this, "saveAllAlboms");
+		PaEventDispatcher.get().addConnect(PaEventDispatcher.SAVE_EVENT, this, "saveAllAlbums");
 	}
 	
 	/**
 	 * enum for control problems while add album operation
-	 * @author avd
+	 * @author Andrii Dashkov
 	 *
 	 */
 	private enum ValidationControl {
@@ -370,7 +372,7 @@ public class PaAlbumContainer {
  		}
 		
 		//check physical existence of xml file for album
-		String str = PaUtils.get().getAlbomXMLFilePath(al.getId());
+		String str = PaUtils.get().getAlbumXMLFilePath(al.getId());
 		
 		if(Files.exists(Paths.get(str))) { 
 			
@@ -533,7 +535,7 @@ public class PaAlbumContainer {
 		XMLOutputFactory factory = XMLOutputFactory.newInstance();
 		
 		// "UTF-8" parameter is important here
-		FileOutputStream fSt = new FileOutputStream(PaUtils.get().getAlbomsXMLFullName());
+		FileOutputStream fSt = new FileOutputStream(PaUtils.get().getAlbumsXMLFullName());
 		
 		XMLStreamWriter writer = factory.createXMLStreamWriter(fSt, "UTF-8");
 		try {

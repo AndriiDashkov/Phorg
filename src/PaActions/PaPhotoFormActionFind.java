@@ -1,15 +1,17 @@
-package PaActions;
+package paactions;
+
+import static paglobal.PaUtils.*;
 
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
-import PaForms.PaImageTable;
-import static PaGlobal.PaUtils.*;
+
+import paforms.PaImageTable;
 
 
 
 /**
  * <p>Find image action</p>
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaPhotoFormActionFind extends PaAction {

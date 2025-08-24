@@ -1,10 +1,10 @@
-package PaEvents;
+package paevents;
 
 /**
  * Incapsulates 2 parameters: the reference to the object-receiver and the name of method for invocation by event
  * PaEentObjectMethod represents the information about single receiver
  * 
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  */
 public class PaEventObjectMethod {
 

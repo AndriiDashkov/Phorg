@@ -1,13 +1,15 @@
 
-package PaExif;
+package paexif;
 
-import static PaGlobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getGuiStrs;
+
 import java.math.BigDecimal;
 import java.util.Vector;
-import PaGlobal.PaLog;
+
+import paglobal.PaLog;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * parser is used to convert a tag information into human form strings
  */
 public class PaTagParser {

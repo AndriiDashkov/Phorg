@@ -1,5 +1,5 @@
 
-package PaImage;
+package paimage;
 
 
 import java.awt.AWTException;
@@ -17,7 +17,7 @@ import java.awt.dnd.DropTargetListener;
 
 /**
  * <p>This class is for drop operation only</p>
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaDropTargetListener implements DropTargetListener {

@@ -1,4 +1,6 @@
-package PaEditor;
+package paeditor;
+
+import static paglobal.PaUtils.getGuiStrs;
 
 import java.awt.Cursor;
 import java.awt.Dimension;
@@ -10,11 +12,10 @@ import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import javax.swing.SwingUtilities;
 
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.getGuiStrs;
+import paglobal.PaUtils;
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  * The instrument for the crop a part of image using a rectangle of fixed size. The instrument allows to move and resize crop area
  * with or without ratio control   
  *

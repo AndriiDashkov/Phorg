@@ -1,13 +1,12 @@
 
-package PaEditor;
+package paeditor;
 
-import static PaExif.PaTagParser.getColorSpace;
-import static PaExif.PaTagParser.getContrast;
-import static PaExif.PaTagParser.getDoubleString;
-import static PaExif.PaTagParser.getString;
-import static PaExif.PaTagParser.getWhiteBalance;
-
-import static PaGlobal.PaUtils.getGuiStrs;
+import static paexif.PaTagParser.getColorSpace;
+import static paexif.PaTagParser.getContrast;
+import static paexif.PaTagParser.getDoubleString;
+import static paexif.PaTagParser.getString;
+import static paexif.PaTagParser.getWhiteBalance;
+import static paglobal.PaUtils.getGuiStrs;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -19,12 +18,12 @@ import java.awt.Insets;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import PaExif.PaExifLoader;
-import PaExif.PaExtendedExf;
-import PaExif.PaImageExf;
+import paexif.PaExifLoader;
+import paexif.PaExtendedExf;
+import paexif.PaImageExf;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * Data panel to represent Exif information for an image
  *
  */

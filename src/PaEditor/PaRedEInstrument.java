@@ -1,7 +1,8 @@
 
-package PaEditor;
+package paeditor;
 
-import static PaGlobal.PaLog.writeLog;
+import static paglobal.PaLog.writeLog;
+
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.Graphics2D;
@@ -13,11 +14,12 @@ import java.awt.event.MouseEvent;
 import java.awt.geom.Ellipse2D;
 import java.awt.image.BufferedImage;
 import javax.swing.SwingUtilities;
-import PaAlgorithms.PaAlgoEye;
-import PaGlobal.PaUtils;
+
+import paalgorithms.PaAlgoEye;
+import paglobal.PaUtils;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaRedEInstrument extends PaZoomRectInstrument {

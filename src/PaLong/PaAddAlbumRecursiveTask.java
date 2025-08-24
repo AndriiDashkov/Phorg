@@ -1,11 +1,12 @@
 /**
  * 
  */
-package PaLong;
+package palong;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.NEXT_ROW;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.NEXT_ROW;
+import static paglobal.PaUtils.getMessagesStrs;
+
 import java.awt.Cursor;
 import java.awt.Toolkit;
 import java.beans.PropertyChangeEvent;
@@ -18,21 +19,22 @@ import java.util.ListIterator;
 import javax.swing.JOptionPane;
 import javax.swing.ProgressMonitor;
 import javax.swing.SwingWorker;
-import PaCollection.PaAlbum;
-import PaCollection.PaAlbumContainer;
-import PaCollection.PaImageContainer;
-import PaCollection.PaMainConainer;
-import PaCollection.PaImage;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaGlobal.PaUtils;
+
+import pacollection.PaAlbum;
+import pacollection.PaAlbumContainer;
+import pacollection.PaImage;
+import pacollection.PaImageContainer;
+import pacollection.PaMainConainer;
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paglobal.PaUtils;
 
 
 /**
  * <p>Class PaAddAlbumRecursiveTask uses SwingWorker to start a long task into background. 
  * Here is the operation of recursive creation of albums according to folders structure and adding images</p>
- * @author avd
+ * @author Andrii Dashkov
  */
 public class PaAddAlbumRecursiveTask extends SwingWorker<Void, Void> implements PropertyChangeListener 
  {
@@ -114,7 +116,7 @@ public class PaAddAlbumRecursiveTask extends SwingWorker<Void, Void> implements 
 	        		    	
 	        		    	if (f.isDirectory()) { 
 	        		    
-	        		    		createAlbomForDir(f,id);
+	        		    		createAlbumForDir(f,id);
 	        		    	}
 	        		    	else {
 	        		    		
@@ -150,7 +152,7 @@ public class PaAddAlbumRecursiveTask extends SwingWorker<Void, Void> implements 
 		 * @param dir - parent folder to create album
 		 * @param parentId - id of parent album for this newly created album
 		 */
-        public void createAlbomForDir(File dir, int parentId)
+        public void createAlbumForDir(File dir, int parentId)
         {
         	if (!dir.exists() || !dir.isDirectory()) {
         		
@@ -219,7 +221,7 @@ public class PaAddAlbumRecursiveTask extends SwingWorker<Void, Void> implements 
 		    	
 		    	if (f.isDirectory()) { 
 		    		
-		    		createAlbomForDir(f,id); 
+		    		createAlbumForDir(f,id); 
 		    	}
 		    	else {
 		    		

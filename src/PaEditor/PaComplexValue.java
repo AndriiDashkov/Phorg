@@ -1,8 +1,8 @@
 
-package PaEditor;
+package paeditor;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * <p>Class for manipulation with complex values</p>
  */
 public class PaComplexValue {

@@ -1,8 +1,9 @@
 
-package PaEditor;
+package paeditor;
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.getGuiStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.getGuiStrs;
+
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -26,14 +27,15 @@ import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import PaAlgorithms.PaAlgoCorners;
-import PaEnums.PaInstrumentTypeEnum;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
+
+import paalgorithms.PaAlgoCorners;
+import paenums.PaInstrumentTypeEnum;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 
 
 /**
- * @author Andrey Dashkov
+ * @author Andrii Dashkov
  * <p>This class determines the complex button for Harris/Stephens corner/edge detector; 
 
  * value </p>
@@ -108,7 +110,7 @@ public class  PaCornersButton extends PaComplexButton {
 
 	/**
 	 * 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 * <p>Special parameter panel class with all components; the link with button is performed 
 	 * through m_saveAsFlag member of the button class.
 	 * Special parameters frame appears next to the instrument button by using 
@@ -319,7 +321,7 @@ public class  PaCornersButton extends PaComplexButton {
 		
 		/**
 		 * 
-		 * @author avd
+		 * @author Andrii Dashkov
 		 * <p>Listener class to listen the controls</p>
 		 *
 		 */

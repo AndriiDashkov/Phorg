@@ -1,6 +1,7 @@
-package PaDialogs;
+package padialogs;
 
-import static PaGlobal.PaUtils.*;
+import static paglobal.PaUtils.*;
+
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
@@ -36,19 +37,20 @@ import javax.swing.border.TitledBorder;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.filechooser.FileNameExtensionFilter;
-import PaCollection.PaImageContainer;
-import PaCollection.PaSubject;
-import PaForms.PaSubjectsPanel;
-import PaGlobal.PaCloseFlag;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaTokenizer;
-import PaGlobal.PaUtils;
-import PaImage.PaFileIconView;
-import PaImage.PaImagePreviewer;
+
+import pacollection.PaImageContainer;
+import pacollection.PaSubject;
+import paforms.PaSubjectsPanel;
+import paglobal.PaCloseFlag;
+import paglobal.PaGuiTools;
+import paglobal.PaTokenizer;
+import paglobal.PaUtils;
+import paimage.PaFileIconView;
+import paimage.PaImagePreviewer;
 
 /**
  * Dialog for adding new image in an album
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaImageNewDialog extends JDialog {
@@ -167,7 +169,7 @@ public class PaImageNewDialog extends JDialog {
 	}
 	/**
 	 * Listener for buttons reaction
-	 * @author avd
+	 * @author Andrii Dashkov
 	 *
 	 */
 	class Forwarder implements ActionListener {
@@ -347,7 +349,7 @@ public class PaImageNewDialog extends JDialog {
 	 */
 	private JPanel createGUI() {
 		
-		m_subPanel = new PaSubjectsPanel(true, _temId, PaUtils.get().getSubjectsContainer(), getGuiStrs("subCaptionChooser")); //"Темы для изображения: "
+		m_subPanel = new PaSubjectsPanel(true, _temId, PaUtils.get().getSubjectsContainer(), getGuiStrs("subCaptionChooser")); //"пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: "
 
 		JPanel panel_1 = PaGuiTools.createHorizontalPanel();
 		
@@ -482,7 +484,7 @@ public class PaImageNewDialog extends JDialog {
 	
 		PaGuiTools.makeSameSize(new JComponent[] { name_lph, path_lph, date_lph,commentLabel } );
 
-		PaGlobal.PaGuiTools.createRecommendedMargin(new JButton[] { m_OkButton, m_CancelButton, m_selectPath } );
+		paglobal.PaGuiTools.createRecommendedMargin(new JButton[] { m_OkButton, m_CancelButton, m_selectPath } );
 		
 		JPanel panelButtons = new JPanel();
 		
@@ -646,7 +648,7 @@ public class PaImageNewDialog extends JDialog {
 			
 			flag = false;
 			
-			m_infoLabel.setText(getMessagesStrs("dateIncorrectMessage")); //"Некорректно введена дата ");
+			m_infoLabel.setText(getMessagesStrs("dateIncorrectMessage")); //"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ ");
 			
 		}
 		
@@ -656,7 +658,7 @@ public class PaImageNewDialog extends JDialog {
 			
 			flag = false;
 			
-			m_infoLabel.setText(getMessagesStrs("correctPathMessage"));//"С таким именем файл не существует. Проверьте правильность пути к файлу.");
+			m_infoLabel.setText(getMessagesStrs("correctPathMessage"));//"пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ.");
 		}
 		else {
 			
@@ -744,7 +746,7 @@ public class PaImageNewDialog extends JDialog {
 	 
 	 /**
 	  * Key listener to verify the text input for bad symbols &*%${@link #changedUpdate(DocumentEvent)}etc
-	  * @author avd
+	  * @author Andrii Dashkov
 	  *
 	  */
 	 class KeyListener implements DocumentListener {

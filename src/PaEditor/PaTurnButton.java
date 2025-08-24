@@ -1,10 +1,11 @@
 
-package PaEditor;
+package paeditor;
 
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.getGuiStrs;
-import static PaGlobal.PaUtils.getMenusStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getMenusStrs;
+
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -27,12 +28,13 @@ import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import PaAlgorithms.PaAlgoTransform;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
+
+import paalgorithms.PaAlgoTransform;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * <p>This class determines the complex button for turn left operation; 
  * the special parameters panel creates here</p>
  */
@@ -124,7 +126,7 @@ public class PaTurnButton extends PaComplexButton {
 	
 	/**
 	 * 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 * <p>Special parameter panel class with all components; the link with button is performed 
 	 * through m_coeff member of PaContrastButton.
 	 * Special parameters frame appears next to the instrument button by using 
@@ -290,7 +292,7 @@ public class PaTurnButton extends PaComplexButton {
 		
 		/**
 		 * 
-		 * @author avd
+		 * @author Andrii Dashkov
 		 * <p>Listener class to listen all spinners; also listens the focus event because
 		 * during the manual change of the value in spinners the event stateChange isnt't invoked </p>
 		 *

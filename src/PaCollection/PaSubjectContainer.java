@@ -1,4 +1,7 @@
-package PaCollection;
+package pacollection;
+
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.*;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -15,17 +18,16 @@ import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 import javax.xml.stream.XMLStreamWriter;
-import PaEvents.PaEvent;
-import PaEvents.PaEventDispatcher;
-import PaEvents.PaEventEnable;
-import PaEvents.PaEventInt;
-import PaEvents.PaEventSubjectRefreshNewPhotoDialog;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.*;
+
+import paevents.PaEvent;
+import paevents.PaEventDispatcher;
+import paevents.PaEventEnable;
+import paevents.PaEventInt;
+import paevents.PaEventSubjectRefreshNewPhotoDialog;
+import paglobal.PaUtils;
 /**
  * 
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public class PaSubjectContainer {

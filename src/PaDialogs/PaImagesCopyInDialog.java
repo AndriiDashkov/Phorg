@@ -1,4 +1,7 @@
-package PaDialogs;
+package padialogs;
+
+import static paglobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getMessagesStrs;
 
 import java.awt.Color;
 import java.awt.FlowLayout;
@@ -22,9 +25,8 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import PaGlobal.PaGuiTools;
-import static PaGlobal.PaUtils.getMessagesStrs;
-import static PaGlobal.PaUtils.getGuiStrs;
+
+import paglobal.PaGuiTools;
 
 public class PaImagesCopyInDialog extends JDialog {
 	
@@ -205,7 +207,7 @@ public class PaImagesCopyInDialog extends JDialog {
 	
 	 /**
 	  * Cathes the Enter button press event to start the find operation
-	  * @author avd
+	  * @author Andrii Dashkov
 	  *
 	  */
 	 private class EnterListener implements KeyListener {

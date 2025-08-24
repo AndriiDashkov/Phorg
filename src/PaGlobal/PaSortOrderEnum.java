@@ -1,7 +1,7 @@
 
-package PaGlobal;
+package paglobal;
 
-import static PaGlobal.PaUtils.*;
+import static paglobal.PaUtils.*;
 
 /**
  * <p>This enum represents the sorting order of images in albom.</p>
@@ -10,7 +10,7 @@ import static PaGlobal.PaUtils.*;
  * @value CUSTOM_ORDER - custom sorting order, in this order an user can reorder images in desirable way using drag and drop
  * @value BOOOMAKED_ORDER - in this sorting order the images which are bookmarked are always in the head
  * @value PRINTED_ORDER - in this sorting order the images which were printed are always in the head
- * @author avd
+ * @author Andrii Dashkov
  *
  */
 public enum PaSortOrderEnum {

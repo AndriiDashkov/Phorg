@@ -1,4 +1,6 @@
-package PaDialogs;
+package padialogs;
+
+import static paglobal.PaUtils.*;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
@@ -19,14 +21,14 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
-import PaCollection.PaAlbum;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaCloseFlag;
-import PaGlobal.PaUtils;
-import static PaGlobal.PaUtils.*;
+
+import pacollection.PaAlbum;
+import paglobal.PaCloseFlag;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
 /**
  * Dialog for subjects delete operation
- * @author avd
+ * @author Andrii Dashkov
  */
 public class PaSubjectDeleteDialog extends JDialog {
 

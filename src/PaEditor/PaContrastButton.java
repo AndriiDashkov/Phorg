@@ -1,12 +1,13 @@
 
-package PaEditor;
+package paeditor;
 
 
-import static PaGlobal.PaLog.writeLog;
-import static PaGlobal.PaUtils.NEXT_ROW;
-import static PaGlobal.PaUtils.getGuiStrs;
-import static PaGlobal.PaUtils.getMenusStrs;
-import static PaGlobal.PaUtils.getMessagesStrs;
+import static paglobal.PaLog.writeLog;
+import static paglobal.PaUtils.NEXT_ROW;
+import static paglobal.PaUtils.getGuiStrs;
+import static paglobal.PaUtils.getMenusStrs;
+import static paglobal.PaUtils.getMessagesStrs;
+
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -31,14 +32,15 @@ import javax.swing.WindowConstants;
 import javax.swing.border.TitledBorder;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import PaAlgorithms.PaAlgorithms;
-import PaAlgorithms.PaFftAlgorithms;
-import PaGlobal.PaGuiTools;
-import PaGlobal.PaUtils;
-import PaLong.PaContrastOperation;
+
+import paalgorithms.PaAlgorithms;
+import paalgorithms.PaFftAlgorithms;
+import paglobal.PaGuiTools;
+import paglobal.PaUtils;
+import palong.PaContrastOperation;
 
 /**
- * @author avd
+ * @author Andrii Dashkov
  * <p>This class determines the complex button for contrast operation; 
  * the special parameters panel creates here</p>
  */
@@ -119,7 +121,7 @@ public class PaContrastButton extends PaComplexButton {
 
 	/**
 	 * 
-	 * @author avd
+	 * @author Andrii Dashkov
 	 * <p>Special parameter panel class with all components; the link with button is performed 
 	 * through m_coeff member of PaContrastButton.
 	 * Special parameters frame appears next to the instrument button by using 
@@ -351,7 +353,7 @@ public class PaContrastButton extends PaComplexButton {
 		
 		/**
 		 * 
-		 * @author avd
+		 * @author Andrii Dashkov
 		 * <p>Listener class to listen all radio buttons</p>
 		 *
 		 */
