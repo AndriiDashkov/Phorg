@@ -727,7 +727,7 @@ public class PaSettings {
 	   }
 
       //for normal work the file with specific locale should exist
-       return ResourceBundle.getBundle( "PaTranslation."+resName, currentLocale);
+       return ResourceBundle.getBundle( "patranslation."+resName, currentLocale);
 	}
 
 	public  void saveSettings (PaEvent eventSave)  {
